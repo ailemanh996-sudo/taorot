@@ -113,7 +113,7 @@ def title_bbox(src, base, tmp, rel=0.35):
         if not vals:
             return None
         peak = max(vals)
-        if peak < 30:                      # khác biệt quá nhỏ -> không có chữ
+        if peak < 15:                      # khác biệt quá nhỏ -> không có chữ
             return None
         cut = peak * rel
         idx = [i for i, v in enumerate(vals) if v > cut]

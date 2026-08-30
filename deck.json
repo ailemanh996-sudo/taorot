@@ -1,7 +1,7 @@
 {
  "deck": "Sensual Tarot",
  "total": 78,
- "done": 11,
+ "done": 20,
  "size": "848x1264",
  "cards": [
   {
@@ -153,7 +153,10 @@
    "title": "WHEEL OF FORTUNE",
    "scene": "a great spinning wheel of fortune inscribed with mystic letters, a sphinx with a sword atop it, a serpent descending on one side and a jackal-god rising on the other, four winged readers in the corners",
    "femme": false,
-   "file": null
+   "file": "cards/10-wheel.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 537
   },
   {
    "slug": "11-justice",
@@ -164,7 +167,10 @@
    "title": "JUSTICE",
    "scene": "a statuesque bare-shouldered queen, silk sliding off one shoulder to the curve of her breast, a sword upright in one hand and balanced scales in the other, seated on a stone throne between pillars",
    "femme": true,
-   "file": null
+   "file": "cards/11-justice.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 478
   },
   {
    "slug": "12-hanged",
@@ -186,7 +192,10 @@
    "title": "DEATH",
    "scene": "a skeleton knight in black armor riding a pale horse, a black flag with a white rose, a fallen king and pleading figures, sunrise between two towers",
    "femme": false,
-   "file": null
+   "file": "cards/13-death.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 524
   },
   {
    "slug": "14-temperance",
@@ -197,7 +206,10 @@
    "title": "TEMPERANCE",
    "scene": "a graceful nude archangel with long loosened hair, seen from behind with the long line of her back to the viewer, pouring water between two golden chalices, one foot on the land and one in the pool, irises blooming",
    "femme": true,
-   "file": null
+   "file": "cards/14-temperance.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 493
   },
   {
    "slug": "15-devil",
@@ -208,7 +220,10 @@
    "title": "THE DEVIL",
    "scene": "a horned winged devil on a dark pedestal raising one hand and a torch; beside him a nude woman arched against the pedestal, her head tipped back and chains loose at her throat, and a nude man slumped at her side, a dark cave around them",
    "femme": true,
-   "file": null
+   "file": "cards/15-devil.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 468
   },
   {
    "slug": "16-tower",
@@ -219,7 +234,10 @@
    "title": "THE TOWER",
    "scene": "a tall stone tower struck by lightning, its crown toppling, flames from the windows, a nude woman and a nude man falling headfirst through storm and ash, her body arched and lit by the lightning",
    "femme": true,
-   "file": null
+   "file": "cards/16-tower.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 517
   },
   {
    "slug": "17-the-star",
@@ -244,7 +262,10 @@
    "title": "THE MOON",
    "scene": "a pale moon with a serene face dropping dew, two towers and a winding path, a nude water nymph rising from the dark pool with water streaming over her bare shoulders, a wolf and a dog howling, a crayfish in the water",
    "femme": true,
-   "file": null
+   "file": "cards/18-moon.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 456
   },
   {
    "slug": "19-sun",
@@ -255,7 +276,10 @@
    "title": "THE SUN",
    "scene": "a joyful nude young woman with a wreath of red flowers riding a calm white horse, her bare torso turned toward the light, a red banner streaming, a radiant sun with a gentle face, a low sunflower wall",
    "femme": true,
-   "file": null
+   "file": "cards/19-sun.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 506
   },
   {
    "slug": "20-judgement",
@@ -266,7 +290,10 @@
    "title": "JUDGEMENT",
    "scene": "a blue-robed angel blowing a great trumpet with a white banner; below, on a calm sea, a nude woman rising from a coffin with her arms open and her body turned to the light, beside a nude man and a child",
    "femme": true,
-   "file": null
+   "file": "cards/20-judgement.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 508
   },
   {
    "slug": "21-world",
