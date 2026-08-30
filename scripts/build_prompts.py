@@ -34,9 +34,10 @@ WING = """WING LOCK (mandatory): wings belong to a figure's back — they are ne
 never a costume and never a decoration. For EVERY winged figure in the scene the wings rise from
 that figure's shoulder blades, the wing roots hidden behind the shoulders, and sweep UPWARD and
 OUTWARD behind the body, opening away from it. The wing tips point up and back, at least as high as
-the figure's head; the concave inner face of each wing turns toward the viewer. Never draw wings
-inverted or mirrored the wrong way round, never folded downward, never drooping past the hips, never
-rooted at the waist or the arms. On any one figure the two wings are the same size and mirror each
+the figure's head; the concave inner face of each wing turns toward the viewer. If the figure is SEEN FROM BEHIND, the wings are seen from behind too: the convex outer surface and
+the leading edge of each wing face the viewer, and the hollow side faces away toward the figure's
+front. Never draw wings inverted or mirrored the wrong way round, never folded downward, never
+drooping past the hips, never rooted at the waist or the arms. On any one figure the two wings are the same size and mirror each
 other across the spine, reading clearly as a left wing and a right wing of one pair."""
 
 NO_COUNT = """COUNT LOCK — not applicable. This card contains no repeated suit objects (no cups, coins, swords or wands). Do not add decorative suit objects, and do not let any object in the scene multiply."""

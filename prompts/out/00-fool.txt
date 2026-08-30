@@ -9,7 +9,7 @@ pixels (2:3, width:height = 0.671) — taller than it is wide, never square, nev
 
 LAYOUT (draw in this order):
 — TOP: inside the top-center ornamental medallion place this card's EMBLEM: a white rose — small antique-gold heraldic emblem, centered, no text, no numerals.
-— MIDDLE (the empty parchment area only): a nude young woman wanderer, a long silk scarf slipping off one shoulder and streaming behind her, a white rose lifted in one hand, her bare back and hip caught in the morning light, stepping lightly toward a cliff edge, a small white dog leaping at her heel, distant mountains under a golden morning sun
+— MIDDLE (the empty parchment area only): a nude young woman wanderer, a long silk scarf slipping off one shoulder and streaming behind her, a white rose lifted in one hand and her eyes lowered to look at the rose, her bare back and hip caught in the morning light, stepping lightly toward a cliff edge, a small white dog leaping at her heel, distant mountains under a golden morning sun
 — BOTTOM: in the bottom band, directly beneath the small skull ornament, the title "THE FOOL" — centered, on one line, spelled exactly like that.
 
 TITLE LOCK: the title must be rendered in the EXACT lettering of the title in the THIRD reference image — identical typeface, identical weight, identical letter-spacing and tracking, identical gold tone and shading, identical cap height and stroke width, identical position directly beneath the skull ornament. Copy that letterform character by character for the new words; do not invent a different font, do not use a modern sans-serif, do not outline, emboss or decorate it differently. The only text on the card is this title.
