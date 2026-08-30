@@ -1,9 +1,11 @@
 {
- "_note": "Vùng nội dung riêng của từng lá, dán lên khung chuẩn. Đo từ bản đồ khác biệt Star vs Fool.",
+ "_note": "Vùng nội dung riêng của từng lá, dán lên khung chuẩn. Đo từ bản đồ khác biệt + check_card.py.",
+ "_history": "title mở rộng 262,591 -> 190,670 vì chữ THE CHARIOT bắt đầu ở x=230 (bị cụt mất chữ đầu)",
  "panel":  [106, 120, 621, 933],
  "emblem": [250, 10, 350, 115],
- "title":  [262, 1090, 330, 145],
+ "title":  [190, 1080, 480, 165],
  "feather": 12,
+ "edge_guard": 18,
  "size": [848, 1264],
  "max_kb": 800
 }

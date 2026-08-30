@@ -185,7 +185,10 @@ Vùng dán lưu trong `prompts/panel.json` (đo từ bản đồ khác biệt St
 |------|---------------------|
 | `panel` — cảnh giữa | 106, 120, 621, 933 |
 | `emblem` — huy hiệu trong medallion | 250, 10, 350, 115 |
-| `title` — chữ tên ở dải dưới | 262, 1090, 330, 145 |
+| `title` — chữ tên ở dải dưới | 190, 1080, 480, 165 |
+
+> Hộp `title` ban đầu là `262,1090,330,145` — quá hẹp: chữ `THE CHARIOT` bắt đầu ở **x=230** nên bị cụt chữ cái
+> đầu. Đã mở rộng sang **190..670**. Khi thêm lá mới, kiểm tra bằng `scripts/check_card.py`.
 
 ```bash
 python3 scripts/compose_card.py raw/          # ghép tất cả ảnh trong raw/ lên khung chuẩn
@@ -257,5 +260,6 @@ cân màu theo khung chuẩn, ghép lên khung chuẩn, chuẩn hoá 848×1264 v
 | `scripts/build_prompts.py` | `check` · `prompt` · `all` · `md` · `batch` |
 | `scripts/process_cards.py` | resize 848×1264 · `--trim` cắt viền · nén ≤ 800KB |
 | `scripts/compose_card.py` | ghép lên khung chuẩn + cân màu · `--check` đo độ lệch |
+| `scripts/check_card.py` | đo `frame` / `band` / toạ độ chữ tên của lá thô, chọn bản tốt nhất |
 | `scripts/build_gallery.py` | quét `cards/` → `deck.json` cho gallery |
 | `cards/card-blank.jpg` · `17-the-star.jpg` · `title-style.png` | 3 ảnh tham chiếu bắt buộc |
