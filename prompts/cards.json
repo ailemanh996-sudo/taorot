@@ -110,7 +110,7 @@
    "group": "major",
    "emblem": "a glowing lantern",
    "title": "THE HERMIT",
-   "femme": false,
+   "femme": true,
    "count": null,
    "scene": "a hooded hermit in a gray cloak on a snowy peak holding up a lantern with a six-pointed star inside"
   },
