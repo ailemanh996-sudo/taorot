@@ -1,7 +1,7 @@
 {
  "deck": "Sensual Tarot",
  "total": 78,
- "done": 57,
+ "done": 64,
  "size": "848x1264",
  "cards": [
   {
@@ -811,7 +811,10 @@
    "title": "EIGHT OF SWORDS",
    "scene": "a blindfolded woman in a flowing gown loosened from one shoulder and loosely bound, standing in a ring of eight swords, a fortress on the cliff behind",
    "femme": true,
-   "file": null
+   "file": "cards/swords-08.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 455
   },
   {
    "slug": "swords-09",
@@ -822,7 +825,10 @@
    "title": "NINE OF SWORDS",
    "scene": "a distressed woman sitting up in bed at night, her bare shoulder and back above the sheet, face in her hands, nine swords mounted in rows on the dark wall",
    "femme": true,
-   "file": null
+   "file": "cards/swords-09.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 430
   },
   {
    "slug": "swords-10",
@@ -833,7 +839,10 @@
    "title": "TEN OF SWORDS",
    "scene": "a still figure lying face down by a black sea at dawn, ten swords along the back in a row, the sun rising",
    "femme": false,
-   "file": null
+   "file": "cards/swords-10.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 418
   },
   {
    "slug": "swords-page",
@@ -844,7 +853,10 @@
    "title": "PAGE OF SWORDS",
    "scene": "an alert young woman page in a flowing cape on a windy mound holding one raised sword with both hands",
    "femme": true,
-   "file": null
+   "file": "cards/swords-page.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 461
   },
   {
    "slug": "swords-knight",
@@ -855,7 +867,10 @@
    "title": "KNIGHT OF SWORDS",
    "scene": "a fierce bare-shouldered knight in steel charging at full gallop, one sword pointed forward, a storm behind",
    "femme": false,
-   "file": null
+   "file": "cards/swords-knight.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 464
   },
   {
    "slug": "swords-queen",
@@ -864,9 +879,12 @@
    "groupLabel": "Swords",
    "emblem": "a sword wrapped in laurel",
    "title": "QUEEN OF SWORDS",
-   "scene": "a stern dignified queen with flowing hair, one shoulder and the curve of her breast left bare by her loosened gown, seated on a cherub-carved throne above a sea of clouds, one upright sword in her hand",
+   "scene": "a stern dignified queen with flowing hair, one shoulder and the curve of her breast left bare by her loosened gown, seated on a butterfly-carved throne above a sea of clouds, one upright sword in her hand",
    "femme": true,
-   "file": null
+   "file": "cards/swords-queen.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 453
   },
   {
    "slug": "swords-king",
@@ -877,7 +895,10 @@
    "title": "KING OF SWORDS",
    "scene": "a commanding wise bare-chested king with a beard on a crescent-carved throne, one upright sword in hand, sea and birds behind",
    "femme": false,
-   "file": null
+   "file": "cards/swords-king.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 448
   },
   {
    "slug": "pentacles-ace",
