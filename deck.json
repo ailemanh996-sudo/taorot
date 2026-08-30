@@ -1,7 +1,7 @@
 {
  "deck": "Sensual Tarot",
  "total": 78,
- "done": 36,
+ "done": 42,
  "size": "848x1264",
  "cards": [
   {
@@ -394,7 +394,7 @@
    "file": "cards/wands-06.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 488
+   "kb": 476
   },
   {
    "slug": "wands-07",
@@ -450,7 +450,7 @@
    "file": "cards/wands-10.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 480
+   "kb": 458
   },
   {
    "slug": "wands-page",
@@ -517,7 +517,10 @@
    "title": "ACE OF CUPS",
    "scene": "a divine hand offering one ornate chalice, a dove descending, five streams overflowing into a pool of lilies",
    "femme": false,
-   "file": null
+   "file": "cards/cups-ace.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 448
   },
   {
    "slug": "cups-02",
@@ -528,7 +531,10 @@
    "title": "TWO OF CUPS",
    "scene": "a nude young woman and a nude young man facing one another, her body turned three-quarters toward the viewer with one arm across her breast, each raising one chalice in a toast, a caduceus with a lion head above them",
    "femme": true,
-   "file": null
+   "file": "cards/cups-02.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 463
   },
   {
    "slug": "cups-03",
@@ -539,7 +545,10 @@
    "title": "THREE OF CUPS",
    "scene": "three nude maidens with flower wreaths dancing in a circle, their bodies turned to the light, each raising one chalice, fruits on the ground",
    "femme": true,
-   "file": null
+   "file": "cards/cups-03.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 497
   },
   {
    "slug": "cups-04",
@@ -550,7 +559,10 @@
    "title": "FOUR OF CUPS",
    "scene": "a pensive nude youth with a lithe bare torso sitting under a tree, arms crossed, three chalices before him, a hand offering a fourth from a cloud",
    "femme": false,
-   "file": null
+   "file": "cards/cups-04.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 475
   },
   {
    "slug": "cups-05",
@@ -561,7 +573,10 @@
    "title": "FIVE OF CUPS",
    "scene": "a grieving cloaked figure bowing by a river, three spilled chalices before him, two full ones standing behind",
    "femme": false,
-   "file": null
+   "file": "cards/cups-05.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 438
   },
   {
    "slug": "cups-06",
@@ -572,7 +587,10 @@
    "title": "SIX OF CUPS",
    "scene": "two graceful young women in sheer summer dresses in an old courtyard garden, exchanging one flower-filled chalice, five more set along the wall behind them",
    "femme": true,
-   "file": null
+   "file": "cards/cups-06.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 489
   },
   {
    "slug": "cups-07",
