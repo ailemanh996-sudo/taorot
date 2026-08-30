@@ -1,13 +1,18 @@
 # 🖤 SENSUAL TAROT 78 LÁ — MASTER PROMPT v2
 
-Bản viết lại để sửa **2 lỗi** của v1:
+Bản viết lại để sửa **4 lỗi**:
 
-1. **AI đếm sai số lượng cốc / xu / kiếm / gậy** → thêm khối **COUNT LOCK** (khoá số lượng bằng số + chữ + bố cục +
-   quy tắc hiển thị + lệnh tự kiểm), và **bố cục đếm được** (hàng, lưới, nhóm 3+3+2…) thay vì "rải rác".
-2. **Độ gợi cảm của các lá nữ chưa đủ** → thêm khối **FEMALE FIGURE DIRECTIVE** + viết lại toàn bộ scene có nhân vật nữ.
+1. **AI đếm sai số lượng cốc / xu / kiếm / gậy** → khối **COUNT LOCK** (số + chữ + bố cục + quy tắc hiển thị +
+   lệnh tự kiểm), và **bố cục đếm được** (hàng, lưới, nhóm 3+3+2…) thay vì "rải rác".
+2. **Độ gợi cảm của các lá nữ chưa đủ** → khối **FEMALE FIGURE DIRECTIVE** + viết lại scene các lá có nhân vật nữ.
+3. **Lá bài không phủ kín khung** (viền tối/sáng thừa quanh lá) → mệnh đề **FULL BLEED** + `--trim` ở hậu kỳ.
+4. **Hoạ tiết viền + màu lệch nhau giữa các lá** → **ghép lên khung chuẩn** bằng `scripts/compose_card.py`:
+   chỉ giữ lại 3 vùng nội dung riêng của mỗi lá (cảnh · emblem · tên), phần còn lại lấy từ `17-the-star.jpg`.
 
-> Tham chiếu mỗi lần tạo (giữ nguyên): `cards/card-blank.jpg` (phôi, vị trí 1) + `cards/17-the-star.jpg` (neo phong cách, vị trí 2).
-> ⚠️ Chưa có 2 file này trong repo — bỏ vào thư mục `cards/` trước khi chạy batch.
+> Tham chiếu mỗi lần tạo (3 ảnh, đúng thứ tự):
+> 1. `cards/card-blank.jpg` — phôi
+> 2. `cards/17-the-star.jpg` — neo phong cách **và** khung chuẩn
+> 3. `cards/title-style.png` — mẫu chữ tên (cắt từ dải dưới của The Star)
 
 ---
 
@@ -22,16 +27,23 @@ symmetric ornamental golden frame, the four corner filigree flourishes, the top-
 bottom band with the small skull ornament EXACTLY as they are — do not redraw, move, recolor or resize any
 part of the frame. FULL BLEED: the card itself fills the entire image EDGE TO EDGE, corner to corner — there
 is no background, no margin, no dark band, no drop shadow and no second border outside the ornamental frame;
-every pixel of the image belongs to the card. Fill the empty parchment center with the new scene, painted in the EXACT master art style
-of the SECOND reference image (a Major Arcana card of the same deck): identical illustration technique and
-linework, identical muted antique color palette, identical paper grain and vellum texture.
+every pixel of the image belongs to the card. Fill the empty parchment center with the new scene, painted in
+the EXACT master art style of the SECOND reference image (a Major Arcana card of the same deck): identical
+illustration technique and linework, identical muted antique color palette, identical paper grain and vellum
+texture. The THIRD reference image is the cropped bottom title band of THE STAR — it is the mandatory
+LETTERING SAMPLE for this deck.
 
 LAYOUT (draw in this order):
 — TOP: inside the top-center ornamental medallion place this card's EMBLEM: {EMBLEM} — small antique-gold
   heraldic emblem, centered, no text, no numerals.
 — MIDDLE (the empty parchment area only): {SCENE}
-— BOTTOM: in the bottom band, directly beneath the small skull ornament, the title "{TITLE}" in the deck's
-  lettering style, centered.
+— BOTTOM: in the bottom band, directly beneath the small skull ornament, the title "{TITLE}" — centered, on
+  one line, spelled exactly like that.
+
+TITLE LOCK: the title must be rendered in the EXACT lettering of the title in the THIRD reference image —
+identical typeface, weight, letter-spacing and tracking, gold tone and shading, cap height and stroke width,
+identical position directly beneath the skull ornament. Copy that letterform character by character for the
+new words; do not invent a different font, do not use a modern sans-serif. The only text on the card is this title.
 
 {COUNT_LOCK}
 
@@ -41,7 +53,8 @@ THEME: sensual classic tarot in the tradition of vintage art-nude tarot decks �
 at ease in their bodies, graceful nude and semi-nude poses, silk and sheer gauze that follows the body's line,
 warm candlelit and low-sun atmosphere, painterly skin in golden light against cool shadow.
 
-NEGATIVE: dark margin, empty band, background or mat around the card, drop shadow, vignette, card floating
+NEGATIVE: wrong or mismatched title font, modern or sans-serif lettering, extra words, misspelled title,
+dark margin, empty band, background or mat around the card, drop shadow, vignette, card floating
 inside the frame, extra or miscounted suit objects, duplicated, fused, cropped or half-hidden objects, extra
 limbs, extra fingers, six-fingered hands, extra heads, modern clothing, neon or oversaturated color, glossy
 3D render, plastic airbrushed skin, text or numbers anywhere except the bottom title band, watermark,
@@ -156,6 +169,32 @@ Kiểm tra nhanh một ảnh đã full-bleed chưa:
 convert cards/<slug>.jpg -fuzz 8% -trim -format "%wx%h" info:   # trả về 848x1264 là đạt
 ```
 
+## 3c. Khung chuẩn & đồng màu — `compose_card.py`
+
+Model chỉ "xấp xỉ" khung khi nhìn tham chiếu → hoạ tiết và màu lệch giữa các lá. Đo bằng RMSE trên dải khung
+trái (0 = giống hệt) trước khi sửa: `0.033 … 0.281` (chariot lệch nhất). Sau khi ghép: `0.003 … 0.004`.
+
+**Cách hoạt động:** lấy `17-the-star.jpg` làm khung chuẩn. Từ mỗi lá AI sinh ra chỉ giữ 3 vùng nội dung
+riêng, dán lên khung chuẩn với viền mềm 12px; phần còn lại (khung vàng, 4 góc filigree, medallion, đầu lâu)
+là của khung chuẩn nên **giống hệt nhau trên mọi lá**. Trước khi dán, ảnh được cân màu theo khung chuẩn
+(per-channel polynomial, hệ số tính trên dải khung trái).
+
+Vùng dán lưu trong `prompts/panel.json` (đo từ bản đồ khác biệt Star vs Fool):
+
+| Vùng | Toạ độ (x, y, w, h) |
+|------|---------------------|
+| `panel` — cảnh giữa | 106, 120, 621, 933 |
+| `emblem` — huy hiệu trong medallion | 250, 10, 350, 115 |
+| `title` — chữ tên ở dải dưới | 262, 1090, 330, 145 |
+
+```bash
+python3 scripts/compose_card.py raw/          # ghép tất cả ảnh trong raw/ lên khung chuẩn
+python3 scripts/compose_card.py --check       # đo độ lệch khung từng lá so với khung chuẩn
+```
+
+> ⚠️ Lưu ý ImageMagick: `-function Polynomial` nhận hệ số theo **luỹ thừa giảm dần** — `"a,b"` = `a·x + b`.
+> Truyền ngược (`"b,a"`) sẽ làm ảnh cháy sáng.
+
 ## 4. Quy trình chạy
 
 ```bash
@@ -169,9 +208,12 @@ python3 scripts/build_prompts.py prompt 08-strength
 python3 scripts/build_prompts.py all     # -> prompts/out/<slug>.txt
 ```
 
-**Generate:** `generate_image` với `images: [cards/card-blank.jpg, cards/17-the-star.jpg]`, prompt lấy ở bước 2/3.
-**Hậu kỳ:** `python3 scripts/process_cards.py raw/ --autoname --trim` → chuẩn hoá 848×1264, cắt viền ngoài,
-nén ≤ 800KB (bắt đầu q90).
+**Generate:** `generate_image` với
+`images: [cards/card-blank.jpg, cards/17-the-star.jpg, cards/title-style.png]`, prompt lấy ở bước 2/3.
+
+**Hậu kỳ:** `python3 scripts/compose_card.py raw/` — một lệnh làm cả 3 việc: cắt viền ngoài (`-trim`),
+cân màu theo khung chuẩn, ghép lên khung chuẩn, chuẩn hoá 848×1264 và nén ≤ 800KB (q90).
+(Dùng `process_cards.py` khi chỉ cần resize/nén mà không ghép khung.)
 
 **Chia batch theo giới hạn 10 ảnh/lượt (8 lượt):**
 
@@ -194,7 +236,8 @@ nén ≤ 800KB (bắt đầu q90).
 - [ ] Có object nào bị che, dính, cắt khung không?
 - [ ] Ảnh phủ kín khung, **không có dải viền tối / nền / bóng đổ** quanh lá?
 - [ ] Khung viền vàng, 4 góc hoa văn, medallion, dải tên + đầu lâu **giống phôi 100%**?
-- [ ] Tên lá đúng chính tả, đúng font bộ bài, chỉ nằm ở dải dưới?
+- [ ] Tên lá đúng chính tả, **đúng font của The Star**, chỉ nằm ở dải dưới?
+- [ ] `python3 scripts/compose_card.py --check` → RMSE khung < 0.01?
 - [ ] Nhân vật nữ đủ gợi cảm nhưng vẫn đúng giới hạn fine-art (không lộ genital, không tư thế khiêu dâm)?
 - [ ] Tay đủ ngón, không dư chi, không dư đầu?
 - [ ] Màu trầm antique khớp `17-the-star.jpg`?
@@ -210,5 +253,9 @@ nén ≤ 800KB (bắt đầu q90).
 | `prompts/cards.json` | Nguồn dữ liệu duy nhất (sửa ở đây, không sửa tay file md) |
 | `prompts/template.md` | Template có placeholder |
 | `prompts/out/<slug>.txt` | 78 prompt hoàn chỉnh, copy-paste trực tiếp |
+| `prompts/panel.json` | Toạ độ 3 vùng nội dung dùng khi ghép khung |
 | `scripts/build_prompts.py` | `check` · `prompt` · `all` · `md` · `batch` |
-| `cards/` | Bỏ `card-blank.jpg` + `17-the-star.jpg` vào đây |
+| `scripts/process_cards.py` | resize 848×1264 · `--trim` cắt viền · nén ≤ 800KB |
+| `scripts/compose_card.py` | ghép lên khung chuẩn + cân màu · `--check` đo độ lệch |
+| `scripts/build_gallery.py` | quét `cards/` → `deck.json` cho gallery |
+| `cards/card-blank.jpg` · `17-the-star.jpg` · `title-style.png` | 3 ảnh tham chiếu bắt buộc |

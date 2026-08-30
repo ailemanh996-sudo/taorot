@@ -1,0 +1,9 @@
+{
+ "_note": "Vùng nội dung riêng của từng lá, dán lên khung chuẩn. Đo từ bản đồ khác biệt Star vs Fool.",
+ "panel":  [106, 120, 621, 933],
+ "emblem": [250, 10, 350, 115],
+ "title":  [262, 1090, 330, 145],
+ "feather": 12,
+ "size": [848, 1264],
+ "max_kb": 800
+}
