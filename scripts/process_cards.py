@@ -18,6 +18,8 @@ Tuỳ chọn:
   --fit cover|contain   cover = crop lấp đầy (mặc định), contain = vừa khung + nền parchment
   --max-kb 800      ngưỡng dung lượng, vượt thì giảm quality dần từ 90
   --bg '#e8dcc0'    màu nền khi --fit contain
+  --trim           tự cắt dải viền ngoài (nền tối) còn sót lại trước khi resize
+  --trim-thr 0.18  ngưỡng sáng để coi là "nội dung" (0-1)
   --dry-run         chỉ in kế hoạch
 """
 import argparse
@@ -54,17 +56,59 @@ def slug_from_name(path):
     return None
 
 
+def profile(path, axis, n=256):
+    """Trung bình độ sáng theo cột (axis='col') hoặc hàng (axis='row')."""
+    wh = subprocess.run(["identify", "-format", "%w %h", str(path)],
+                        capture_output=True, text=True).stdout.split()
+    w, h = (int(wh[0]), int(wh[1]))
+    step = max(1, (w if axis == "col" else h) // n)
+    vals = []
+    for i in range(0, (w if axis == "col" else h), step):
+        geo = (f"{step}x{h}+{i}+0" if axis == "col" else f"{w}x{step}+0+{i}")
+        out = subprocess.run(["convert", str(path), "-crop", geo, "+repage", "-colorspace", "Gray",
+                              "-format", "%[fx:mean]", "info:"], capture_output=True, text=True).stdout
+        try:
+            vals.append((i, float(out)))
+        except ValueError:
+            pass
+    return vals, (w, h)
+
+
+def trim_box(path, thr=0.18):
+    """Tìm bbox nội dung theo ngưỡng sáng; trả (x, y, w, h) hoặc None."""
+    cols, (w, h) = profile(path, "col")
+    rows, _ = profile(path, "row")
+    def span(vals, limit):
+        hits = [i for i, v in vals if v > thr]
+        if not hits:
+            return 0, limit
+        return min(hits), max(hits) + (vals[1][0] - vals[0][0] if len(vals) > 1 else 1)
+    x0, x1 = span(cols, w)
+    y0, y1 = span(rows, h)
+    if x0 == 0 and y0 == 0 and x1 >= w and y1 >= h:
+        return None
+    return x0, y0, x1 - x0, y1 - y0
+
+
 def target_size_kb(p, quality):
     return p.stat().st_size / 1024 if p.exists() else 10 ** 9
 
 
-def process(src, dst, size, fit, max_kb, bg, dry):
+def process(src, dst, size, fit, max_kb, bg, dry, trim=None):
     w, h = (int(x) for x in size.lower().split("x"))
     im = imagemagick()
     if not im:
         sys.exit("Không tìm thấy ImageMagick (convert/magick) và Pillow cũng không có.")
+    pre = []
+    if trim is not None:
+        box = trim_box(src, trim)
+        if box:
+            bx, by, bw, bh = box
+            pre = ["-crop", f"{bw}x{bh}+{bx}+{by}", "+repage"]
+            if dry:
+                print(f"      trim: cắt viền ngoài -> {bw}x{bh} tại +{bx}+{by}")
     resize = (f"{w}x{h}^" if fit == "cover" else f"{w}x{h}")
-    base = im + [str(src), "-strip", "-colorspace", "sRGB", "-resize", resize]
+    base = im + [str(src)] + pre + ["-strip", "-colorspace", "sRGB", "-resize", resize]
     if fit == "cover":
         base += ["-gravity", "center", "-extent", f"{w}x{h}"]
     else:
@@ -95,6 +139,8 @@ def main():
     ap.add_argument("--fit", default="cover", choices=["cover", "contain"])
     ap.add_argument("--max-kb", type=int, default=800)
     ap.add_argument("--bg", default="#e8dcc0")
+    ap.add_argument("--trim", nargs="?", type=float, const=0.18, default=None,
+                    help="cắt dải viền ngoài tối, ngưỡng sáng 0-1 (mặc định 0.18)")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
@@ -129,7 +175,7 @@ def main():
     print(f"{len(jobs)} ảnh -> {CARDS.relative_to(ROOT)}/  ({a.size}, {a.fit}, <= {a.max_kb}KB)")
     for f, s in jobs:
         dst = CARDS / f"{s}.jpg"
-        r = process(f, dst, a.size, a.fit, a.max_kb, a.bg, a.dry_run)
+        r = process(f, dst, a.size, a.fit, a.max_kb, a.bg, a.dry_run, a.trim)
         if r:
             kb, q = r
             flag = "  <-- vẫn quá nặng" if kb > a.max_kb else ""

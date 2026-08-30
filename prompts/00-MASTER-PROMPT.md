@@ -20,7 +20,9 @@ Copy nguyên khối này, `{EMBLEM}` `{SCENE}` `{TITLE}` `{COUNT_LOCK}` `{FEMME}
 A single tarot card built upon the FIRST reference image (the deck's blank ornamental template): keep its
 symmetric ornamental golden frame, the four corner filigree flourishes, the top-center medallion and the
 bottom band with the small skull ornament EXACTLY as they are — do not redraw, move, recolor or resize any
-part of the frame. Fill the empty parchment center with the new scene, painted in the EXACT master art style
+part of the frame. FULL BLEED: the card itself fills the entire image EDGE TO EDGE, corner to corner — there
+is no background, no margin, no dark band, no drop shadow and no second border outside the ornamental frame;
+every pixel of the image belongs to the card. Fill the empty parchment center with the new scene, painted in the EXACT master art style
 of the SECOND reference image (a Major Arcana card of the same deck): identical illustration technique and
 linework, identical muted antique color palette, identical paper grain and vellum texture.
 
@@ -39,10 +41,11 @@ THEME: sensual classic tarot in the tradition of vintage art-nude tarot decks �
 at ease in their bodies, graceful nude and semi-nude poses, silk and sheer gauze that follows the body's line,
 warm candlelit and low-sun atmosphere, painterly skin in golden light against cool shadow.
 
-NEGATIVE: extra or miscounted suit objects, duplicated, fused, cropped or half-hidden objects, extra limbs,
-extra fingers, six-fingered hands, extra heads, modern clothing, neon or oversaturated color, glossy 3D render,
-plastic airbrushed skin, text or numbers anywhere except the bottom title band, watermark, signature, artist
-name, double border, multiple cards, collage.
+NEGATIVE: dark margin, empty band, background or mat around the card, drop shadow, vignette, card floating
+inside the frame, extra or miscounted suit objects, duplicated, fused, cropped or half-hidden objects, extra
+limbs, extra fingers, six-fingered hands, extra heads, modern clothing, neon or oversaturated color, glossy
+3D render, plastic airbrushed skin, text or numbers anywhere except the bottom title band, watermark,
+signature, artist name, double border, multiple cards, collage.
 
 No other text, no watermark, single card only.
 ```
@@ -136,6 +139,23 @@ Các lá vốn trung tính được **gán nữ** trong bản sensual này: `00-
 
 ---
 
+## 3b. Full-bleed — không còn viền ngoài
+
+Lá phôi **phải** phủ kín khung: nếu phôi còn dải nền tối ở mép, model sẽ học theo và vẽ kèm viền tối quanh
+mọi lá bài. Hai lớp bảo vệ:
+
+1. **Khoá ở prompt** — mệnh đề `FULL BLEED …` ở ngay đầu template + các cụm `dark margin / background /
+   drop shadow / vignette / card floating inside the frame` trong NEGATIVE.
+2. **Khoá ở hậu kỳ** — `python3 scripts/process_cards.py raw/ --trim` tự dò dải viền ngoài (theo ngưỡng sáng,
+   mặc định `0.18`) và cắt bỏ trước khi resize về 848×1264. Dùng `--trim-thr` để chỉnh ngưỡng; `--trim`
+   không làm gì nếu ảnh đã phủ kín khung.
+
+Kiểm tra nhanh một ảnh đã full-bleed chưa:
+
+```bash
+convert cards/<slug>.jpg -fuzz 8% -trim -format "%wx%h" info:   # trả về 848x1264 là đạt
+```
+
 ## 4. Quy trình chạy
 
 ```bash
@@ -150,7 +170,8 @@ python3 scripts/build_prompts.py all     # -> prompts/out/<slug>.txt
 ```
 
 **Generate:** `generate_image` với `images: [cards/card-blank.jpg, cards/17-the-star.jpg]`, prompt lấy ở bước 2/3.
-**Hậu kỳ:** chuẩn hoá 848×1264, nén > 800KB → q90.
+**Hậu kỳ:** `python3 scripts/process_cards.py raw/ --autoname --trim` → chuẩn hoá 848×1264, cắt viền ngoài,
+nén ≤ 800KB (bắt đầu q90).
 
 **Chia batch theo giới hạn 10 ảnh/lượt (8 lượt):**
 
@@ -171,6 +192,7 @@ python3 scripts/build_prompts.py all     # -> prompts/out/<slug>.txt
 
 - [ ] Đếm tay số cốc / xu / kiếm / gậy **trong vùng giấy** — đúng N? (đừng tính emblem ở medallion)
 - [ ] Có object nào bị che, dính, cắt khung không?
+- [ ] Ảnh phủ kín khung, **không có dải viền tối / nền / bóng đổ** quanh lá?
 - [ ] Khung viền vàng, 4 góc hoa văn, medallion, dải tên + đầu lâu **giống phôi 100%**?
 - [ ] Tên lá đúng chính tả, đúng font bộ bài, chỉ nằm ở dải dưới?
 - [ ] Nhân vật nữ đủ gợi cảm nhưng vẫn đúng giới hạn fine-art (không lộ genital, không tư thế khiêu dâm)?

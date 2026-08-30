@@ -28,8 +28,9 @@ Sửa nội dung lá nào thì sửa trong `prompts/cards.json`, rồi chạy l�
 
 ## Hai điểm sửa của bản v2
 
-1. **COUNT LOCK** — khoá số lượng cốc / xu / kiếm / gậy bằng 5 lớp (số+chữ · bố cục hình học ·
+1. **FULL BLEED** — lá bài phủ kín khung 848×1264, không viền tối / nền / bóng đổ (khoá ở prompt + `--trim` ở hậu kỳ).
+2. **COUNT LOCK** — khoá số lượng cốc / xu / kiếm / gậy bằng 5 lớp (số+chữ · bố cục hình học ·
    nhóm con · cấm che khuất/cắt khung · lệnh tự kiểm đếm lại).
-2. **FEMALE FIGURE DIRECTIVE** — tăng độ gợi cảm cho các lá nữ, vẫn trong giới hạn fine-art nudity.
+3. **FEMALE FIGURE DIRECTIVE** — tăng độ gợi cảm cho các lá nữ, vẫn trong giới hạn fine-art nudity.
 
 Chi tiết: `prompts/00-MASTER-PROMPT.md`.
