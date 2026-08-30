@@ -212,7 +212,7 @@ def load_panel():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("src", nargs="?", help="thư mục hoặc file ảnh nguồn")
-    ap.add_argument("--base", default=str(ref("17-the-star.jpg")))
+    ap.add_argument("--base", default=str(ref("frame-master.jpg")))
     ap.add_argument("--out", default=str(CARDS))
     ap.add_argument("--check", action="store_true", help="đo độ lệch khung giữa các lá")
     a = ap.parse_args()
