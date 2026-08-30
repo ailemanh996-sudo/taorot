@@ -10,7 +10,7 @@ Dùng:
   python3 scripts/compose_card.py raw/                      # ghép tất cả ảnh trong raw/
   python3 scripts/compose_card.py raw/08-strength.png       # một lá
   python3 scripts/compose_card.py --check                   # đo độ lệch khung/màu hiện tại
-  python3 scripts/compose_card.py raw/ --base cards/17-the-star.jpg
+  python3 scripts/compose_card.py raw/ --base refs/17-the-star.jpg
 
 Vùng dán lấy từ prompts/panel.json (có thể chỉnh tay).
 """
@@ -23,6 +23,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CARDS = ROOT / "cards"
+REFS = ROOT / "refs"          # ảnh MẪU (không phải lá bài): khung trống, khung chuẩn, mẫu chữ
+
+
+def ref(name):
+    """Đường dẫn ảnh mẫu. Ưu tiên refs/, fallback về cards/ (tương thích ngược)."""
+    p = REFS / name
+    return p if p.exists() else CARDS / name
 PANEL = ROOT / "prompts" / "panel.json"
 IMG_EXT = {".jpg", ".jpeg", ".png", ".webp"}
 
@@ -205,7 +212,7 @@ def load_panel():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("src", nargs="?", help="thư mục hoặc file ảnh nguồn")
-    ap.add_argument("--base", default=str(CARDS / "17-the-star.jpg"))
+    ap.add_argument("--base", default=str(ref("17-the-star.jpg")))
     ap.add_argument("--out", default=str(CARDS))
     ap.add_argument("--check", action="store_true", help="đo độ lệch khung giữa các lá")
     a = ap.parse_args()
@@ -220,7 +227,7 @@ def main():
         reg = frame_region(W, H, panel)
         print(f"Độ lệch vùng khung so với {base.name} (RMSE, 0 = giống hệt):")
         for f in sorted(CARDS.glob("*.jpg")):
-            if f.name in ("card-blank.jpg",):
+            if f.stem in ("card-blank", "title-style"):
                 continue
             d = diff_region(f, base, reg)
             flag = "ok" if d < 0.02 else ("lệch nhẹ" if d < 0.05 else "LỆCH NHIỀU")

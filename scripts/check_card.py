@@ -19,7 +19,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from compose_card import CARDS, ROOT, channel_stats, frame_region, im, load_panel, run  # noqa: E402
+from compose_card import (CARDS, ROOT, channel_stats, frame_region, im, load_panel,  # noqa: E402
+                         ref, run)
 
 BAND = (60, 1050, 730, 200)   # vùng dải tên, đo `band` (cả hoạ tiết)
 TITLE_SCAN = (60, 1095, 730, 145)  # chỉ dải chữ, để đo bbox chữ (tránh lẫn đầu lâu)
@@ -134,7 +135,7 @@ def main():
         return 1
     panel = load_panel()
     W, H = panel["size"]
-    base = CARDS / "17-the-star.jpg"
+    base = ref("17-the-star.jpg")
     tmp = Path("/tmp/_check")
     tmp.mkdir(exist_ok=True)
 

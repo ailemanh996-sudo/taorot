@@ -18,9 +18,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from compose_card import CARDS, load_panel  # noqa: E402
+from compose_card import CARDS, load_panel, ref  # noqa: E402
 
-BASE = CARDS / "17-the-star.jpg"
+BASE = ref("17-the-star.jpg")
 # vùng TRONG hộp tên nhưng TRÁNH chữ (chữ nằm khoảng x200..660, y1100..1235)
 PROBES = {
     "trái": lambda tx: (tx + 3, 1090, 24, 150),
@@ -52,7 +52,7 @@ def main():
     args = sys.argv[1:]
     files = ([CARDS / f"{a}.jpg" for a in args] if args
              else sorted(f for f in CARDS.glob("*.jpg")
-                         if f.stem not in ("card-blank", "17-the-star")))
+                         if f.stem not in ("card-blank", "title-style")))
     print(f"{'lá':<16}" + "".join(f"{k:>10}" for k in PROBES) + "   đánh giá")
     print("-" * 62)
     bad = []
