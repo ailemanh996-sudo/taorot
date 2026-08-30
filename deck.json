@@ -1,7 +1,7 @@
 {
  "deck": "Sensual Tarot",
  "total": 78,
- "done": 31,
+ "done": 36,
  "size": "848x1264",
  "cards": [
   {
@@ -394,7 +394,7 @@
    "file": "cards/wands-06.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 481
+   "kb": 490
   },
   {
    "slug": "wands-07",
@@ -447,7 +447,10 @@
    "title": "TEN OF WANDS",
    "scene": "an exhausted bare-chested man in a red loincloth hunched under a bundle of ten staves, walking toward a town at dusk",
    "femme": false,
-   "file": null
+   "file": "cards/wands-10.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 456
   },
   {
    "slug": "wands-page",
@@ -458,7 +461,10 @@
    "title": "PAGE OF WANDS",
    "scene": "a graceful young woman page in a flowing open robe sliding off one shoulder, holding one living wand, desert dunes and pyramids behind her",
    "femme": true,
-   "file": null
+   "file": "cards/wands-page.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 444
   },
   {
    "slug": "wands-knight",
@@ -469,7 +475,10 @@
    "title": "KNIGHT OF WANDS",
    "scene": "a bare-chested knight in golden armor on a rearing horse, one flourishing wand raised high, his cloak streaming",
    "femme": false,
-   "file": null
+   "file": "cards/wands-knight.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 469
   },
   {
    "slug": "wands-queen",
@@ -480,7 +489,10 @@
    "title": "QUEEN OF WANDS",
    "scene": "a radiant nude queen with dark loosened hair on a lion-carved throne, one breast bared, one sunflower wand in her hand, a black cat at her feet",
    "femme": true,
-   "file": null
+   "file": "cards/wands-queen.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 475
   },
   {
    "slug": "wands-king",
@@ -491,7 +503,10 @@
    "title": "KING OF WANDS",
    "scene": "a powerful bare-chested king with a beard on a salamander-carved throne, one living green wand in hand",
    "femme": false,
-   "file": null
+   "file": "cards/wands-king.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 443
   },
   {
    "slug": "cups-ace",
