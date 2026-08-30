@@ -1,305 +1,1042 @@
 {
-  "meta": {
-    "deck": "Sensual Tarot — 78 cards",
-    "version": "v2 (count-locked, sensual edition)",
-    "refs": ["cards/card-blank.jpg (blank template, position 1)", "cards/17-the-star.jpg (style anchor, position 2)"],
-    "note": "count = null -> emits the 'no suit objects' COUNT LOCK. count.n is a HARD constraint."
+ "meta": {
+  "deck": "Sensual Tarot — 78 cards",
+  "version": "v2 (count-locked, sensual edition)",
+  "refs": [
+   "cards/card-blank.jpg (blank template, position 1)",
+   "cards/17-the-star.jpg (style anchor, position 2)"
+  ],
+  "note": "count = null -> emits the 'no suit objects' COUNT LOCK. count.n is a HARD constraint."
+ },
+ "cards": [
+  {
+   "n": "0",
+   "slug": "00-fool",
+   "group": "major",
+   "emblem": "a white rose",
+   "title": "THE FOOL",
+   "femme": true,
+   "count": null,
+   "scene": "a nude young woman wanderer, a long silk scarf slipping off one shoulder and streaming behind her, a white rose lifted in one hand, her bare back and hip caught in the morning light, stepping lightly toward a cliff edge, a small white dog leaping at her heel, distant mountains under a golden morning sun"
   },
-  "cards": [
-    {"n": "0", "slug": "00-fool", "group": "major", "emblem": "a white rose", "title": "THE FOOL", "femme": true, "count": null,
-     "scene": "a nude young woman wanderer, a long silk scarf slipping off one shoulder and streaming behind her, a white rose lifted in one hand, her bare back and hip caught in the morning light, stepping lightly toward a cliff edge, a small white dog leaping at her heel, distant mountains under a golden morning sun"},
-
-    {"n": "I", "slug": "01-magician", "group": "major", "emblem": "an infinity symbol", "title": "THE MAGICIAN", "femme": true,
-     "count": {"n": 4, "obj": "suit objects on the altar", "layout": "exactly four objects, one of each: one cup, one sword, one wand, one coin — all four resting on the altar table, all four wholly visible, no duplicates, nothing else on the table"},
-     "scene": "a nude young woman magician, bare torso with a length of silk slung low across her hips, one hand raising a wand to the sky and the other pointing down to the earth, the altar table before her laid with a cup, a sword, a wand and a pentacle, a rose garden behind her"},
-
-    {"n": "II", "slug": "02-priestess", "group": "major", "emblem": "a pomegranate", "title": "THE HIGH PRIESTESS", "femme": true, "count": null,
-     "scene": "a serene nude priestess, bare shoulders and the soft line of her breasts veiled only by a drift of sheer gauze, seated between two stone pillars, a scroll of mystery resting in her lap, a silver crescent moon at her feet"},
-
-    {"n": "III", "slug": "03-empress", "group": "major", "emblem": "a twelve-star crown", "title": "THE EMPRESS", "femme": true, "count": null,
-     "scene": "a voluptuous nude empress, one breast bared, a crown of flowers in loosened hair, reclining on a velvet throne amid ripe golden wheat and fruits, a heart-shaped shield of Venus leaning beside her"},
-
-    {"n": "IV", "slug": "04-emperor", "group": "major", "emblem": "a ram's head", "title": "THE EMPEROR", "femme": false, "count": null,
-     "scene": "a powerful bare-chested emperor in partial armor on a stone throne carved with ram heads, an ankh scepter in one hand, barren mountains behind him"},
-
-    {"n": "V", "slug": "05-hierophant", "group": "major", "emblem": "two crossed golden keys", "title": "THE HIEROPHANT", "femme": false, "count": null,
-     "scene": "a mystic teacher in rich red-gold vestments raising a blessing hand, two kneeling adepts before him, temple pillars behind"},
-
-    {"n": "VI", "slug": "06-lovers", "group": "major", "emblem": "an apple coiled by a serpent", "title": "THE LOVERS", "femme": true, "count": null,
-     "scene": "a nude man and a nude woman standing hand in hand beneath a great winged angel, her body turned three-quarters toward the viewer with silk fallen to her hip and his hand at the small of her back, the tree of knowledge with a serpent behind her, the tree of flames behind him"},
-
-    {"n": "VII", "slug": "07-chariot", "group": "major", "emblem": "a winged sun disk", "title": "THE CHARIOT", "femme": true, "count": null,
-     "scene": "a heroic bare-shouldered woman charioteer in fine steel under a starry canopy, standing in a stone chariot between two sphinxes, a walled city behind her"},
-
-    {"n": "VIII", "slug": "08-strength", "group": "major", "emblem": "a red rose", "title": "STRENGTH", "femme": true, "count": null,
-     "scene": "a nude woman garlanded with roses, one knee raised, leaning in close to calmly close the jaws of a great golden lion, her bare back arched and her hip lit by low sun, an infinity sign glowing above her head"},
-
-    {"n": "IX", "slug": "09-hermit", "group": "major", "emblem": "a glowing lantern", "title": "THE HERMIT", "femme": false, "count": null,
-     "scene": "a hooded hermit in a gray cloak on a snowy peak holding up a lantern with a six-pointed star inside"},
-
-    {"n": "X", "slug": "10-wheel", "group": "major", "emblem": "a spoked golden wheel", "title": "WHEEL OF FORTUNE", "femme": false,
-     "count": {"n": 1, "obj": "sword", "layout": "exactly one sword, held upright by the sphinx on top of the wheel; no other blade anywhere on the card"},
-     "scene": "a great spinning wheel of fortune inscribed with mystic letters, a sphinx with a sword atop it, a serpent descending on one side and a jackal-god rising on the other, four winged readers in the corners"},
-
-    {"n": "XI", "slug": "11-justice", "group": "major", "emblem": "balanced golden scales", "title": "JUSTICE", "femme": true,
-     "count": {"n": 1, "obj": "sword", "layout": "exactly one sword, held upright in her left hand; no other blade on the card"},
-     "scene": "a statuesque bare-shouldered queen, silk sliding off one shoulder to the curve of her breast, a sword upright in one hand and balanced scales in the other, seated on a stone throne between pillars"},
-
-    {"n": "XII", "slug": "12-hanged", "group": "major", "emblem": "an inverted living branch", "title": "THE HANGED MAN", "femme": false, "count": null,
-     "scene": "a serene nude man suspended upside-down by one foot from a living tree shaped like a cross, legs crossed, a radiant halo of light around his head"},
-
-    {"n": "XIII", "slug": "13-death", "group": "major", "emblem": "a five-petaled white rose", "title": "DEATH", "femme": false, "count": null,
-     "scene": "a skeleton knight in black armor riding a pale horse, a black flag with a white rose, a fallen king and pleading figures, sunrise between two towers"},
-
-    {"n": "XIV", "slug": "14-temperance", "group": "major", "emblem": "a triangle within a square", "title": "TEMPERANCE", "femme": true,
-     "count": {"n": 2, "obj": "chalices", "layout": "exactly two chalices, one in each hand, both bowls fully visible and un-occluded"},
-     "scene": "a graceful nude archangel with long loosened hair, seen from behind with the long line of her back to the viewer, pouring water between two golden chalices, one foot on the land and one in the pool, irises blooming"},
-
-    {"n": "XV", "slug": "15-devil", "group": "major", "emblem": "an inverted pentagram", "title": "THE DEVIL", "femme": true, "count": null,
-     "scene": "a horned winged devil on a dark pedestal raising one hand and a torch; beside him a nude woman arched against the pedestal, her head tipped back and chains loose at her throat, and a nude man slumped at her side, a dark cave around them"},
-
-    {"n": "XVI", "slug": "16-tower", "group": "major", "emblem": "a jagged lightning bolt", "title": "THE TOWER", "femme": true, "count": null,
-     "scene": "a tall stone tower struck by lightning, its crown toppling, flames from the windows, a nude woman and a nude man falling headfirst through storm and ash, her body arched and lit by the lightning"},
-
-    {"n": "XVII", "slug": "17-the-star", "group": "major", "emblem": "an eight-pointed star", "title": "THE STAR", "femme": true,
-     "count": {"n": 2, "obj": "jugs", "layout": "exactly two jugs, one in each hand, both fully visible"},
-     "scene": "a beautiful nude maiden kneeling at a clear pool, her torso turned toward the viewer and wet hair over one shoulder, pouring water from two jugs, one foot in the stream, a great eight-pointed star and seven smaller stars above"},
-
-    {"n": "XVIII", "slug": "18-moon", "group": "major", "emblem": "a crescent moon dripping dew", "title": "THE MOON", "femme": true, "count": null,
-     "scene": "a pale moon with a serene face dropping dew, two towers and a winding path, a nude water nymph rising from the dark pool with water streaming over her bare shoulders, a wolf and a dog howling, a crayfish in the water"},
-
-    {"n": "XIX", "slug": "19-sun", "group": "major", "emblem": "a radiant sun face", "title": "THE SUN", "femme": true, "count": null,
-     "scene": "a joyful nude young woman with a wreath of red flowers riding a calm white horse, her bare torso turned toward the light, a red banner streaming, a radiant sun with a gentle face, a low sunflower wall"},
-
-    {"n": "XX", "slug": "20-judgement", "group": "major", "emblem": "a golden trumpet", "title": "JUDGEMENT", "femme": true, "count": null,
-     "scene": "a blue-robed angel blowing a great trumpet with a white banner; below, on a calm sea, a nude woman rising from a coffin with her arms open and her body turned to the light, beside a nude man and a child"},
-
-    {"n": "XXI", "slug": "21-world", "group": "major", "emblem": "a laurel wreath oval", "title": "THE WORLD", "femme": true,
-     "count": {"n": 2, "obj": "wands", "layout": "exactly two wands, one gripped in each hand, both shafts visible from hand to tip"},
-     "scene": "a graceful nude woman dancer with a flowing violet scarf caught low around her hips, holding a wand in each hand, dancing within a great oval laurel wreath, an angel, an eagle, a lion and a bull at the corners"},
-
-    {"n": "A", "slug": "wands-ace", "group": "wands", "emblem": "one leafy wand", "title": "ACE OF WANDS", "femme": false,
-     "count": {"n": 1, "obj": "wand", "layout": "exactly one wand, sprouting and alive, held by the divine hand; no second staff anywhere, not even in the landscape"},
-     "scene": "a divine hand from a cloud offering a single living, sprouting wand, a rugged landscape and a distant castle below"},
-
-    {"n": "2", "slug": "wands-02", "group": "wands", "emblem": "two crossed leafy wands", "title": "TWO OF WANDS", "femme": true,
-     "count": {"n": 2, "obj": "wands", "layout": "exactly two wands: one held upright in her right hand, one mounted upright on the stone battlement to her left — 1 + 1 = 2; both shafts complete from base to tip, they do not cross"},
-     "scene": "a bare-shouldered noblewoman on a battlement, sheer silk slipping from one shoulder, a globe of the world resting in one palm, one wand upright in her other hand, the second wand mounted on the wall behind her"},
-
-    {"n": "3", "slug": "wands-03", "group": "wands", "emblem": "three leafy wands in a fan", "title": "THREE OF WANDS", "femme": false,
-     "count": {"n": 3, "obj": "wands", "layout": "exactly three wands planted upright in one straight diagonal row in front of the figure, evenly spaced, all three tips clear of the horizon, none overlapping — count them left to right: 1, 2, 3"},
-     "scene": "a robed merchant seen from behind on a cliff, three staves planted in a row before him, sailing ships on a golden sea"},
-
-    {"n": "4", "slug": "wands-04", "group": "wands", "emblem": "four wands with a garland", "title": "FOUR OF WANDS", "femme": true,
-     "count": {"n": 4, "obj": "wands", "layout": "exactly four wands as the four corner posts of a canopy — two on the left, two on the right — 2 + 2 = 4; all four shafts fully visible from ground to tip, their tops joined by one flower garland"},
-     "scene": "four garlanded wands forming a festive canopy, a graceful couple dancing beneath it, she bare-shouldered in slipping silk with his hand at her waist, a manor beyond"},
-
-    {"n": "5", "slug": "wands-05", "group": "wands", "emblem": "five wands crossed in a star", "title": "FIVE OF WANDS", "femme": false,
-     "count": {"n": 5, "obj": "wands", "layout": "exactly five wands, one gripped by each of the five youths — five figures, five wands, one per figure, nobody holds two; count them: 1, 2, 3, 4, 5"},
-     "scene": "five nude athletic youths, each holding one single staff, clashing them in a spirited mock battle"},
-
-    {"n": "6", "slug": "wands-06", "group": "wands", "emblem": "six wands, one crowned with laurel", "title": "SIX OF WANDS", "femme": true,
-     "count": {"n": 6, "obj": "wands", "layout": "exactly six wands: one laurel-crowned wand raised in the heroine's hand plus five held by the five followers behind her — 1 + 5 = 6; all six upright and separately countable"},
-     "scene": "a nude victorious woman on a white horse, hair loose over one bare shoulder, a laurel wreath on her brow, one crowned wand raised, five admirers behind her each holding one wand"},
-
-    {"n": "7", "slug": "wands-07", "group": "wands", "emblem": "seven wands in a palisade", "title": "SEVEN OF WANDS", "femme": false,
-     "count": {"n": 7, "obj": "wands", "layout": "exactly seven wands: one held in the young man's two hands plus six rising from below the cliff edge in front of him — 1 + 6 = 7; the six lower tips evenly spaced along the cliff line, none overlapping"},
-     "scene": "a bare-chested young man on a ridge gripping one wand, six rival wands rising from below the cliff edge"},
-
-    {"n": "8", "slug": "wands-08", "group": "wands", "emblem": "eight parallel wands", "title": "EIGHT OF WANDS", "femme": false,
-     "count": {"n": 8, "obj": "wands", "layout": "exactly eight wands in ONE single parallel diagonal row across the open sky — 1 row of 8, evenly spaced, all eight pointing the same way, none crossing, none cropped by the frame"},
-     "scene": "eight wands with leaf tips flying in one parallel diagonal row across an open sky toward a river town below"},
-
-    {"n": "9", "slug": "wands-09", "group": "wands", "emblem": "nine wands in a rampart row", "title": "NINE OF WANDS", "femme": false,
-     "count": {"n": 9, "obj": "wands", "layout": "exactly nine wands: eight planted upright in one straight palisade row behind him, evenly spaced, plus the one he holds — 8 + 1 = 9; all nine countable against open sky"},
-     "scene": "a wary sentinel with a bandaged head holding one wand, eight wands planted upright in a row before him"},
-
-    {"n": "10", "slug": "wands-10", "group": "wands", "emblem": "ten wands in a bundle", "title": "TEN OF WANDS", "femme": false,
-     "count": {"n": 10, "obj": "wands", "layout": "exactly ten staves bound in ONE bundle on his back — the bundle fans open slightly at both ends so all ten cut ends are separated and can be counted: 5 ends at the top, 5 ends at the bottom, 5 + 5 = 10; no loose eleventh staff"},
-     "scene": "an exhausted bare-chested man in a red loincloth hunched under a bundle of ten staves, walking toward a town at dusk"},
-
-    {"n": "P", "slug": "wands-page", "group": "wands", "emblem": "a wand with a feather plume", "title": "PAGE OF WANDS", "femme": true,
-     "count": {"n": 1, "obj": "wand", "layout": "exactly one living wand; no second staff, no decorative staffs in the dunes"},
-     "scene": "a graceful young woman page in a flowing open robe sliding off one shoulder, holding one living wand, desert dunes and pyramids behind her"},
-
-    {"n": "N", "slug": "wands-knight", "group": "wands", "emblem": "a wand over a horse", "title": "KNIGHT OF WANDS", "femme": false,
-     "count": {"n": 1, "obj": "wand", "layout": "exactly one wand, raised high in his hand; no other staff"},
-     "scene": "a bare-chested knight in golden armor on a rearing horse, one flourishing wand raised high, his cloak streaming"},
-
-    {"n": "Q", "slug": "wands-queen", "group": "wands", "emblem": "a sunflower wand between two flames", "title": "QUEEN OF WANDS", "femme": true,
-     "count": {"n": 1, "obj": "wand", "layout": "exactly one sunflower wand; no other staff"},
-     "scene": "a radiant nude queen with dark loosened hair on a lion-carved throne, one breast bared, one sunflower wand in her hand, a black cat at her feet"},
-
-    {"n": "K", "slug": "wands-king", "group": "wands", "emblem": "a flaming wand rising from a lion head", "title": "KING OF WANDS", "femme": false,
-     "count": {"n": 1, "obj": "wand", "layout": "exactly one living green wand; no other staff"},
-     "scene": "a powerful bare-chested king with a beard on a salamander-carved throne, one living green wand in hand"},
-
-    {"n": "A", "slug": "cups-ace", "group": "cups", "emblem": "one overflowing chalice", "title": "ACE OF CUPS", "femme": false,
-     "count": {"n": 1, "obj": "chalice", "layout": "exactly one chalice; the five overflowing streams are water, not cups — do not draw extra chalices in the pool"},
-     "scene": "a divine hand offering one ornate chalice, a dove descending, five streams overflowing into a pool of lilies"},
-
-    {"n": "2", "slug": "cups-02", "group": "cups", "emblem": "two interlocked rings", "title": "TWO OF CUPS", "femme": true,
-     "count": {"n": 2, "obj": "chalices", "layout": "exactly two chalices, one raised in each lover's hand, one on the left and one on the right, both bowls fully visible and not overlapping — no third cup"},
-     "scene": "a nude young woman and a nude young man facing one another, her body turned three-quarters toward the viewer with one arm across her breast, each raising one chalice in a toast, a caduceus with a lion head above them"},
-
-    {"n": "3", "slug": "cups-03", "group": "cups", "emblem": "three chalices in a triangle", "title": "THREE OF CUPS", "femme": true,
-     "count": {"n": 3, "obj": "chalices", "layout": "exactly three chalices — one raised by each of the three maidens, three dancers and three cups, one per figure; all three bowls held above shoulder height and countable"},
-     "scene": "three nude maidens with flower wreaths dancing in a circle, their bodies turned to the light, each raising one chalice, fruits on the ground"},
-
-    {"n": "4", "slug": "cups-04", "group": "cups", "emblem": "three chalices and one offered", "title": "FOUR OF CUPS", "femme": false,
-     "count": {"n": 4, "obj": "chalices", "layout": "exactly four chalices: three standing upright in a row on the grass in front of him, evenly spaced, plus the one offered by the hand from the cloud — 3 + 1 = 4; all four bowls visible"},
-     "scene": "a pensive nude youth with a lithe bare torso sitting under a tree, arms crossed, three chalices before him, a hand offering a fourth from a cloud"},
-
-    {"n": "5", "slug": "cups-05", "group": "cups", "emblem": "three spilled, two standing", "title": "FIVE OF CUPS", "femme": false,
-     "count": {"n": 5, "obj": "chalices", "layout": "exactly five chalices: three spilled and empty lying in the foreground plus two still upright and full standing on the bank behind him — 3 + 2 = 5; all five bowls countable, none hidden behind his cloak"},
-     "scene": "a grieving cloaked figure bowing by a river, three spilled chalices before him, two full ones standing behind"},
-
-    {"n": "6", "slug": "cups-06", "group": "cups", "emblem": "six chalices with flowers", "title": "SIX OF CUPS", "femme": true,
-     "count": {"n": 6, "obj": "chalices", "layout": "exactly six chalices, each filled with flowers: one being passed between their hands plus five standing in a row along the courtyard wall behind them — 1 + 5 = 6; all six bowls separate and countable"},
-     "scene": "two graceful young women in sheer summer dresses in an old courtyard garden, exchanging one flower-filled chalice, five more set along the wall behind them"},
-
-    {"n": "7", "slug": "cups-07", "group": "cups", "emblem": "seven chalices on a cloud", "title": "SEVEN OF CUPS", "femme": false,
-     "count": {"n": 7, "obj": "chalices", "layout": "exactly seven chalices on ONE luminous cloud, arranged as two clean rows: 4 on the lower row and 3 on the upper row — 4 + 3 = 7; evenly spaced against open sky, each bowl separate and un-occluded"},
-     "scene": "a dreamer gazing at seven chalices floating on one luminous cloud, each holding a different vision — a face, jewels, a wreath, a dragon, a serpent, a castle, a veiled figure"},
-
-    {"n": "8", "slug": "cups-08", "group": "cups", "emblem": "eight chalices stacked", "title": "EIGHT OF CUPS", "femme": false,
-     "count": {"n": 8, "obj": "chalices", "layout": "exactly eight chalices stacked on the rocky ledge as 3 + 3 + 2, with one clearly empty gap between the sixth and the seventh — 3 + 3 + 2 = 8; all eight bowls countable, none cropped by the frame"},
-     "scene": "a robed seeker with a staff walking away at night, eight chalices stacked on a rocky ledge with a gap, a waning moon above"},
-
-    {"n": "9", "slug": "cups-09", "group": "cups", "emblem": "nine chalices in an arc", "title": "NINE OF CUPS", "femme": false,
-     "count": {"n": 9, "obj": "chalices", "layout": "exactly nine chalices on the shelf behind him as a neat 3 x 3 grid — three rows of three, 3 + 3 + 3 = 9; evenly spaced, all nine bowls fully visible"},
-     "scene": "a content bare-chested merchant seated before nine chalices proudly arranged in a grid on a shelf"},
-
-    {"n": "10", "slug": "cups-10", "group": "cups", "emblem": "ten chalices under a rainbow", "title": "TEN OF CUPS", "femme": true,
-     "count": {"n": 10, "obj": "chalices", "layout": "exactly ten chalices along ONE rainbow arc — 4 on the left half, 4 on the right half, 2 at the apex — 4 + 4 + 2 = 10; evenly spaced against open sky, all ten bowls countable"},
-     "scene": "a blissful couple embracing in a meadow, she in slipping silk with one bare shoulder and the long line of her back to the light, his arms around her waist, ten chalices along a rainbow arc, a cottage and dancing children beyond"},
-
-    {"n": "P", "slug": "cups-page", "group": "cups", "emblem": "a chalice with a fish", "title": "PAGE OF CUPS", "femme": true,
-     "count": {"n": 1, "obj": "chalice", "layout": "exactly one chalice; no other cup anywhere in the scene"},
-     "scene": "a graceful young woman page by the sea in an open robe sliding off one shoulder, holding one chalice from which a curious fish looks out"},
-
-    {"n": "N", "slug": "cups-knight", "group": "cups", "emblem": "a chalice on a horseshoe", "title": "KNIGHT OF CUPS", "femme": false,
-     "count": {"n": 1, "obj": "chalice", "layout": "exactly one golden chalice; no other cup"},
-     "scene": "a romantic bare-chested knight in fish-scale armor on a white horse, calmly carrying one golden chalice"},
-
-    {"n": "Q", "slug": "cups-queen", "group": "cups", "emblem": "a lidded chalice between waves", "title": "QUEEN OF CUPS", "femme": true,
-     "count": {"n": 1, "obj": "chalice", "layout": "exactly one lidded golden chalice; no other cup"},
-     "scene": "a gentle nude queen on a shell throne by the sea, wet hair over one bare shoulder, cradling one lidded golden chalice in her lap, sea foam behind her"},
-
-    {"n": "K", "slug": "cups-king", "group": "cups", "emblem": "a chalice between two fish", "title": "KING OF CUPS", "femme": false,
-     "count": {"n": 1, "obj": "chalice", "layout": "exactly one chalice; no other cup"},
-     "scene": "a composed nude king with a beard on a wave-carved throne set on a rocky islet, one chalice and a scepter in hand"},
-
-    {"n": "A", "slug": "swords-ace", "group": "swords", "emblem": "one upright sword with a crown", "title": "ACE OF SWORDS", "femme": false,
-     "count": {"n": 1, "obj": "sword", "layout": "exactly one sword, upright in the divine hand; no second blade anywhere"},
-     "scene": "a divine hand grasping one upright sword, a jeweled crown hovering at its tip, barren peaks below"},
-
-    {"n": "2", "slug": "swords-02", "group": "swords", "emblem": "two crossed swords", "title": "TWO OF SWORDS", "femme": true,
-     "count": {"n": 2, "obj": "swords", "layout": "exactly two long blades forming a single X across her chest, one over each shoulder; no third blade, no dagger at her belt"},
-     "scene": "a blindfolded woman in a sheer robe that clings to her bare body, seated by the sea, two swords crossed over her chest, the moon rising"},
-
-    {"n": "3", "slug": "swords-03", "group": "swords", "emblem": "three swords through a heart", "title": "THREE OF SWORDS", "femme": false,
-     "count": {"n": 3, "obj": "swords", "layout": "exactly three swords through one heart — one vertical from above and two angled from the left and right; three separate hilts clearly countable against the storm sky, 1, 2, 3"},
-     "scene": "a large anatomical heart pierced by three swords, rain and storm clouds behind"},
-
-    {"n": "4", "slug": "swords-04", "group": "swords", "emblem": "three swords on a wall, one below", "title": "FOUR OF SWORDS", "femme": false,
-     "count": {"n": 4, "obj": "swords", "layout": "exactly four swords: three mounted horizontally on the wall above him, stacked in a row of 3, plus one lying flat on the tomb slab beneath him — 3 + 1 = 4; all four blades complete and countable"},
-     "scene": "a knight in armor lying at rest on a stone tomb in a chapel, three swords on the wall and one below, a stained-glass window"},
-
-    {"n": "5", "slug": "swords-05", "group": "swords", "emblem": "five swords, two discarded", "title": "FIVE OF SWORDS", "femme": false,
-     "count": {"n": 5, "obj": "swords", "layout": "exactly five swords: three gathered in the victor's hands, held upright and fanned so all three hilts are separate, plus two lying abandoned in the sand behind him — 3 + 2 = 5"},
-     "scene": "a smug victor gathering three swords on a windy shore, two defeated figures walking away, two swords abandoned in the sand"},
-
-    {"n": "6", "slug": "swords-06", "group": "swords", "emblem": "six swords in a boat", "title": "SIX OF SWORDS", "femme": true,
-     "count": {"n": 6, "obj": "swords", "layout": "exactly six swords standing upright in the boat — three on the left of the passengers and three on the right, 3 + 3 = 6; evenly spaced, all six hilts above the gunwale, none crossing the figures"},
-     "scene": "a cloaked woman and a child being poled across a river by a ferryman, six swords upright along the boat"},
-
-    {"n": "7", "slug": "swords-07", "group": "swords", "emblem": "seven swords, two left behind", "title": "SEVEN OF SWORDS", "femme": false,
-     "count": {"n": 7, "obj": "swords", "layout": "exactly seven swords: five carried in his arms with five separate hilts visible, plus two left standing upright in the grass behind him — 5 + 2 = 7"},
-     "scene": "a sly man in a red cap tiptoeing away from a camp with five swords in his arms, two swords left standing in the grass"},
-
-    {"n": "8", "slug": "swords-08", "group": "swords", "emblem": "eight swords in a ring", "title": "EIGHT OF SWORDS", "femme": true,
-     "count": {"n": 8, "obj": "swords", "layout": "exactly eight swords planted in the ground around her at even intervals, like the hours of a clock — three in front of her, one at each side, three behind her, 3 + 2 + 3 = 8; all eight hilts visible above ground, evenly spaced, forming one open circle"},
-     "scene": "a blindfolded woman in a flowing gown loosened from one shoulder and loosely bound, standing in a ring of eight swords, a fortress on the cliff behind"},
-
-    {"n": "9", "slug": "swords-09", "group": "swords", "emblem": "nine swords on a wall", "title": "NINE OF SWORDS", "femme": true,
-     "count": {"n": 9, "obj": "swords", "layout": "exactly nine swords mounted on the dark wall in three rows of three — 3 + 3 + 3 = 9; a neat 3 x 3 grid of horizontal blades, all nine countable, none hidden behind her head or hands"},
-     "scene": "a distressed woman sitting up in bed at night, her bare shoulder and back above the sheet, face in her hands, nine swords mounted in rows on the dark wall"},
-
-    {"n": "10", "slug": "swords-10", "group": "swords", "emblem": "ten swords along a back", "title": "TEN OF SWORDS", "femme": false,
-     "count": {"n": 10, "obj": "swords", "layout": "exactly ten swords planted along the back in two staggered rows of five — 5 + 5 = 10; all ten hilts countable in a row from shoulder to hip, evenly spaced, none overlapping"},
-     "scene": "a still figure lying face down by a black sea at dawn, ten swords along the back in a row, the sun rising"},
-
-    {"n": "P", "slug": "swords-page", "group": "swords", "emblem": "a sword with a feather plume", "title": "PAGE OF SWORDS", "femme": true,
-     "count": {"n": 1, "obj": "sword", "layout": "exactly one sword, gripped in both hands; no dagger, no second blade"},
-     "scene": "an alert young woman page in a flowing cape on a windy mound holding one raised sword with both hands"},
-
-    {"n": "N", "slug": "swords-knight", "group": "swords", "emblem": "a sword over a horse", "title": "KNIGHT OF SWORDS", "femme": false,
-     "count": {"n": 1, "obj": "sword", "layout": "exactly one sword, pointed forward like a lance; no other blade"},
-     "scene": "a fierce bare-shouldered knight in steel charging at full gallop, one sword pointed forward, a storm behind"},
-
-    {"n": "Q", "slug": "swords-queen", "group": "swords", "emblem": "a sword wrapped in laurel", "title": "QUEEN OF SWORDS", "femme": true,
-     "count": {"n": 1, "obj": "sword", "layout": "exactly one upright sword; no other blade"},
-     "scene": "a stern dignified queen with flowing hair, one shoulder and the curve of her breast left bare by her loosened gown, seated on a cherub-carved throne above a sea of clouds, one upright sword in her hand"},
-
-    {"n": "K", "slug": "swords-king", "group": "swords", "emblem": "a sword between two wings", "title": "KING OF SWORDS", "femme": false,
-     "count": {"n": 1, "obj": "sword", "layout": "exactly one upright sword; no other blade"},
-     "scene": "a commanding wise bare-chested king with a beard on a crescent-carved throne, one upright sword in hand, sea and birds behind"},
-
-    {"n": "A", "slug": "pentacles-ace", "group": "pentacles", "emblem": "one pentacle coin in a hand", "title": "ACE OF PENTACLES", "femme": false,
-     "count": {"n": 1, "obj": "pentacle coin", "layout": "exactly one large golden pentacle coin in the divine hand; no other coin, no coins scattered in the garden"},
-     "scene": "a divine hand offering one large golden pentacle coin over a lush garden gateway with lilies, mountains beyond"},
-
-    {"n": "2", "slug": "pentacles-02", "group": "pentacles", "emblem": "two pentacles and an infinity ribbon", "title": "TWO OF PENTACLES", "femme": false,
-     "count": {"n": 2, "obj": "pentacle coins", "layout": "exactly two coins, one at each end of the looping infinity ribbon, one in each hand; both discs fully visible against the sky, no third coin"},
-     "scene": "a nimble bare-chested youth in a flowing sash juggling two pentacle coins joined by an infinity ribbon, ships on rolling waves behind"},
-
-    {"n": "3", "slug": "pentacles-03", "group": "pentacles", "emblem": "three pentacles in an arch", "title": "THREE OF PENTACLES", "femme": true,
-     "count": {"n": 3, "obj": "pentacle coins", "layout": "exactly three coins set into the stone arch above the sculptor — one at the apex and two at the springing points, 1 + 2 = 3; all three discs fully visible, none hidden by the arch's shadow"},
-     "scene": "a young woman sculptor in an open workshop apron slipping off one shoulder, hair loose, chiseling a column, a monk and an architect commenting, three coins set in the arch above"},
-
-    {"n": "4", "slug": "pentacles-04", "group": "pentacles", "emblem": "four pentacles, one on the head", "title": "FOUR OF PENTACLES", "femme": false,
-     "count": {"n": 4, "obj": "pentacle coins", "layout": "exactly four coins: one clutched to his chest, one balanced in his crown, two pressed beneath his feet — 1 + 1 + 2 = 4; all four discs fully visible, none buried in the ground or hidden by his robes"},
-     "scene": "a crowned man in rich robes seated rigidly on a stone seat, clutching one coin to his chest, one coin in his crown, two coins beneath his feet"},
-
-    {"n": "5", "slug": "pentacles-05", "group": "pentacles", "emblem": "five pentacles in a church window", "title": "FIVE OF PENTACLES", "femme": true,
-     "count": {"n": 5, "obj": "pentacle coins", "layout": "exactly five glowing coins set in the tall stained-glass window in a quincunx — one at the top center, two on the middle row, two on the bottom row, 1 + 2 + 2 = 5; all five discs separate and countable"},
-     "scene": "two ragged beggars passing a glowing church in the snow, five coins shining in the tall stained-glass window"},
-
-    {"n": "6", "slug": "pentacles-06", "group": "pentacles", "emblem": "six pentacles on a scale", "title": "SIX OF PENTACLES", "femme": false,
-     "count": {"n": 6, "obj": "pentacle coins", "layout": "exactly six coins on the balance — three stacked in the left pan and three stacked in the right pan, 3 + 3 = 6; all six discs visible above the pan rims, no coins loose on the ground"},
-     "scene": "a prosperous merchant weighing coins on a balance before a kneeling poor couple, a town arcade behind him"},
-
-    {"n": "7", "slug": "pentacles-07", "group": "pentacles", "emblem": "seven pentacles on a vine", "title": "SEVEN OF PENTACLES", "femme": false,
-     "count": {"n": 7, "obj": "pentacle coins", "layout": "exactly seven coins growing on the vine — three on the left branch, three on the right branch, one at the top center, 3 + 3 + 1 = 7; all seven fully visible and un-occluded by leaves"},
-     "scene": "a bare-chested young farmer leaning on a hoe gazing at a garden vine bearing seven coins, a manor beyond"},
-
-    {"n": "8", "slug": "pentacles-08", "group": "pentacles", "emblem": "eight pentacles in a row", "title": "EIGHT OF PENTACLES", "femme": true,
-     "count": {"n": 8, "obj": "pentacle coins", "layout": "exactly eight finished coins in ONE straight row of 8 along the front edge of the bench, evenly spaced and all eight countable; the blank stone disc she is chiseling is unfinished and bears no star, so it does NOT count and must not look like a coin"},
-     "scene": "a young woman apprentice in an apron slipping off one shoulder, sleeves rolled and hair loose, chiseling a plain stone disc at a bench, eight coins in one row along the bench edge, a town through the window"},
-
-    {"n": "9", "slug": "pentacles-09", "group": "pentacles", "emblem": "nine pentacles on an arbor", "title": "NINE OF PENTACLES", "femme": true,
-     "count": {"n": 9, "obj": "pentacle coins", "layout": "exactly nine coins fixed to the arbor beam in ONE row of 9, evenly spaced against open sky, all nine fully visible, none hidden by leaves or by her body — count them left to right: 1 to 9"},
-     "scene": "an elegant woman in a sheer flowing gown that clings to breast and hip, a falcon on her gloved hand, her other hand touching ripe grapes, nine coins along the arbor beam, a snail at her feet"},
-
-    {"n": "10", "slug": "pentacles-10", "group": "pentacles", "emblem": "ten pentacles in a tree-of-life pyramid", "title": "TEN OF PENTACLES", "femme": true,
-     "count": {"n": 10, "obj": "pentacle coins", "layout": "exactly ten coins on the wall in a Tree-of-Life pyramid — 4 on the bottom row, 3 above them, 2 above those, 1 at the apex, 4 + 3 + 2 + 1 = 10; all ten discs countable, none hidden behind the figures"},
-     "scene": "a family hall — a patriarch seated, a couple standing with his hand at her waist, a child playing with two dogs — ten coins in a pyramid emblem on the wall behind them"},
-
-    {"n": "P", "slug": "pentacles-page", "group": "pentacles", "emblem": "a pentacle held by two hands", "title": "PAGE OF PENTACLES", "femme": true,
-     "count": {"n": 1, "obj": "pentacle coin", "layout": "exactly one large coin, held in both hands; no other coin anywhere"},
-     "scene": "a studious young woman page in an open robe studying one large pentacle coin held in both hands, a plowed field behind her"},
-
-    {"n": "N", "slug": "pentacles-knight", "group": "pentacles", "emblem": "a pentacle on a draft horse", "title": "KNIGHT OF PENTACLES", "femme": false,
-     "count": {"n": 1, "obj": "pentacle coin", "layout": "exactly one coin, resting in his open palm; no other coin"},
-     "scene": "a patient bare-chested knight on a heavy black draft horse standing still, examining one pentacle coin in his palm, a plowed field behind"},
-
-    {"n": "Q", "slug": "pentacles-queen", "group": "pentacles", "emblem": "a pentacle entwined with roses", "title": "QUEEN OF PENTACLES", "femme": true,
-     "count": {"n": 1, "obj": "pentacle coin", "layout": "exactly one coin, resting in her lap; no other coin"},
-     "scene": "a warm nude queen with a flower crown on a goat-carved throne, one breast bared, one pentacle resting in her lap, a rabbit in the garden"},
-
-    {"n": "K", "slug": "pentacles-king", "group": "pentacles", "emblem": "a pentacle above a bull head", "title": "KING OF PENTACLES", "femme": false,
-     "count": {"n": 1, "obj": "pentacle coin", "layout": "exactly one coin, held in one hand; no other coin"},
-     "scene": "a robust bare-chested king with a beard and an ermine cloak on a bull-carved throne, one pentacle and a scepter in hand, harvest fields behind"}
-  ]
+  {
+   "n": "I",
+   "slug": "01-magician",
+   "group": "major",
+   "emblem": "an infinity symbol",
+   "title": "THE MAGICIAN",
+   "femme": true,
+   "count": {
+    "n": 4,
+    "obj": "suit objects on the altar",
+    "layout": "exactly four objects, one of each: one cup, one sword, one wand, one coin — all four resting on the altar table, all four wholly visible, no duplicates, nothing else on the table"
+   },
+   "scene": "a nude young woman magician, bare torso with a length of silk slung low across her hips, one hand raising a wand to the sky and the other pointing down to the earth, the altar table before her laid with a cup, a sword, a wand and a pentacle, a rose garden behind her"
+  },
+  {
+   "n": "II",
+   "slug": "02-priestess",
+   "group": "major",
+   "emblem": "a pomegranate",
+   "title": "THE HIGH PRIESTESS",
+   "femme": true,
+   "count": null,
+   "scene": "a serene nude priestess, bare shoulders and the soft line of her breasts veiled only by a drift of sheer gauze, seated between two stone pillars, a scroll of mystery resting in her lap, a silver crescent moon at her feet"
+  },
+  {
+   "n": "III",
+   "slug": "03-empress",
+   "group": "major",
+   "emblem": "a twelve-star crown",
+   "title": "THE EMPRESS",
+   "femme": true,
+   "count": null,
+   "scene": "a slender nude empress, one breast bared, a crown of flowers in loosened hair, reclining on a velvet throne amid ripe golden wheat and fruits, a heart-shaped shield of Venus leaning beside her",
+   "build": "slender and lithe — a narrow waist, long tapering limbs, a long neck, elegant elongated proportions, lean and graceful rather than heavy"
+  },
+  {
+   "n": "IV",
+   "slug": "04-emperor",
+   "group": "major",
+   "emblem": "a ram's head",
+   "title": "THE EMPEROR",
+   "femme": false,
+   "count": null,
+   "scene": "a powerful bare-chested emperor in partial armor on a stone throne carved with ram heads, an ankh scepter in one hand, barren mountains behind him"
+  },
+  {
+   "n": "V",
+   "slug": "05-hierophant",
+   "group": "major",
+   "emblem": "two crossed golden keys",
+   "title": "THE HIEROPHANT",
+   "femme": false,
+   "count": null,
+   "scene": "a mystic teacher in rich red-gold vestments raising a blessing hand, two kneeling adepts before him, temple pillars behind"
+  },
+  {
+   "n": "VI",
+   "slug": "06-lovers",
+   "group": "major",
+   "emblem": "an apple coiled by a serpent",
+   "title": "THE LOVERS",
+   "femme": true,
+   "count": null,
+   "scene": "a nude man and a nude woman standing hand in hand beneath a great winged angel, her body turned three-quarters toward the viewer with silk fallen to her hip and his hand at the small of her back, the tree of knowledge with a serpent behind her, the tree of flames behind him"
+  },
+  {
+   "n": "VII",
+   "slug": "07-chariot",
+   "group": "major",
+   "emblem": "a winged sun disk",
+   "title": "THE CHARIOT",
+   "femme": true,
+   "count": null,
+   "scene": "a heroic bare-shouldered woman charioteer in fine steel under a starry canopy, standing in a stone chariot between two sphinxes, a walled city behind her"
+  },
+  {
+   "n": "VIII",
+   "slug": "08-strength",
+   "group": "major",
+   "emblem": "a red rose",
+   "title": "STRENGTH",
+   "femme": true,
+   "count": null,
+   "scene": "a nude woman garlanded with roses, one knee raised, leaning in close to calmly close the jaws of a great golden lion, her bare back arched and her hip lit by low sun, an infinity sign glowing above her head"
+  },
+  {
+   "n": "IX",
+   "slug": "09-hermit",
+   "group": "major",
+   "emblem": "a glowing lantern",
+   "title": "THE HERMIT",
+   "femme": false,
+   "count": null,
+   "scene": "a hooded hermit in a gray cloak on a snowy peak holding up a lantern with a six-pointed star inside"
+  },
+  {
+   "n": "X",
+   "slug": "10-wheel",
+   "group": "major",
+   "emblem": "a spoked golden wheel",
+   "title": "WHEEL OF FORTUNE",
+   "femme": false,
+   "count": {
+    "n": 1,
+    "obj": "sword",
+    "layout": "exactly one sword, held upright by the sphinx on top of the wheel; no other blade anywhere on the card"
+   },
+   "scene": "a great spinning wheel of fortune inscribed with mystic letters, a sphinx with a sword atop it, a serpent descending on one side and a jackal-god rising on the other, four winged readers in the corners"
+  },
+  {
+   "n": "XI",
+   "slug": "11-justice",
+   "group": "major",
+   "emblem": "balanced golden scales",
+   "title": "JUSTICE",
+   "femme": true,
+   "count": {
+    "n": 1,
+    "obj": "sword",
+    "layout": "exactly one sword, held upright in her left hand; no other blade on the card"
+   },
+   "scene": "a statuesque bare-shouldered queen, silk sliding off one shoulder to the curve of her breast, a sword upright in one hand and balanced scales in the other, seated on a stone throne between pillars"
+  },
+  {
+   "n": "XII",
+   "slug": "12-hanged",
+   "group": "major",
+   "emblem": "an inverted living branch",
+   "title": "THE HANGED MAN",
+   "femme": false,
+   "count": null,
+   "scene": "a serene nude man suspended upside-down by one foot from a living tree shaped like a cross, legs crossed, a radiant halo of light around his head"
+  },
+  {
+   "n": "XIII",
+   "slug": "13-death",
+   "group": "major",
+   "emblem": "a five-petaled white rose",
+   "title": "DEATH",
+   "femme": false,
+   "count": null,
+   "scene": "a skeleton knight in black armor riding a pale horse, a black flag with a white rose, a fallen king and pleading figures, sunrise between two towers"
+  },
+  {
+   "n": "XIV",
+   "slug": "14-temperance",
+   "group": "major",
+   "emblem": "a triangle within a square",
+   "title": "TEMPERANCE",
+   "femme": true,
+   "count": {
+    "n": 2,
+    "obj": "chalices",
+    "layout": "exactly two chalices, one in each hand, both bowls fully visible and un-occluded"
+   },
+   "scene": "a graceful nude archangel with long loosened hair, seen from behind with the long line of her back to the viewer, pouring water between two golden chalices, one foot on the land and one in the pool, irises blooming"
+  },
+  {
+   "n": "XV",
+   "slug": "15-devil",
+   "group": "major",
+   "emblem": "an inverted pentagram",
+   "title": "THE DEVIL",
+   "femme": true,
+   "count": null,
+   "scene": "a horned winged devil on a dark pedestal raising one hand and a torch; beside him a nude woman arched against the pedestal, her head tipped back and chains loose at her throat, and a nude man slumped at her side, a dark cave around them"
+  },
+  {
+   "n": "XVI",
+   "slug": "16-tower",
+   "group": "major",
+   "emblem": "a jagged lightning bolt",
+   "title": "THE TOWER",
+   "femme": true,
+   "count": null,
+   "scene": "a tall stone tower struck by lightning, its crown toppling, flames from the windows, a nude woman and a nude man falling headfirst through storm and ash, her body arched and lit by the lightning"
+  },
+  {
+   "n": "XVII",
+   "slug": "17-the-star",
+   "group": "major",
+   "emblem": "an eight-pointed star",
+   "title": "THE STAR",
+   "femme": true,
+   "count": {
+    "n": 2,
+    "obj": "jugs",
+    "layout": "exactly two jugs, one in each hand, both fully visible"
+   },
+   "scene": "a beautiful nude maiden kneeling at a clear pool, her torso turned toward the viewer and wet hair over one shoulder, pouring water from two jugs, one foot in the stream, a great eight-pointed star and seven smaller stars above"
+  },
+  {
+   "n": "XVIII",
+   "slug": "18-moon",
+   "group": "major",
+   "emblem": "a crescent moon dripping dew",
+   "title": "THE MOON",
+   "femme": true,
+   "count": null,
+   "scene": "a pale moon with a serene face dropping dew, two towers and a winding path, a nude water nymph rising from the dark pool with water streaming over her bare shoulders, a wolf and a dog howling, a crayfish in the water"
+  },
+  {
+   "n": "XIX",
+   "slug": "19-sun",
+   "group": "major",
+   "emblem": "a radiant sun face",
+   "title": "THE SUN",
+   "femme": true,
+   "count": null,
+   "scene": "a joyful nude young woman with a wreath of red flowers riding a calm white horse, her bare torso turned toward the light, a red banner streaming, a radiant sun with a gentle face, a low sunflower wall"
+  },
+  {
+   "n": "XX",
+   "slug": "20-judgement",
+   "group": "major",
+   "emblem": "a golden trumpet",
+   "title": "JUDGEMENT",
+   "femme": true,
+   "count": null,
+   "scene": "a blue-robed angel blowing a great trumpet with a white banner; below, on a calm sea, a nude woman rising from a coffin with her arms open and her body turned to the light, beside a nude man and a child"
+  },
+  {
+   "n": "XXI",
+   "slug": "21-world",
+   "group": "major",
+   "emblem": "a laurel wreath oval",
+   "title": "THE WORLD",
+   "femme": true,
+   "count": {
+    "n": 2,
+    "obj": "wands",
+    "layout": "exactly two wands, one gripped in each hand, both shafts visible from hand to tip"
+   },
+   "scene": "a graceful nude woman dancer with a flowing violet scarf caught low around her hips, holding a wand in each hand, dancing within a great oval laurel wreath, an angel, an eagle, a lion and a bull at the corners"
+  },
+  {
+   "n": "A",
+   "slug": "wands-ace",
+   "group": "wands",
+   "emblem": "one leafy wand",
+   "title": "ACE OF WANDS",
+   "femme": false,
+   "count": {
+    "n": 1,
+    "obj": "wand",
+    "layout": "exactly one wand, sprouting and alive, held by the divine hand; no second staff anywhere, not even in the landscape"
+   },
+   "scene": "a divine hand from a cloud offering a single living, sprouting wand, a rugged landscape and a distant castle below"
+  },
+  {
+   "n": "2",
+   "slug": "wands-02",
+   "group": "wands",
+   "emblem": "two crossed leafy wands",
+   "title": "TWO OF WANDS",
+   "femme": true,
+   "count": {
+    "n": 2,
+    "obj": "wands",
+    "layout": "exactly two wands: one held upright in her right hand, one mounted upright on the stone battlement to her left — 1 + 1 = 2; both shafts complete from base to tip, they do not cross"
+   },
+   "scene": "a bare-shouldered noblewoman on a battlement, sheer silk slipping from one shoulder, a globe of the world resting in one palm, one wand upright in her other hand, the second wand mounted on the wall behind her"
+  },
+  {
+   "n": "3",
+   "slug": "wands-03",
+   "group": "wands",
+   "emblem": "three leafy wands in a fan",
+   "title": "THREE OF WANDS",
+   "femme": false,
+   "count": {
+    "n": 3,
+    "obj": "wands",
+    "layout": "exactly three wands planted upright in one straight diagonal row in front of the figure, evenly spaced, all three tips clear of the horizon, none overlapping — count them left to right: 1, 2, 3"
+   },
+   "scene": "a robed merchant seen from behind on a cliff, three staves planted in a row before him, sailing ships on a golden sea"
+  },
+  {
+   "n": "4",
+   "slug": "wands-04",
+   "group": "wands",
+   "emblem": "four wands with a garland",
+   "title": "FOUR OF WANDS",
+   "femme": true,
+   "count": {
+    "n": 4,
+    "obj": "wands",
+    "layout": "exactly four wands as the four corner posts of a canopy — two on the left, two on the right — 2 + 2 = 4; all four shafts fully visible from ground to tip, their tops joined by one flower garland"
+   },
+   "scene": "four garlanded wands forming a festive canopy, a graceful couple dancing beneath it, she bare-shouldered in slipping silk with his hand at her waist, a manor beyond"
+  },
+  {
+   "n": "5",
+   "slug": "wands-05",
+   "group": "wands",
+   "emblem": "five wands crossed in a star",
+   "title": "FIVE OF WANDS",
+   "femme": false,
+   "count": {
+    "n": 5,
+    "obj": "wands",
+    "layout": "exactly five wands, one gripped by each of the five youths — five figures, five wands, one per figure, nobody holds two; count them: 1, 2, 3, 4, 5"
+   },
+   "scene": "five nude athletic youths, each holding one single staff, clashing them in a spirited mock battle"
+  },
+  {
+   "n": "6",
+   "slug": "wands-06",
+   "group": "wands",
+   "emblem": "six wands, one crowned with laurel",
+   "title": "SIX OF WANDS",
+   "femme": true,
+   "count": {
+    "n": 6,
+    "obj": "wands",
+    "layout": "exactly six wands: one laurel-crowned wand raised in the heroine's hand plus five held by the five followers behind her — 1 + 5 = 6; all six upright and separately countable"
+   },
+   "scene": "a nude victorious woman on a white horse, hair loose over one bare shoulder, a laurel wreath on her brow, one crowned wand raised, five admirers behind her each holding one wand"
+  },
+  {
+   "n": "7",
+   "slug": "wands-07",
+   "group": "wands",
+   "emblem": "seven wands in a palisade",
+   "title": "SEVEN OF WANDS",
+   "femme": false,
+   "count": {
+    "n": 7,
+    "obj": "wands",
+    "layout": "exactly seven wands: one held in the young man's two hands plus six rising from below the cliff edge in front of him — 1 + 6 = 7; the six lower tips evenly spaced along the cliff line, none overlapping"
+   },
+   "scene": "a bare-chested young man on a ridge gripping one wand, six rival wands rising from below the cliff edge"
+  },
+  {
+   "n": "8",
+   "slug": "wands-08",
+   "group": "wands",
+   "emblem": "eight parallel wands",
+   "title": "EIGHT OF WANDS",
+   "femme": false,
+   "count": {
+    "n": 8,
+    "obj": "wands",
+    "layout": "exactly eight wands in ONE single parallel diagonal row across the open sky — 1 row of 8, evenly spaced, all eight pointing the same way, none crossing, none cropped by the frame"
+   },
+   "scene": "eight wands with leaf tips flying in one parallel diagonal row across an open sky toward a river town below"
+  },
+  {
+   "n": "9",
+   "slug": "wands-09",
+   "group": "wands",
+   "emblem": "nine wands in a rampart row",
+   "title": "NINE OF WANDS",
+   "femme": false,
+   "count": {
+    "n": 9,
+    "obj": "wands",
+    "layout": "exactly nine wands: eight planted upright in one straight palisade row behind him, evenly spaced, plus the one he holds — 8 + 1 = 9; all nine countable against open sky"
+   },
+   "scene": "a wary sentinel with a bandaged head holding one wand, eight wands planted upright in a row before him"
+  },
+  {
+   "n": "10",
+   "slug": "wands-10",
+   "group": "wands",
+   "emblem": "ten wands in a bundle",
+   "title": "TEN OF WANDS",
+   "femme": false,
+   "count": {
+    "n": 10,
+    "obj": "wands",
+    "layout": "exactly ten staves bound in ONE bundle on his back — the bundle fans open slightly at both ends so all ten cut ends are separated and can be counted: 5 ends at the top, 5 ends at the bottom, 5 + 5 = 10; no loose eleventh staff"
+   },
+   "scene": "an exhausted bare-chested man in a red loincloth hunched under a bundle of ten staves, walking toward a town at dusk"
+  },
+  {
+   "n": "P",
+   "slug": "wands-page",
+   "group": "wands",
+   "emblem": "a wand with a feather plume",
+   "title": "PAGE OF WANDS",
+   "femme": true,
+   "count": {
+    "n": 1,
+    "obj": "wand",
+    "layout": "exactly one living wand; no second staff, no decorative staffs in the dunes"
+   },
+   "scene": "a graceful young woman page in a flowing open robe sliding off one shoulder, holding one living wand, desert dunes and pyramids behind her"
+  },
+  {
+   "n": "N",
+   "slug": "wands-knight",
+   "group": "wands",
+   "emblem": "a wand over a horse",
+   "title": "KNIGHT OF WANDS",
+   "femme": false,
+   "count": {
+    "n": 1,
+    "obj": "wand",
+    "layout": "exactly one wand, raised high in his hand; no other staff"
+   },
+   "scene": "a bare-chested knight in golden armor on a rearing horse, one flourishing wand raised high, his cloak streaming"
+  },
+  {
+   "n": "Q",
+   "slug": "wands-queen",
+   "group": "wands",
+   "emblem": "a sunflower wand between two flames",
+   "title": "QUEEN OF WANDS",
+   "femme": true,
+   "count": {
+    "n": 1,
+    "obj": "wand",
+    "layout": "exactly one sunflower wand; no other staff"
+   },
+   "scene": "a radiant nude queen with dark loosened hair on a lion-carved throne, one breast bared, one sunflower wand in her hand, a black cat at her feet"
+  },
+  {
+   "n": "K",
+   "slug": "wands-king",
+   "group": "wands",
+   "emblem": "a flaming wand rising from a lion head",
+   "title": "KING OF WANDS",
+   "femme": false,
+   "count": {
+    "n": 1,
+    "obj": "wand",
+    "layout": "exactly one living green wand; no other staff"
+   },
+   "scene": "a powerful bare-chested king with a beard on a salamander-carved throne, one living green wand in hand"
+  },
+  {
+   "n": "A",
+   "slug": "cups-ace",
+   "group": "cups",
+   "emblem": "one overflowing chalice",
+   "title": "ACE OF CUPS",
+   "femme": false,
+   "count": {
+    "n": 1,
+    "obj": "chalice",
+    "layout": "exactly one chalice; the five overflowing streams are water, not cups — do not draw extra chalices in the pool"
+   },
+   "scene": "a divine hand offering one ornate chalice, a dove descending, five streams overflowing into a pool of lilies"
+  },
+  {
+   "n": "2",
+   "slug": "cups-02",
+   "group": "cups",
+   "emblem": "two interlocked rings",
+   "title": "TWO OF CUPS",
+   "femme": true,
+   "count": {
+    "n": 2,
+    "obj": "chalices",
+    "layout": "exactly two chalices, one raised in each lover's hand, one on the left and one on the right, both bowls fully visible and not overlapping — no third cup"
+   },
+   "scene": "a nude young woman and a nude young man facing one another, her body turned three-quarters toward the viewer with one arm across her breast, each raising one chalice in a toast, a caduceus with a lion head above them"
+  },
+  {
+   "n": "3",
+   "slug": "cups-03",
+   "group": "cups",
+   "emblem": "three chalices in a triangle",
+   "title": "THREE OF CUPS",
+   "femme": true,
+   "count": {
+    "n": 3,
+    "obj": "chalices",
+    "layout": "exactly three chalices — one raised by each of the three maidens, three dancers and three cups, one per figure; all three bowls held above shoulder height and countable"
+   },
+   "scene": "three nude maidens with flower wreaths dancing in a circle, their bodies turned to the light, each raising one chalice, fruits on the ground"
+  },
+  {
+   "n": "4",
+   "slug": "cups-04",
+   "group": "cups",
+   "emblem": "three chalices and one offered",
+   "title": "FOUR OF CUPS",
+   "femme": false,
+   "count": {
+    "n": 4,
+    "obj": "chalices",
+    "layout": "exactly four chalices: three standing upright in a row on the grass in front of him, evenly spaced, plus the one offered by the hand from the cloud — 3 + 1 = 4; all four bowls visible"
+   },
+   "scene": "a pensive nude youth with a lithe bare torso sitting under a tree, arms crossed, three chalices before him, a hand offering a fourth from a cloud"
+  },
+  {
+   "n": "5",
+   "slug": "cups-05",
+   "group": "cups",
+   "emblem": "three spilled, two standing",
+   "title": "FIVE OF CUPS",
+   "femme": false,
+   "count": {
+    "n": 5,
+    "obj": "chalices",
+    "layout": "exactly five chalices: three spilled and empty lying in the foreground plus two still upright and full standing on the bank behind him — 3 + 2 = 5; all five bowls countable, none hidden behind his cloak"
+   },
+   "scene": "a grieving cloaked figure bowing by a river, three spilled chalices before him, two full ones standing behind"
+  },
+  {
+   "n": "6",
+   "slug": "cups-06",
+   "group": "cups",
+   "emblem": "six chalices with flowers",
+   "title": "SIX OF CUPS",
+   "femme": true,
+   "count": {
+    "n": 6,
+    "obj": "chalices",
+    "layout": "exactly six chalices, each filled with flowers: one being passed between their hands plus five standing in a row along the courtyard wall behind them — 1 + 5 = 6; all six bowls separate and countable"
+   },
+   "scene": "two graceful young women in sheer summer dresses in an old courtyard garden, exchanging one flower-filled chalice, five more set along the wall behind them"
+  },
+  {
+   "n": "7",
+   "slug": "cups-07",
+   "group": "cups",
+   "emblem": "seven chalices on a cloud",
+   "title": "SEVEN OF CUPS",
+   "femme": false,
+   "count": {
+    "n": 7,
+    "obj": "chalices",
+    "layout": "exactly seven chalices on ONE luminous cloud, arranged as two clean rows: 4 on the lower row and 3 on the upper row — 4 + 3 = 7; evenly spaced against open sky, each bowl separate and un-occluded"
+   },
+   "scene": "a dreamer gazing at seven chalices floating on one luminous cloud, each holding a different vision — a face, jewels, a wreath, a dragon, a serpent, a castle, a veiled figure"
+  },
+  {
+   "n": "8",
+   "slug": "cups-08",
+   "group": "cups",
+   "emblem": "eight chalices stacked",
+   "title": "EIGHT OF CUPS",
+   "femme": false,
+   "count": {
+    "n": 8,
+    "obj": "chalices",
+    "layout": "exactly eight chalices stacked on the rocky ledge as 3 + 3 + 2, with one clearly empty gap between the sixth and the seventh — 3 + 3 + 2 = 8; all eight bowls countable, none cropped by the frame"
+   },
+   "scene": "a robed seeker with a staff walking away at night, eight chalices stacked on a rocky ledge with a gap, a waning moon above"
+  },
+  {
+   "n": "9",
+   "slug": "cups-09",
+   "group": "cups",
+   "emblem": "nine chalices in an arc",
+   "title": "NINE OF CUPS",
+   "femme": false,
+   "count": {
+    "n": 9,
+    "obj": "chalices",
+    "layout": "exactly nine chalices on the shelf behind him as a neat 3 x 3 grid — three rows of three, 3 + 3 + 3 = 9; evenly spaced, all nine bowls fully visible"
+   },
+   "scene": "a content bare-chested merchant seated before nine chalices proudly arranged in a grid on a shelf"
+  },
+  {
+   "n": "10",
+   "slug": "cups-10",
+   "group": "cups",
+   "emblem": "ten chalices under a rainbow",
+   "title": "TEN OF CUPS",
+   "femme": true,
+   "count": {
+    "n": 10,
+    "obj": "chalices",
+    "layout": "exactly ten chalices along ONE rainbow arc — 4 on the left half, 4 on the right half, 2 at the apex — 4 + 4 + 2 = 10; evenly spaced against open sky, all ten bowls countable"
+   },
+   "scene": "a blissful couple embracing in a meadow, she in slipping silk with one bare shoulder and the long line of her back to the light, his arms around her waist, ten chalices along a rainbow arc, a cottage and dancing children beyond"
+  },
+  {
+   "n": "P",
+   "slug": "cups-page",
+   "group": "cups",
+   "emblem": "a chalice with a fish",
+   "title": "PAGE OF CUPS",
+   "femme": true,
+   "count": {
+    "n": 1,
+    "obj": "chalice",
+    "layout": "exactly one chalice; no other cup anywhere in the scene"
+   },
+   "scene": "a graceful young woman page by the sea in an open robe sliding off one shoulder, holding one chalice from which a curious fish looks out"
+  },
+  {
+   "n": "N",
+   "slug": "cups-knight",
+   "group": "cups",
+   "emblem": "a chalice on a horseshoe",
+   "title": "KNIGHT OF CUPS",
+   "femme": false,
+   "count": {
+    "n": 1,
+    "obj": "chalice",
+    "layout": "exactly one golden chalice; no other cup"
+   },
+   "scene": "a romantic bare-chested knight in fish-scale armor on a white horse, calmly carrying one golden chalice"
+  },
+  {
+   "n": "Q",
+   "slug": "cups-queen",
+   "group": "cups",
+   "emblem": "a lidded chalice between waves",
+   "title": "QUEEN OF CUPS",
+   "femme": true,
+   "count": {
+    "n": 1,
+    "obj": "chalice",
+    "layout": "exactly one lidded golden chalice; no other cup"
+   },
+   "scene": "a gentle nude queen on a shell throne by the sea, wet hair over one bare shoulder, cradling one lidded golden chalice in her lap, sea foam behind her"
+  },
+  {
+   "n": "K",
+   "slug": "cups-king",
+   "group": "cups",
+   "emblem": "a chalice between two fish",
+   "title": "KING OF CUPS",
+   "femme": false,
+   "count": {
+    "n": 1,
+    "obj": "chalice",
+    "layout": "exactly one chalice; no other cup"
+   },
+   "scene": "a composed nude king with a beard on a wave-carved throne set on a rocky islet, one chalice and a scepter in hand"
+  },
+  {
+   "n": "A",
+   "slug": "swords-ace",
+   "group": "swords",
+   "emblem": "one upright sword with a crown",
+   "title": "ACE OF SWORDS",
+   "femme": false,
+   "count": {
+    "n": 1,
+    "obj": "sword",
+    "layout": "exactly one sword, upright in the divine hand; no second blade anywhere"
+   },
+   "scene": "a divine hand grasping one upright sword, a jeweled crown hovering at its tip, barren peaks below"
+  },
+  {
+   "n": "2",
+   "slug": "swords-02",
+   "group": "swords",
+   "emblem": "two crossed swords",
+   "title": "TWO OF SWORDS",
+   "femme": true,
+   "count": {
+    "n": 2,
+    "obj": "swords",
+    "layout": "exactly two long blades forming a single X across her chest, one over each shoulder; no third blade, no dagger at her belt"
+   },
+   "scene": "a blindfolded woman in a sheer robe that clings to her bare body, seated by the sea, two swords crossed over her chest, the moon rising"
+  },
+  {
+   "n": "3",
+   "slug": "swords-03",
+   "group": "swords",
+   "emblem": "three swords through a heart",
+   "title": "THREE OF SWORDS",
+   "femme": false,
+   "count": {
+    "n": 3,
+    "obj": "swords",
+    "layout": "exactly three swords through one heart — one vertical from above and two angled from the left and right; three separate hilts clearly countable against the storm sky, 1, 2, 3"
+   },
+   "scene": "a large anatomical heart pierced by three swords, rain and storm clouds behind"
+  },
+  {
+   "n": "4",
+   "slug": "swords-04",
+   "group": "swords",
+   "emblem": "three swords on a wall, one below",
+   "title": "FOUR OF SWORDS",
+   "femme": false,
+   "count": {
+    "n": 4,
+    "obj": "swords",
+    "layout": "exactly four swords: three mounted horizontally on the wall above him, stacked in a row of 3, plus one lying flat on the tomb slab beneath him — 3 + 1 = 4; all four blades complete and countable"
+   },
+   "scene": "a knight in armor lying at rest on a stone tomb in a chapel, three swords on the wall and one below, a stained-glass window"
+  },
+  {
+   "n": "5",
+   "slug": "swords-05",
+   "group": "swords",
+   "emblem": "five swords, two discarded",
+   "title": "FIVE OF SWORDS",
+   "femme": false,
+   "count": {
+    "n": 5,
+    "obj": "swords",
+    "layout": "exactly five swords: three gathered in the victor's hands, held upright and fanned so all three hilts are separate, plus two lying abandoned in the sand behind him — 3 + 2 = 5"
+   },
+   "scene": "a smug victor gathering three swords on a windy shore, two defeated figures walking away, two swords abandoned in the sand"
+  },
+  {
+   "n": "6",
+   "slug": "swords-06",
+   "group": "swords",
+   "emblem": "six swords in a boat",
+   "title": "SIX OF SWORDS",
+   "femme": true,
+   "count": {
+    "n": 6,
+    "obj": "swords",
+    "layout": "exactly six swords standing upright in the boat — three on the left of the passengers and three on the right, 3 + 3 = 6; evenly spaced, all six hilts above the gunwale, none crossing the figures"
+   },
+   "scene": "a cloaked woman and a child being poled across a river by a ferryman, six swords upright along the boat"
+  },
+  {
+   "n": "7",
+   "slug": "swords-07",
+   "group": "swords",
+   "emblem": "seven swords, two left behind",
+   "title": "SEVEN OF SWORDS",
+   "femme": false,
+   "count": {
+    "n": 7,
+    "obj": "swords",
+    "layout": "exactly seven swords: five carried in his arms with five separate hilts visible, plus two left standing upright in the grass behind him — 5 + 2 = 7"
+   },
+   "scene": "a sly man in a red cap tiptoeing away from a camp with five swords in his arms, two swords left standing in the grass"
+  },
+  {
+   "n": "8",
+   "slug": "swords-08",
+   "group": "swords",
+   "emblem": "eight swords in a ring",
+   "title": "EIGHT OF SWORDS",
+   "femme": true,
+   "count": {
+    "n": 8,
+    "obj": "swords",
+    "layout": "exactly eight swords planted in the ground around her at even intervals, like the hours of a clock — three in front of her, one at each side, three behind her, 3 + 2 + 3 = 8; all eight hilts visible above ground, evenly spaced, forming one open circle"
+   },
+   "scene": "a blindfolded woman in a flowing gown loosened from one shoulder and loosely bound, standing in a ring of eight swords, a fortress on the cliff behind"
+  },
+  {
+   "n": "9",
+   "slug": "swords-09",
+   "group": "swords",
+   "emblem": "nine swords on a wall",
+   "title": "NINE OF SWORDS",
+   "femme": true,
+   "count": {
+    "n": 9,
+    "obj": "swords",
+    "layout": "exactly nine swords mounted on the dark wall in three rows of three — 3 + 3 + 3 = 9; a neat 3 x 3 grid of horizontal blades, all nine countable, none hidden behind her head or hands"
+   },
+   "scene": "a distressed woman sitting up in bed at night, her bare shoulder and back above the sheet, face in her hands, nine swords mounted in rows on the dark wall"
+  },
+  {
+   "n": "10",
+   "slug": "swords-10",
+   "group": "swords",
+   "emblem": "ten swords along a back",
+   "title": "TEN OF SWORDS",
+   "femme": false,
+   "count": {
+    "n": 10,
+    "obj": "swords",
+    "layout": "exactly ten swords planted along the back in two staggered rows of five — 5 + 5 = 10; all ten hilts countable in a row from shoulder to hip, evenly spaced, none overlapping"
+   },
+   "scene": "a still figure lying face down by a black sea at dawn, ten swords along the back in a row, the sun rising"
+  },
+  {
+   "n": "P",
+   "slug": "swords-page",
+   "group": "swords",
+   "emblem": "a sword with a feather plume",
+   "title": "PAGE OF SWORDS",
+   "femme": true,
+   "count": {
+    "n": 1,
+    "obj": "sword",
+    "layout": "exactly one sword, gripped in both hands; no dagger, no second blade"
+   },
+   "scene": "an alert young woman page in a flowing cape on a windy mound holding one raised sword with both hands"
+  },
+  {
+   "n": "N",
+   "slug": "swords-knight",
+   "group": "swords",
+   "emblem": "a sword over a horse",
+   "title": "KNIGHT OF SWORDS",
+   "femme": false,
+   "count": {
+    "n": 1,
+    "obj": "sword",
+    "layout": "exactly one sword, pointed forward like a lance; no other blade"
+   },
+   "scene": "a fierce bare-shouldered knight in steel charging at full gallop, one sword pointed forward, a storm behind"
+  },
+  {
+   "n": "Q",
+   "slug": "swords-queen",
+   "group": "swords",
+   "emblem": "a sword wrapped in laurel",
+   "title": "QUEEN OF SWORDS",
+   "femme": true,
+   "count": {
+    "n": 1,
+    "obj": "sword",
+    "layout": "exactly one upright sword; no other blade"
+   },
+   "scene": "a stern dignified queen with flowing hair, one shoulder and the curve of her breast left bare by her loosened gown, seated on a cherub-carved throne above a sea of clouds, one upright sword in her hand"
+  },
+  {
+   "n": "K",
+   "slug": "swords-king",
+   "group": "swords",
+   "emblem": "a sword between two wings",
+   "title": "KING OF SWORDS",
+   "femme": false,
+   "count": {
+    "n": 1,
+    "obj": "sword",
+    "layout": "exactly one upright sword; no other blade"
+   },
+   "scene": "a commanding wise bare-chested king with a beard on a crescent-carved throne, one upright sword in hand, sea and birds behind"
+  },
+  {
+   "n": "A",
+   "slug": "pentacles-ace",
+   "group": "pentacles",
+   "emblem": "one pentacle coin in a hand",
+   "title": "ACE OF PENTACLES",
+   "femme": false,
+   "count": {
+    "n": 1,
+    "obj": "pentacle coin",
+    "layout": "exactly one large golden pentacle coin in the divine hand; no other coin, no coins scattered in the garden"
+   },
+   "scene": "a divine hand offering one large golden pentacle coin over a lush garden gateway with lilies, mountains beyond"
+  },
+  {
+   "n": "2",
+   "slug": "pentacles-02",
+   "group": "pentacles",
+   "emblem": "two pentacles and an infinity ribbon",
+   "title": "TWO OF PENTACLES",
+   "femme": false,
+   "count": {
+    "n": 2,
+    "obj": "pentacle coins",
+    "layout": "exactly two coins, one at each end of the looping infinity ribbon, one in each hand; both discs fully visible against the sky, no third coin"
+   },
+   "scene": "a nimble bare-chested youth in a flowing sash juggling two pentacle coins joined by an infinity ribbon, ships on rolling waves behind"
+  },
+  {
+   "n": "3",
+   "slug": "pentacles-03",
+   "group": "pentacles",
+   "emblem": "three pentacles in an arch",
+   "title": "THREE OF PENTACLES",
+   "femme": true,
+   "count": {
+    "n": 3,
+    "obj": "pentacle coins",
+    "layout": "exactly three coins set into the stone arch above the sculptor — one at the apex and two at the springing points, 1 + 2 = 3; all three discs fully visible, none hidden by the arch's shadow"
+   },
+   "scene": "a young woman sculptor in an open workshop apron slipping off one shoulder, hair loose, chiseling a column, a monk and an architect commenting, three coins set in the arch above"
+  },
+  {
+   "n": "4",
+   "slug": "pentacles-04",
+   "group": "pentacles",
+   "emblem": "four pentacles, one on the head",
+   "title": "FOUR OF PENTACLES",
+   "femme": false,
+   "count": {
+    "n": 4,
+    "obj": "pentacle coins",
+    "layout": "exactly four coins: one clutched to his chest, one balanced in his crown, two pressed beneath his feet — 1 + 1 + 2 = 4; all four discs fully visible, none buried in the ground or hidden by his robes"
+   },
+   "scene": "a crowned man in rich robes seated rigidly on a stone seat, clutching one coin to his chest, one coin in his crown, two coins beneath his feet"
+  },
+  {
+   "n": "5",
+   "slug": "pentacles-05",
+   "group": "pentacles",
+   "emblem": "five pentacles in a church window",
+   "title": "FIVE OF PENTACLES",
+   "femme": true,
+   "count": {
+    "n": 5,
+    "obj": "pentacle coins",
+    "layout": "exactly five glowing coins set in the tall stained-glass window in a quincunx — one at the top center, two on the middle row, two on the bottom row, 1 + 2 + 2 = 5; all five discs separate and countable"
+   },
+   "scene": "two ragged beggars passing a glowing church in the snow, five coins shining in the tall stained-glass window"
+  },
+  {
+   "n": "6",
+   "slug": "pentacles-06",
+   "group": "pentacles",
+   "emblem": "six pentacles on a scale",
+   "title": "SIX OF PENTACLES",
+   "femme": false,
+   "count": {
+    "n": 6,
+    "obj": "pentacle coins",
+    "layout": "exactly six coins on the balance — three stacked in the left pan and three stacked in the right pan, 3 + 3 = 6; all six discs visible above the pan rims, no coins loose on the ground"
+   },
+   "scene": "a prosperous merchant weighing coins on a balance before a kneeling poor couple, a town arcade behind him"
+  },
+  {
+   "n": "7",
+   "slug": "pentacles-07",
+   "group": "pentacles",
+   "emblem": "seven pentacles on a vine",
+   "title": "SEVEN OF PENTACLES",
+   "femme": false,
+   "count": {
+    "n": 7,
+    "obj": "pentacle coins",
+    "layout": "exactly seven coins growing on the vine — three on the left branch, three on the right branch, one at the top center, 3 + 3 + 1 = 7; all seven fully visible and un-occluded by leaves"
+   },
+   "scene": "a bare-chested young farmer leaning on a hoe gazing at a garden vine bearing seven coins, a manor beyond"
+  },
+  {
+   "n": "8",
+   "slug": "pentacles-08",
+   "group": "pentacles",
+   "emblem": "eight pentacles in a row",
+   "title": "EIGHT OF PENTACLES",
+   "femme": true,
+   "count": {
+    "n": 8,
+    "obj": "pentacle coins",
+    "layout": "exactly eight finished coins in ONE straight row of 8 along the front edge of the bench, evenly spaced and all eight countable; the blank stone disc she is chiseling is unfinished and bears no star, so it does NOT count and must not look like a coin"
+   },
+   "scene": "a young woman apprentice in an apron slipping off one shoulder, sleeves rolled and hair loose, chiseling a plain stone disc at a bench, eight coins in one row along the bench edge, a town through the window"
+  },
+  {
+   "n": "9",
+   "slug": "pentacles-09",
+   "group": "pentacles",
+   "emblem": "nine pentacles on an arbor",
+   "title": "NINE OF PENTACLES",
+   "femme": true,
+   "count": {
+    "n": 9,
+    "obj": "pentacle coins",
+    "layout": "exactly nine coins fixed to the arbor beam in ONE row of 9, evenly spaced against open sky, all nine fully visible, none hidden by leaves or by her body — count them left to right: 1 to 9"
+   },
+   "scene": "an elegant woman in a sheer flowing gown that clings to breast and hip, a falcon on her gloved hand, her other hand touching ripe grapes, nine coins along the arbor beam, a snail at her feet"
+  },
+  {
+   "n": "10",
+   "slug": "pentacles-10",
+   "group": "pentacles",
+   "emblem": "ten pentacles in a tree-of-life pyramid",
+   "title": "TEN OF PENTACLES",
+   "femme": true,
+   "count": {
+    "n": 10,
+    "obj": "pentacle coins",
+    "layout": "exactly ten coins on the wall in a Tree-of-Life pyramid — 4 on the bottom row, 3 above them, 2 above those, 1 at the apex, 4 + 3 + 2 + 1 = 10; all ten discs countable, none hidden behind the figures"
+   },
+   "scene": "a family hall — a patriarch seated, a couple standing with his hand at her waist, a child playing with two dogs — ten coins in a pyramid emblem on the wall behind them"
+  },
+  {
+   "n": "P",
+   "slug": "pentacles-page",
+   "group": "pentacles",
+   "emblem": "a pentacle held by two hands",
+   "title": "PAGE OF PENTACLES",
+   "femme": true,
+   "count": {
+    "n": 1,
+    "obj": "pentacle coin",
+    "layout": "exactly one large coin, held in both hands; no other coin anywhere"
+   },
+   "scene": "a studious young woman page in an open robe studying one large pentacle coin held in both hands, a plowed field behind her"
+  },
+  {
+   "n": "N",
+   "slug": "pentacles-knight",
+   "group": "pentacles",
+   "emblem": "a pentacle on a draft horse",
+   "title": "KNIGHT OF PENTACLES",
+   "femme": false,
+   "count": {
+    "n": 1,
+    "obj": "pentacle coin",
+    "layout": "exactly one coin, resting in his open palm; no other coin"
+   },
+   "scene": "a patient bare-chested knight on a heavy black draft horse standing still, examining one pentacle coin in his palm, a plowed field behind"
+  },
+  {
+   "n": "Q",
+   "slug": "pentacles-queen",
+   "group": "pentacles",
+   "emblem": "a pentacle entwined with roses",
+   "title": "QUEEN OF PENTACLES",
+   "femme": true,
+   "count": {
+    "n": 1,
+    "obj": "pentacle coin",
+    "layout": "exactly one coin, resting in her lap; no other coin"
+   },
+   "scene": "a warm nude queen with a flower crown on a goat-carved throne, one breast bared, one pentacle resting in her lap, a rabbit in the garden"
+  },
+  {
+   "n": "K",
+   "slug": "pentacles-king",
+   "group": "pentacles",
+   "emblem": "a pentacle above a bull head",
+   "title": "KING OF PENTACLES",
+   "femme": false,
+   "count": {
+    "n": 1,
+    "obj": "pentacle coin",
+    "layout": "exactly one coin, held in one hand; no other coin"
+   },
+   "scene": "a robust bare-chested king with a beard and an ermine cloak on a bull-carved throne, one pentacle and a scepter in hand, harvest fields behind"
+  }
+ ]
 }

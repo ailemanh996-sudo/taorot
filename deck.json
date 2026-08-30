@@ -53,12 +53,12 @@
    "groupLabel": "Major Arcana",
    "emblem": "a twelve-star crown",
    "title": "THE EMPRESS",
-   "scene": "a voluptuous nude empress, one breast bared, a crown of flowers in loosened hair, reclining on a velvet throne amid ripe golden wheat and fruits, a heart-shaped shield of Venus leaning beside her",
+   "scene": "a slender nude empress, one breast bared, a crown of flowers in loosened hair, reclining on a velvet throne amid ripe golden wheat and fruits, a heart-shaped shield of Venus leaning beside her",
    "femme": true,
    "file": "cards/03-empress.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 506
+   "kb": 531
   },
   {
    "slug": "04-emperor",
@@ -212,7 +212,7 @@
    "file": "cards/14-temperance.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 513
+   "kb": 510
   },
   {
    "slug": "15-devil",
