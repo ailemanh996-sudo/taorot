@@ -25,7 +25,7 @@ EXPECTED = {"ace": 1, "02": 2, "03": 3, "04": 4, "05": 5, "06": 6,
             "07": 7, "08": 8, "09": 9, "10": 10,
             "page": 1, "knight": 1, "queen": 1, "king": 1}
 
-FEMME = """FEMALE FIGURE DIRECTIVE (mandatory for every woman in the scene): render her with heightened yet tasteful sensuality — a mature adult woman, confident and entirely at ease in her own skin. Favour: a long bare back with the line of the spine caught by low golden light, bare shoulders with silk or wet gauze slipping off one of them, the curve of waist and hip clearly drawn, a hand lifted into loosened hair, an arched or reclining posture. Give her a languid, alive expression — parted lips, heavy-lidded eyes meeting the viewer or a slow sidelong glance. Her build: {BUILD}. Drapery is silk or sheer gauze that clings and reveals the body's line rather than hiding it. Nudity is fine-art: bare breasts, back and hips may be shown as soft classical anatomy, painterly and never graphic or clinical.
+FEMME = """FEMALE FIGURE DIRECTIVE (mandatory for every woman in the scene): render her with heightened yet tasteful sensuality — a mature adult woman, confident and entirely at ease in her own skin. Favour: a long bare back with the line of the spine caught by low golden light, bare shoulders with silk or wet gauze slipping off one of them, the curve of waist and hip clearly drawn, a hand lifted into loosened hair, an arched or reclining posture. Give her a languid, alive expression — parted lips, heavy-lidded eyes meeting the viewer or a slow sidelong glance. Her build: {BUILD}. Drapery is silk or sheer gauze that clings and reveals the body's line rather than hiding it. Nudity is fine-art: bare breasts, back and hips may be shown as soft classical anatomy, painterly and never graphic or clinical. {ALLURE}
 HARD LIMITS: no explicit sexual acts, no exposed genitals, no spread legs, no hand or object at the genitals, no sexual fluids, no fetish or bondage gear, no minors, no pornographic framing or camera angle."""
 
 DEFAULT_BUILD = "full, ripe and womanly, with soft generous curves"
@@ -76,6 +76,7 @@ def build(c):
             .replace("{TITLE}", c["title"])
             .replace("{COUNT_LOCK}", count_lock(c))
             .replace("{FEMME}", (FEMME.replace("{BUILD}", c.get("build", DEFAULT_BUILD))
+                                 .replace("{ALLURE}", c.get("allure", ""))
                                  if c.get("femme") else "FEMALE FIGURE DIRECTIVE — not applicable to this card."))
             .replace("{WING_LOCK}", wing_lock(c)))
 

@@ -251,6 +251,15 @@ cân màu theo khung chuẩn, ghép lên khung chuẩn, chuẩn hoá 848×1264 v
 - [ ] `python3 scripts/compose_card.py --check` → RMSE khung < 0.01?
 - [ ] `python3 scripts/check_card.py raw/<lá>.png` → **tỉ lệ 0.671** (không có `!`), chữ tên **OK**?
 - [ ] `python3 scripts/check_seam.py` → tất cả **mịn** (< 0.10)?
+- [ ] `check_card.py` → `frame` của lá thô < 0.10? (với phôi đúng, các lá đạt 0.048–0.146;
+      phôi cũ làm con số này vọt lên 0.11–0.28)
+
+**Hai trường tuỳ chọn trong `cards.json` để chỉnh dáng nhân vật:**
+- `build` — dáng người, cắm vào khối FEMME. Mặc định `full, ripe and womanly, with soft generous curves`.
+  Ví dụ lá Empress / Moon / Sun dùng `slender and lithe — a narrow waist, long tapering limbs…`.
+- `allure` — tăng độ quyến rũ, thêm một câu vào cuối khối FEMME. Mặc định rỗng.
+  Ví dụ lá Moon / Sun dùng `Raise the allure further: an unmistakably inviting presence…`.
+Cả hai đi kèm HARD LIMITS (không hành vi tình dục rõ, không lộ cơ quan sinh dục, không trẻ vị thành niên).
 - [ ] Nhân vật nữ đủ gợi cảm nhưng vẫn đúng giới hạn fine-art (không lộ genital, không tư thế khiêu dâm)?
 - [ ] Tay đủ ngón, không dư chi, không dư đầu?
 - [ ] Màu trầm antique khớp `17-the-star.jpg`?

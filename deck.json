@@ -1,7 +1,7 @@
 {
  "deck": "Sensual Tarot",
  "total": 78,
- "done": 20,
+ "done": 22,
  "size": "848x1264",
  "cards": [
   {
@@ -16,7 +16,7 @@
    "file": "cards/00-fool.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 470
+   "kb": 453
   },
   {
    "slug": "01-magician",
@@ -44,7 +44,7 @@
    "file": "cards/02-priestess.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 489
+   "kb": 479
   },
   {
    "slug": "03-empress",
@@ -58,7 +58,7 @@
    "file": "cards/03-empress.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 531
+   "kb": 495
   },
   {
    "slug": "04-emperor",
@@ -86,7 +86,7 @@
    "file": "cards/05-hierophant.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 518
+   "kb": 496
   },
   {
    "slug": "06-lovers",
@@ -114,7 +114,7 @@
    "file": "cards/07-chariot.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 503
+   "kb": 491
   },
   {
    "slug": "08-strength",
@@ -226,7 +226,7 @@
    "file": "cards/15-devil.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 470
+   "kb": 477
   },
   {
    "slug": "16-tower",
@@ -254,7 +254,7 @@
    "file": "cards/17-the-star.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 490
+   "kb": 488
   },
   {
    "slug": "18-moon",
@@ -268,7 +268,7 @@
    "file": "cards/18-moon.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 496
+   "kb": 426
   },
   {
    "slug": "19-sun",
@@ -282,7 +282,7 @@
    "file": "cards/19-sun.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 496
+   "kb": 505
   },
   {
    "slug": "20-judgement",
@@ -293,7 +293,10 @@
    "title": "JUDGEMENT",
    "scene": "a blue-robed angel blowing a great trumpet with a white banner; below, on a calm sea, a nude woman rising from a coffin with her arms open and her body turned to the light, beside a nude man and a child",
    "femme": true,
-   "file": null
+   "file": "cards/20-judgement.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 470
   },
   {
    "slug": "21-world",
@@ -304,7 +307,10 @@
    "title": "THE WORLD",
    "scene": "a graceful nude woman dancer with a flowing violet scarf caught low around her hips, holding a wand in each hand, dancing within a great oval laurel wreath, an angel, an eagle, a lion and a bull at the corners",
    "femme": true,
-   "file": null
+   "file": "cards/21-world.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 528
   },
   {
    "slug": "wands-ace",
