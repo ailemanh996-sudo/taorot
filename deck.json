@@ -138,11 +138,11 @@
    "emblem": "a glowing lantern",
    "title": "THE HERMIT",
    "scene": "a hooded hermit in a gray cloak on a snowy peak holding up a lantern with a six-pointed star inside",
-   "femme": false,
+   "femme": true,
    "file": "cards/09-hermit.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 469
+   "kb": 441
   },
   {
    "slug": "10-wheel",
