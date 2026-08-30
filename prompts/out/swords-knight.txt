@@ -1,0 +1,16 @@
+A single tarot card built upon the FIRST reference image (the deck's blank ornamental template): keep its symmetric ornamental golden frame, the four corner filigree flourishes, the top-center medallion and the bottom band with the small skull ornament EXACTLY as they are — do not redraw, move, recolor or resize any part of the frame. Fill the empty parchment center with the new scene, painted in the EXACT master art style of the SECOND reference image (a Major Arcana card of the same deck): identical illustration technique and linework, identical muted antique color palette, identical paper grain and vellum texture.
+
+LAYOUT (draw in this order):
+— TOP: inside the top-center ornamental medallion place this card's EMBLEM: a sword over a horse — small antique-gold heraldic emblem, centered, no text, no numerals.
+— MIDDLE (the empty parchment area only): a fierce bare-shouldered knight in steel charging at full gallop, one sword pointed forward, a storm behind
+— BOTTOM: in the bottom band, directly beneath the small skull ornament, the title "KNIGHT OF SWORDS" in the deck's lettering style, centered.
+
+COUNT LOCK — EXACTLY 1 sword (hard constraint; count before you draw). The parchment scene contains exactly 1 sword — not 0, not 2. Placement is locked: exactly one sword, pointed forward like a lance; no other blade. Every one of the 1 must be fully visible: nothing occluded by a body, limb, cloth, cloud or another object, nothing fused, broken, cropped by the golden frame, or half-hidden behind a figure. Keep them at one consistent size, shape, material and color so they read as a single countable set, with a clear gap of background between each one. Place no other sword anywhere else on the card — not in the frame, not in the background, not held by a figure, not as decoration. The emblem in the top medallion is a separate heraldic motif and does NOT count toward the 1. Before finishing, count them: 1. If the total is not 1, redraw.
+
+FEMALE FIGURE DIRECTIVE — not applicable to this card.
+
+THEME: sensual classic tarot in the tradition of vintage art-nude tarot decks — elegant adult figures entirely at ease in their bodies, graceful nude and semi-nude poses, silk and sheer gauze that follows the body's line, warm candlelit and low-sun atmosphere, painterly skin in golden light against cool shadow.
+
+NEGATIVE: extra or miscounted suit objects, duplicated, fused, cropped or half-hidden objects, extra limbs, extra fingers, six-fingered hands, extra heads, modern clothing, neon or oversaturated color, glossy 3D render, plastic airbrushed skin, text or numbers anywhere except the bottom title band, watermark, signature, artist name, double border, multiple cards, collage.
+
+No other text, no watermark, single card only.
