@@ -1,7 +1,7 @@
 {
  "deck": "Sensual Tarot",
  "total": 78,
- "done": 42,
+ "done": 50,
  "size": "848x1264",
  "cards": [
   {
@@ -601,7 +601,10 @@
    "title": "SEVEN OF CUPS",
    "scene": "a dreamer gazing at seven chalices floating on one luminous cloud, each holding a different vision — a face, jewels, a wreath, a dragon, a serpent, a castle, a veiled figure",
    "femme": false,
-   "file": null
+   "file": "cards/cups-07.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 440
   },
   {
    "slug": "cups-08",
@@ -612,7 +615,10 @@
    "title": "EIGHT OF CUPS",
    "scene": "a robed seeker with a staff walking away at night, eight chalices stacked on a rocky ledge with a gap, a waning moon above",
    "femme": false,
-   "file": null
+   "file": "cards/cups-08.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 462
   },
   {
    "slug": "cups-09",
@@ -623,7 +629,10 @@
    "title": "NINE OF CUPS",
    "scene": "a content bare-chested merchant seated before nine chalices proudly arranged in a grid on a shelf",
    "femme": false,
-   "file": null
+   "file": "cards/cups-09.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 477
   },
   {
    "slug": "cups-10",
@@ -634,7 +643,10 @@
    "title": "TEN OF CUPS",
    "scene": "a blissful couple embracing in a meadow, she in slipping silk with one bare shoulder and the long line of her back to the light, his arms around her waist, ten chalices along a rainbow arc, a cottage and dancing children beyond",
    "femme": true,
-   "file": null
+   "file": "cards/cups-10.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 477
   },
   {
    "slug": "cups-page",
@@ -645,7 +657,10 @@
    "title": "PAGE OF CUPS",
    "scene": "a graceful young woman page by the sea in an open robe sliding off one shoulder, holding one chalice from which a curious fish looks out",
    "femme": true,
-   "file": null
+   "file": "cards/cups-page.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 459
   },
   {
    "slug": "cups-knight",
@@ -656,7 +671,10 @@
    "title": "KNIGHT OF CUPS",
    "scene": "a romantic bare-chested knight in fish-scale armor on a white horse, calmly carrying one golden chalice",
    "femme": false,
-   "file": null
+   "file": "cards/cups-knight.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 453
   },
   {
    "slug": "cups-queen",
@@ -667,7 +685,10 @@
    "title": "QUEEN OF CUPS",
    "scene": "a gentle nude queen on a shell throne by the sea, wet hair over one bare shoulder, cradling one lidded golden chalice in her lap, sea foam behind her",
    "femme": true,
-   "file": null
+   "file": "cards/cups-queen.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 483
   },
   {
    "slug": "cups-king",
@@ -678,7 +699,10 @@
    "title": "KING OF CUPS",
    "scene": "a composed nude king with a beard on a wave-carved throne set on a rocky islet, one chalice and a scepter in hand",
    "femme": false,
-   "file": null
+   "file": "cards/cups-king.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 455
   },
   {
    "slug": "swords-ace",
