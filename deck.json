@@ -207,12 +207,12 @@
    "groupLabel": "Major Arcana",
    "emblem": "a triangle within a square",
    "title": "TEMPERANCE",
-   "scene": "a graceful nude archangel with long loosened hair, seen from behind with the long line of her back to the viewer, pouring water between two golden chalices, one foot on the land and one in the pool, irises blooming",
+   "scene": "a graceful winged adult figure with long loosened hair, wearing a sheer antique drape, standing in a THREE-QUARTER VIEW with her body turned toward the viewer, one knee bent with one foot on the rock and the other in the pool, her arms extended to either side pouring water between two golden chalices, irises blooming, warm sepia and ochre light",
    "femme": true,
    "file": "cards/14-temperance.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 478
+   "kb": 479
   },
   {
    "slug": "15-devil",
@@ -305,12 +305,12 @@
    "groupLabel": "Major Arcana",
    "emblem": "a laurel wreath oval",
    "title": "THE WORLD",
-   "scene": "a graceful nude woman dancer with a flowing violet scarf caught low around her hips, holding a wand in each hand, dancing within a great oval laurel wreath, an angel, an eagle, a lion and a bull at the corners",
+   "scene": "a graceful adult woman dancer posed in a sinuous S-curve, one hip thrust out and one knee lifted, her body arched with the head tipped back and her shoulders and back bare, a flowing violet scarf swirling low around her hips and drifting behind her, one slim wand held out in each hand, dancing within a great oval laurel wreath, an angel, an eagle, a lion and a bull at the corners",
    "femme": true,
    "file": "cards/21-world.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 489
+   "kb": 487
   },
   {
    "slug": "wands-ace",
