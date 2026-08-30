@@ -86,6 +86,45 @@ def color_match(src, dst, base, region):
     return dst
 
 
+def match_band(src, base, tmp, panel):
+    """Cân màu RIÊNG cho dải dưới.
+
+    Cân màu toàn cục lấy mẫu ở khung trái; nhưng nhiều lá (vd The Hanged Man) có dải dưới
+    lệch sáng/màu đồng đều so với khung chuẩn trong khi khung lại khớp -> khi dán ô chữ tên
+    lên sẽ lộ một mảng khác màu. Ở đây tính hệ số trên hai mảnh bên trái/phải của hộp tên
+    (tức phần dải sẽ bị thay bằng khung chuẩn) rồi áp dụng cho toàn dải.
+    """
+    W, H = panel["size"]
+    y0, h = 1045, 200                      # dải dưới
+    tx, ty, tw, th = panel["title"]
+    regs = [(0, y0, tx, h), (tx + tw, y0, W - (tx + tw), h)]
+    regs = [r for r in regs if r[2] > 20]
+
+    def stat_pair(img, tag):
+        parts = []
+        for i, r in enumerate(regs):
+            f = tmp / f"{tag}{i}.png"
+            run(im() + [str(img), "-crop", f"{r[2]}x{r[3]}+{r[0]}+{r[1]}", "+repage", str(f)])
+            parts.append(str(f))
+        out = tmp / f"{tag}_all.png"
+        run(im() + parts + ["+append", str(out)])
+        return channel_stats(out, (0, 0, *size_of(out)))
+
+    sb, ss = stat_pair(base, "b"), stat_pair(src, "s")
+    band = tmp / "band.png"
+    run(im() + [str(src), "-crop", f"{W}x{h}+0+{y0}", "+repage", str(band)])
+    cmd = im() + [str(band)]
+    for i, ((mb, sb_), (ms, ss_)) in enumerate(zip(sb, ss)):
+        a = max(0.5, min(2.0, sb_ / ss_ if ss_ > 1e-6 else 1.0))
+        b = mb - a * ms
+        cmd += ["-channel", "RGB"[i], "-function", "Polynomial", f"{a:.6f},{b:.6f}"]
+    cmd += ["+channel", str(tmp / "band2.png")]
+    run(cmd)
+    run(im() + [str(src), str(tmp / "band2.png"), "-geometry", f"+0+{y0}",
+                "-compose", "over", "-composite", str(src)])
+    return src
+
+
 def build_mask(path, panel, W, H):
     cmd = im() + ["-size", f"{W}x{H}", "xc:black", "-fill", "white"]
     for key in ("panel", "emblem", "title"):
@@ -112,12 +151,16 @@ def compose(src, base, out, panel):
     if run(im() + [str(src), "-fuzz", "8%", "-trim", "-format", "%wx%h", "info:"]).stdout.strip() \
             != f"{size_of(src)[0]}x{size_of(src)[1]}":
         cmd += ["-fuzz", "8%", "-trim", "+repage"]
-    cmd += ["-strip", "-colorspace", "sRGB", "-resize", f"{W}x{H}^",
-            "-gravity", "center", "-extent", f"{W}x{H}", str(work)]
+    # fixed aspect: co theo chiều ngang (giữ tỉ lệ nhân vật như nhau giữa các lá),
+    # rồi crop/pad chiều dọc về đúng H — thay vì cover-crop làm cảnh bị cắt khác nhau
+    cmd += ["-strip", "-colorspace", "sRGB", "-resize", f"{W}x",
+            "-gravity", "center", "-background", panel.get("bg", "#e8dcc0"),
+            "-extent", f"{W}x{H}", str(work)]
     run(cmd)
 
-    # 2. cân màu theo khung chuẩn
+    # 2. cân màu toàn cục theo khung chuẩn, rồi cân riêng dải dưới
     color_match(work, work, base, frame_region(W, H, panel))
+    match_band(work, base, tmp, panel)
 
     # 3. dán 3 vùng nội dung lên khung chuẩn
     build_mask(mask, panel, W, H)

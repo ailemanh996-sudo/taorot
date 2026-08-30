@@ -8,6 +8,8 @@ Bản viết lại để sửa **4 lỗi**:
 3. **Lá bài không phủ kín khung** (viền tối/sáng thừa quanh lá) → mệnh đề **FULL BLEED** + `--trim` ở hậu kỳ.
 4. **Hoạ tiết viền + màu lệch nhau giữa các lá** → **ghép lên khung chuẩn** bằng `scripts/compose_card.py`:
    chỉ giữ lại 3 vùng nội dung riêng của mỗi lá (cảnh · emblem · tên), phần còn lại lấy từ `17-the-star.jpg`.
+5. **Tỉ lệ khung hình không cố định** (model hay sinh lệch, vd 832×1280) → **ASPECT RATIO LOCK** trong prompt
+   + hậu kỳ co theo **chiều ngang** (`-resize 848x`) rồi crop/pad về 848×1264, để nhân vật các lá to bằng nhau.
 
 > Tham chiếu mỗi lần tạo (3 ảnh, đúng thứ tự):
 > 1. `cards/card-blank.jpg` — phôi
@@ -185,11 +187,16 @@ Vùng dán lưu trong `prompts/panel.json` (đo từ bản đồ khác biệt St
 |------|---------------------|
 | `panel` — cảnh giữa | 106, 120, 621, 933 |
 | `emblem` — huy hiệu trong medallion | 250, 10, 350, 115 |
-| `title` — chữ tên ở dải dưới | 190, 1080, 480, 165 |
+| `title` — dải dưới (chữ tên) | 80, 1045, 690, 200 |
 
-> Hộp `title` đã nới 2 lần vì chữ dài: `262,1090,330,145` → `190,1080,480,165` (chữ `THE CHARIOT` bắt đầu ở
-> **x=230** nên bị cụt chữ đầu) → **`175,1080,500,165`** (`THE HIGH PRIESTESS` rộng 477px, bắt đầu ở x=191).
-> Khi thêm lá mới, luôn chạy `scripts/check_card.py` để xem chữ có nằm gọn trong hộp không.
+> Hộp `title` đã nới 3 lần:
+> 1. `262,1090,330,145` → `190,1080,480,165` — chữ `THE CHARIOT` bắt đầu ở **x=230** nên bị cụt chữ đầu.
+> 2. → `175,1080,500,165` — `THE HIGH PRIESTESS` rộng 477px, bắt đầu ở x=191.
+> 3. → **`80,1045,690,200`** (toàn bộ dải trong). Lý do: model **không thể vẽ lại dải hoạ tiết giống hệt**
+>    khung chuẩn (khác cấu trúc, sửa bằng cân màu vô dụng; thử tạo lại 3 lần vẫn lệch 0.15–0.21). Dán một ô
+>    nhỏ sẽ lộ **hình chữ nhật** khác màu; lấy cả dải thì đường nối bị đẩy ra mép trong khung vàng — nơi có
+>    đường viền tự nhiên che khuất. Đo được: độ lệch ở mép từ **0.037–0.213** (có 4 lá nổi bật) → **0.052–0.079**
+>    (đều nhau, không lá nào nổi). Kiểm tra bằng `scripts/check_seam.py`.
 
 ```bash
 python3 scripts/compose_card.py raw/          # ghép tất cả ảnh trong raw/ lên khung chuẩn
@@ -242,7 +249,8 @@ cân màu theo khung chuẩn, ghép lên khung chuẩn, chuẩn hoá 848×1264 v
 - [ ] Khung viền vàng, 4 góc hoa văn, medallion, dải tên + đầu lâu **giống phôi 100%**?
 - [ ] Tên lá đúng chính tả, **đúng font của The Star**, chỉ nằm ở dải dưới?
 - [ ] `python3 scripts/compose_card.py --check` → RMSE khung < 0.01?
-- [ ] `python3 scripts/check_card.py raw/<lá>.png` → chữ tên báo **OK** (nằm gọn trong hộp), `band` < 0.15?
+- [ ] `python3 scripts/check_card.py raw/<lá>.png` → **tỉ lệ 0.671** (không có `!`), chữ tên **OK**?
+- [ ] `python3 scripts/check_seam.py` → tất cả **mịn** (< 0.10)?
 - [ ] Nhân vật nữ đủ gợi cảm nhưng vẫn đúng giới hạn fine-art (không lộ genital, không tư thế khiêu dâm)?
 - [ ] Tay đủ ngón, không dư chi, không dư đầu?
 - [ ] Màu trầm antique khớp `17-the-star.jpg`?
@@ -262,6 +270,7 @@ cân màu theo khung chuẩn, ghép lên khung chuẩn, chuẩn hoá 848×1264 v
 | `scripts/build_prompts.py` | `check` · `prompt` · `all` · `md` · `batch` |
 | `scripts/process_cards.py` | resize 848×1264 · `--trim` cắt viền · nén ≤ 800KB |
 | `scripts/compose_card.py` | ghép lên khung chuẩn + cân màu · `--check` đo độ lệch |
-| `scripts/check_card.py` | đo `frame` / `band` / toạ độ chữ tên của lá thô, chọn bản tốt nhất |
+| `scripts/check_card.py` | đo `tỉ lệ` / `frame` / `band` / toạ độ chữ tên của lá thô, chọn bản tốt nhất |
+| `scripts/check_seam.py` | đo đường nối ở mép vùng dán trên lá đã ghép (phát hiện ô chữ nhật lệch màu) |
 | `scripts/build_gallery.py` | quét `cards/` → `deck.json` cho gallery |
 | `cards/card-blank.jpg` · `17-the-star.jpg` · `title-style.png` | 3 ảnh tham chiếu bắt buộc |

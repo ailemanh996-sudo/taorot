@@ -16,7 +16,7 @@
    "file": "cards/00-fool.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 485
+   "kb": 482
   },
   {
    "slug": "01-magician",
@@ -30,7 +30,7 @@
    "file": "cards/01-magician.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 454
+   "kb": 451
   },
   {
    "slug": "02-priestess",
@@ -44,7 +44,7 @@
    "file": "cards/02-priestess.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 494
+   "kb": 489
   },
   {
    "slug": "03-empress",
@@ -58,7 +58,7 @@
    "file": "cards/03-empress.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 510
+   "kb": 507
   },
   {
    "slug": "04-emperor",
@@ -72,7 +72,7 @@
    "file": "cards/04-emperor.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 514
+   "kb": 511
   },
   {
    "slug": "05-hierophant",
@@ -86,7 +86,7 @@
    "file": "cards/05-hierophant.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 505
+   "kb": 504
   },
   {
    "slug": "06-lovers",
@@ -100,7 +100,7 @@
    "file": "cards/06-lovers.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 526
+   "kb": 525
   },
   {
    "slug": "07-chariot",
@@ -114,7 +114,7 @@
    "file": "cards/07-chariot.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 525
+   "kb": 522
   },
   {
    "slug": "08-strength",
@@ -128,7 +128,7 @@
    "file": "cards/08-strength.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 465
+   "kb": 461
   },
   {
    "slug": "09-hermit",
@@ -142,7 +142,7 @@
    "file": "cards/09-hermit.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 491
+   "kb": 492
   },
   {
    "slug": "10-wheel",
@@ -156,7 +156,7 @@
    "file": "cards/10-wheel.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 537
+   "kb": 577
   },
   {
    "slug": "11-justice",
@@ -170,7 +170,7 @@
    "file": "cards/11-justice.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 478
+   "kb": 475
   },
   {
    "slug": "12-hanged",
@@ -184,7 +184,7 @@
    "file": "cards/12-hanged.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 468
+   "kb": 498
   },
   {
    "slug": "13-death",
@@ -198,7 +198,7 @@
    "file": "cards/13-death.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 524
+   "kb": 523
   },
   {
    "slug": "14-temperance",
@@ -212,7 +212,7 @@
    "file": "cards/14-temperance.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 525
+   "kb": 524
   },
   {
    "slug": "15-devil",
@@ -226,7 +226,7 @@
    "file": "cards/15-devil.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 524
+   "kb": 522
   },
   {
    "slug": "16-tower",
@@ -240,7 +240,7 @@
    "file": "cards/16-tower.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 517
+   "kb": 515
   },
   {
    "slug": "17-the-star",
@@ -268,7 +268,7 @@
    "file": "cards/18-moon.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 456
+   "kb": 454
   },
   {
    "slug": "19-sun",
@@ -282,7 +282,7 @@
    "file": "cards/19-sun.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 506
+   "kb": 504
   },
   {
    "slug": "20-judgement",
@@ -296,7 +296,7 @@
    "file": "cards/20-judgement.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 508
+   "kb": 507
   },
   {
    "slug": "21-world",
@@ -310,7 +310,7 @@
    "file": "cards/21-world.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 519
+   "kb": 517
   },
   {
    "slug": "wands-ace",
@@ -324,7 +324,7 @@
    "file": "cards/wands-ace.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 496
+   "kb": 493
   },
   {
    "slug": "wands-02",
@@ -338,7 +338,7 @@
    "file": "cards/wands-02.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 459
+   "kb": 455
   },
   {
    "slug": "wands-03",
@@ -352,7 +352,7 @@
    "file": "cards/wands-03.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 462
+   "kb": 458
   },
   {
    "slug": "wands-04",
@@ -366,7 +366,7 @@
    "file": "cards/wands-04.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 484
+   "kb": 509
   },
   {
    "slug": "wands-05",
@@ -380,7 +380,7 @@
    "file": "cards/wands-05.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 496
+   "kb": 492
   },
   {
    "slug": "wands-06",

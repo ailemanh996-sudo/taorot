@@ -1,6 +1,6 @@
 {
  "_note": "Vùng nội dung riêng của từng lá, dán lên khung chuẩn. Đo từ bản đồ khác biệt + check_card.py.",
- "_history": "title mở rộng 262,591 -> 190,670 vì chữ THE CHARIOT bắt đầu ở x=230 (bị cụt mất chữ đầu) | nới tiếp 190->175 vì THE HIGH PRIESTESS rộng 488px (x=181)",
+ "_history": "title mở rộng 262,591 -> 190,670 vì chữ THE CHARIOT bắt đầu ở x=230 (bị cụt mất chữ đầu) | nới tiếp 190->175 vì THE HIGH PRIESTESS rộng 488px (x=181) | nới hộp tên = toàn bộ dải trong (80..770 x 1045..1245): model không thể vẽ lại dải hoạ tiết giống hệt nhau, nên thay vì dán một ô nhỏ (lộ hình chữ nhật), lấy cả dải từ lá nguồn và đẩy đường nối ra mép trong khung vàng - nơi có đường viền tự nhiên che khuất",
  "panel": [
   106,
   120,
@@ -14,10 +14,10 @@
   115
  ],
  "title": [
-  175,
-  1080,
-  500,
-  165
+  80,
+  1045,
+  690,
+  200
  ],
  "feather": 12,
  "edge_guard": 18,

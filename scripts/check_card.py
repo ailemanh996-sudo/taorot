@@ -26,12 +26,13 @@ TITLE_SCAN = (60, 1095, 730, 145)  # chỉ dải chữ, để đo bbox chữ (tr
 
 
 def prep(src, dst, W, H):
+    """Đưa ảnh thô về đúng khung (W,H); trả về tỉ lệ gốc để cảnh báo lệch."""
     cmd = im() + [str(src)]
     wh = run(["identify", "-format", "%wx%h", str(src)]).stdout.strip()
     if run(im() + [str(src), "-fuzz", "8%", "-trim", "-format", "%wx%h", "info:"]).stdout.strip() != wh:
         cmd += ["-fuzz", "8%", "-trim", "+repage"]
-    cmd += ["-strip", "-colorspace", "sRGB", "-resize", f"{W}x{H}^",
-            "-gravity", "center", "-extent", f"{W}x{H}", str(dst)]
+    cmd += ["-strip", "-colorspace", "sRGB", "-resize", f"{W}x",
+            "-gravity", "center", "-background", "#e8dcc0", "-extent", f"{W}x{H}", str(dst)]
     run(cmd)
     return dst
 
@@ -146,10 +147,12 @@ def main():
         else:
             files.append(p)
 
-    print(f"{'ảnh':<28}{'frame':>8}{'band':>8}   chữ tên (x,y,w,h)        khớp hộp?")
+    print(f"{'ảnh':<22}{'tỉ lệ':>7}{'frame':>8}{'band':>8}   chữ tên (x,y,w,h)        khớp hộp?")
     print("-" * 88)
     results = []
     for f in files:
+        ow, oh = (int(v) for v in run(["identify", "-format", "%w %h", str(f)]).stdout.split())
+        ratio = ow / oh
         prep(f, tmp / "s.png", W, H)
         colormatch(tmp / "s.png", tmp / "m.png", base, frame_region(W, H, panel))
         fr = rmse(*(crop(x, tmp / f"c{i}.png", frame_region(W, H, panel))
@@ -159,11 +162,12 @@ def main():
         tx, ty, tw, th = panel["title"]
         fits = bb is not None and bb[0] >= tx and bb[0] + bb[2] <= tx + tw \
             and bb[1] >= ty and bb[1] + bb[3] <= ty + th
-        print(f"{f.stem:<28}{fr:8.4f}{bd:8.4f}   "
+        rflag = f"{ratio:.3f}{'!' if abs(ratio - W / H) > 0.01 else ' '}"
+        print(f"{f.stem:<22}{rflag:>7}{fr:8.4f}{bd:8.4f}   "
               f"{str(bb) if bb else '(không thấy)':<24}  {'OK' if fits else '← VƯỢT HỘP'}")
         results.append((f, fr, bd, fits))
     print("-" * 88)
-    print("khung khớp < 0.02 · dải tên khớp < 0.05 · chữ phải nằm gọn trong hộp")
+    print(f"tỉ lệ chuẩn {W/H:.3f} (! = lệch, cần tạo lại) · khung < 0.02 · dải tên < 0.05 · chữ nằm gọn trong hộp")
     ok = [r for r in results if r[3]]
     if len(ok) > 1:
         best = min(ok, key=lambda r: r[1] + r[2])
