@@ -338,7 +338,7 @@
    "file": "cards/wands-02.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 468
+   "kb": 459
   },
   {
    "slug": "wands-03",
@@ -352,7 +352,7 @@
    "file": "cards/wands-03.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 440
+   "kb": 433
   },
   {
    "slug": "wands-04",
@@ -366,7 +366,7 @@
    "file": "cards/wands-04.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 484
+   "kb": 478
   },
   {
    "slug": "wands-05",
@@ -394,7 +394,7 @@
    "file": "cards/wands-06.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 448
+   "kb": 464
   },
   {
    "slug": "wands-07",
@@ -422,7 +422,7 @@
    "file": "cards/wands-08.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 451
+   "kb": 434
   },
   {
    "slug": "wands-09",
@@ -431,12 +431,12 @@
    "groupLabel": "Wands",
    "emblem": "nine wands in a rampart row",
    "title": "NINE OF WANDS",
-   "scene": "a wary sentinel with a bandaged head holding one wand, eight wands planted upright in a row before him",
+   "scene": "a watchful bare-chested sentinel with a linen band bound round his brow, standing weary but unbowed and holding one wand, eight wands planted upright in a straight row BEHIND him against open sky, his body standing in front of the row",
    "femme": false,
    "file": "cards/wands-09.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 446
+   "kb": 450
   },
   {
    "slug": "wands-10",

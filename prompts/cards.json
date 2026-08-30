@@ -17,7 +17,8 @@
    "title": "THE FOOL",
    "femme": true,
    "count": null,
-   "scene": "a nude young woman wanderer, a long silk scarf slipping off one shoulder and streaming behind her, a white rose lifted in one hand and her eyes lowered to look at the rose, her bare back and hip caught in the morning light, stepping lightly toward a cliff edge, a small white dog leaping at her heel, distant mountains under a golden morning sun"
+   "scene": "a nude young woman wanderer, a long silk scarf slipping off one shoulder and streaming behind her, a white rose lifted in one hand and her eyes lowered to look at the rose, her bare back and hip caught in the morning light, stepping lightly toward a cliff edge, a small white dog leaping at her heel, distant mountains under a golden morning sun",
+   "hair": "loose honey-blonde waves to her shoulder blades, wind-tossed, a few strands caught across her lips"
   },
   {
    "n": "I",
@@ -31,7 +32,8 @@
     "obj": "suit objects on the altar",
     "layout": "exactly four objects, one of each: one cup, one sword, one wand, one coin — all four resting on the altar table, all four wholly visible, no duplicates, nothing else on the table"
    },
-   "scene": "a nude young woman magician, bare torso with a length of silk slung low across her hips, one hand raising a wand to the sky and the other pointing down to the earth, the altar table before her laid with a cup, a sword, a wand and a pentacle, a rose garden behind her"
+   "scene": "a nude young woman magician, bare torso with a length of silk slung low across her hips, one hand raising a wand to the sky and the other pointing down to the earth, the altar table before her laid with a cup, a sword, a wand and a pentacle, a rose garden behind her",
+   "hair": "very long jet-black hair, dead straight, parted in the centre and falling past her waist like a dark curtain"
   },
   {
    "n": "II",
@@ -41,7 +43,8 @@
    "title": "THE HIGH PRIESTESS",
    "femme": true,
    "count": null,
-   "scene": "a serene nude priestess, bare shoulders and the soft line of her breasts veiled only by a drift of sheer gauze, seated between two stone pillars, a scroll of mystery resting in her lap, a silver crescent moon at her feet"
+   "scene": "a serene nude priestess, bare shoulders and the soft line of her breasts veiled only by a drift of sheer gauze, seated between two stone pillars, a scroll of mystery resting in her lap, a silver crescent moon at her feet",
+   "hair": "a heavy fall of deep auburn hair with a slight natural wave, worn loose beneath her veil down to her hips"
   },
   {
    "n": "III",
@@ -52,7 +55,8 @@
    "femme": true,
    "count": null,
    "scene": "a slender nude empress, one breast bared, a crown of flowers in loosened hair, reclining on a velvet throne amid ripe golden wheat and fruits, a heart-shaped shield of Venus leaning beside her",
-   "build": "slender and lithe — a narrow waist, long tapering limbs, a long neck, elegant elongated proportions, lean and graceful rather than heavy"
+   "build": "slender and lithe — a narrow waist, long tapering limbs, a long neck, elegant elongated proportions, lean and graceful rather than heavy",
+   "hair": "thick ripe-wheat blonde hair, loosely waved, spilling over both shoulders in soft ropey curls"
   },
   {
    "n": "IV",
@@ -82,7 +86,8 @@
    "title": "THE LOVERS",
    "femme": true,
    "count": null,
-   "scene": "a nude man and a nude woman standing hand in hand beneath a great winged angel, her body turned three-quarters toward the viewer with silk fallen to her hip and his hand at the small of her back, the tree of knowledge with a serpent behind her, the tree of flames behind him"
+   "scene": "a nude man and a nude woman standing hand in hand beneath a great winged angel, her body turned three-quarters toward the viewer with silk fallen to her hip and his hand at the small of her back, the tree of knowledge with a serpent behind her, the tree of flames behind him",
+   "hair": "warm chestnut hair gathered in a low knot at the nape with loose tendrils curling at the temples"
   },
   {
    "n": "VII",
@@ -92,7 +97,8 @@
    "title": "THE CHARIOT",
    "femme": true,
    "count": null,
-   "scene": "a heroic bare-shouldered woman charioteer in fine steel under a starry canopy, standing in a stone chariot between two sphinxes, a walled city behind her"
+   "scene": "a heroic bare-shouldered woman charioteer in fine steel under a starry canopy, standing in a stone chariot between two sphinxes, a walled city behind her",
+   "hair": "dark sable-brown hair bound in one thick braid lying over a bare shoulder"
   },
   {
    "n": "VIII",
@@ -102,7 +108,8 @@
    "title": "STRENGTH",
    "femme": true,
    "count": null,
-   "scene": "a nude woman garlanded with roses, one knee raised, leaning in close to calmly close the jaws of a great golden lion, her bare back arched and her hip lit by low sun, an infinity sign glowing above her head"
+   "scene": "a nude woman garlanded with roses, one knee raised, leaning in close to calmly close the jaws of a great golden lion, her bare back arched and her hip lit by low sun, an infinity sign glowing above her head",
+   "hair": "long burnished-copper hair in loose romantic waves, a lion-coloured mane down her back"
   },
   {
    "n": "IX",
@@ -112,7 +119,8 @@
    "title": "THE HERMIT",
    "femme": true,
    "count": null,
-   "scene": "a hooded hermit in a gray cloak on a snowy peak holding up a lantern with a six-pointed star inside"
+   "scene": "a hooded hermit in a gray cloak on a snowy peak holding up a lantern with a six-pointed star inside",
+   "hair": "silver-ash hair, long and softly waved, escaping from under her hood"
   },
   {
    "n": "X",
@@ -140,7 +148,8 @@
     "obj": "sword",
     "layout": "exactly one sword, held upright in her left hand; no other blade on the card"
    },
-   "scene": "a statuesque bare-shouldered queen, silk sliding off one shoulder to the curve of her breast, a sword upright in one hand and balanced scales in the other, seated on a stone throne between pillars"
+   "scene": "a statuesque bare-shouldered queen, silk sliding off one shoulder to the curve of her breast, a sword upright in one hand and balanced scales in the other, seated on a stone throne between pillars",
+   "hair": "sleek raven-black hair drawn back severely from the face and falling in one straight sheet to her waist"
   },
   {
    "n": "XII",
@@ -174,7 +183,8 @@
     "obj": "chalices",
     "layout": "exactly two chalices, one in each hand, both bowls fully visible and un-occluded"
    },
-   "scene": "a graceful winged adult figure with long loosened hair, wearing a sheer antique drape, standing in a THREE-QUARTER VIEW with her body turned toward the viewer, one knee bent with one foot on the rock and the other in the pool, her arms extended to either side pouring water between two golden chalices, irises blooming, warm sepia and ochre light"
+   "scene": "a graceful winged adult figure with long loosened hair, wearing a sheer antique drape, standing in a THREE-QUARTER VIEW with her body turned toward the viewer, one knee bent with one foot on the rock and the other in the pool, her arms extended to either side pouring water between two golden chalices, irises blooming, warm sepia and ochre light",
+   "hair": "pale ash-blonde hair, long and fine, falling straight down her back with a faint golden sheen"
   },
   {
    "n": "XV",
@@ -184,7 +194,8 @@
    "title": "THE DEVIL",
    "femme": true,
    "count": null,
-   "scene": "a horned winged devil on a dark pedestal raising one hand and a torch; beside him a nude woman arched against the pedestal, her head tipped back and chains loose at her throat, and a nude man slumped at her side, a dark cave around them"
+   "scene": "a horned winged devil on a dark pedestal raising one hand and a torch; beside him a nude woman arched against the pedestal, her head tipped back and chains loose at her throat, and a nude man slumped at her side, a dark cave around them",
+   "hair": "tangled black hair streaked deep wine-red, wild and loose past her shoulders"
   },
   {
    "n": "XVI",
@@ -194,7 +205,8 @@
    "title": "THE TOWER",
    "femme": true,
    "count": null,
-   "scene": "a tall stone tower struck by lightning, its crown toppling, flames from the windows, a nude woman and a nude man falling headfirst through storm and ash, her body arched and lit by the lightning"
+   "scene": "a tall stone tower struck by lightning, its crown toppling, flames from the windows, a nude woman and a nude man falling headfirst through storm and ash, her body arched and lit by the lightning",
+   "hair": "long storm-dark brown hair blown out horizontally, streaming loose in the blast"
   },
   {
    "n": "XVII",
@@ -208,7 +220,8 @@
     "obj": "jugs",
     "layout": "exactly two jugs, one in each hand, both fully visible"
    },
-   "scene": "a nude woman standing waist-deep in a clear pool at night, her body arched back and turned three-quarters toward the viewer, wet hair falling down her back, both arms raised pouring water from two jugs, one knee lifted, a great eight-pointed star and seven smaller stars above"
+   "scene": "a nude woman standing waist-deep in a clear pool at night, her body arched back and turned three-quarters toward the viewer, wet hair falling down her back, both arms raised pouring water from two jugs, one knee lifted, a great eight-pointed star and seven smaller stars above",
+   "hair": "very long pale-gold hair, wet and sleek, clinging down her back to her hips"
   },
   {
    "n": "XVIII",
@@ -220,7 +233,8 @@
    "count": null,
    "scene": "a pale moon with a serene face dropping dew, two towers and a winding path, a nude water nymph rising from the dark pool with water streaming over her bare shoulders, a wolf and a dog howling, a crayfish in the water",
    "build": "slender and lithe — a narrow waist, long tapering limbs, a long neck, elegant elongated proportions, lean and graceful rather than heavy",
-   "allure": "Raise the allure further: an unmistakably inviting presence. She holds a slow sidelong glance on the viewer, lips softly parted, the body turned to display the long line from shoulder to waist to hip, silk slipping as though about to fall, one hand lingering along her own throat, collarbone or thigh. Warm, sensual and inviting — never crude, never posed like a fashion photograph."
+   "allure": "Raise the allure further: an unmistakably inviting presence. She holds a slow sidelong glance on the viewer, lips softly parted, the body turned to display the long line from shoulder to waist to hip, silk slipping as though about to fall, one hand lingering along her own throat, collarbone or thigh. Warm, sensual and inviting — never crude, never posed like a fashion photograph.",
+   "hair": "long ink-blue-black hair with a cold sheen, worn loose and dripping wet over one shoulder"
   },
   {
    "n": "XIX",
@@ -232,7 +246,8 @@
    "count": null,
    "scene": "a joyful nude young woman with a wreath of red flowers riding a calm white horse, her bare torso turned toward the light, a red banner streaming, a radiant sun with a gentle face, a low sunflower wall",
    "build": "slender and lithe — a narrow waist, long tapering limbs, a long neck, elegant elongated proportions, lean and graceful rather than heavy",
-   "allure": "Raise the allure further: an unmistakably inviting presence. She holds a slow sidelong glance on the viewer, lips softly parted, the body turned to display the long line from shoulder to waist to hip, silk slipping as though about to fall, one hand lingering along her own throat, collarbone or thigh. Warm, sensual and inviting — never crude, never posed like a fashion photograph."
+   "allure": "Raise the allure further: an unmistakably inviting presence. She holds a slow sidelong glance on the viewer, lips softly parted, the body turned to display the long line from shoulder to waist to hip, silk slipping as though about to fall, one hand lingering along her own throat, collarbone or thigh. Warm, sensual and inviting — never crude, never posed like a fashion photograph.",
+   "hair": "bright sunflower-blonde hair, loosely curled, catching the light like a halo"
   },
   {
    "n": "XX",
@@ -242,7 +257,8 @@
    "title": "JUDGEMENT",
    "femme": true,
    "count": null,
-   "scene": "a blue-robed angel blowing a great trumpet with a white banner; below, on a calm sea, a nude woman rising from a coffin with her arms open and her body turned to the light, beside a nude man and a child"
+   "scene": "a blue-robed angel blowing a great trumpet with a white banner; below, on a calm sea, a nude woman rising from a coffin with her arms open and her body turned to the light, beside a nude man and a child",
+   "hair": "dark honey hair in thick loose waves down her back, stirred by the wind"
   },
   {
    "n": "XXI",
@@ -258,7 +274,8 @@
    },
    "scene": "a graceful adult woman dancer posed in a sinuous S-curve, one hip thrust out and one knee lifted, her body arched with the head tipped back and her shoulders and back bare, a flowing violet scarf swirling low around her hips and drifting behind her, one slim wand held out in each hand, dancing within a great oval laurel wreath, an angel, an eagle, a lion and a bull at the corners",
    "build": "slender and lithe — a narrow waist, long tapering limbs, a long neck, elegant elongated proportions, lean and graceful rather than heavy",
-   "allure": "Raise the allure further: an unmistakably inviting presence. She holds a slow sidelong glance on the viewer, lips softly parted, the body turned to display the long line from shoulder to waist to hip, silk slipping as though about to fall, one hand lingering along her own throat, collarbone or thigh. Warm, sensual and inviting — never crude, never posed like a fashion photograph."
+   "allure": "Raise the allure further: an unmistakably inviting presence. She holds a slow sidelong glance on the viewer, lips softly parted, the body turned to display the long line from shoulder to waist to hip, silk slipping as though about to fall, one hand lingering along her own throat, collarbone or thigh. Warm, sensual and inviting — never crude, never posed like a fashion photograph.",
+   "hair": "long dark-chestnut hair, loose with a slight wave, swirling as she dances"
   },
   {
    "n": "A",
@@ -286,7 +303,8 @@
     "obj": "wands",
     "layout": "exactly two wands: one held upright in her right hand, one mounted upright on the stone battlement to her left — 1 + 1 = 2; both shafts complete from base to tip, they do not cross"
    },
-   "scene": "a bare-shouldered noblewoman on a battlement, sheer silk slipping from one shoulder, a globe of the world resting in one palm, one wand upright in her other hand, the second wand mounted on the wall behind her"
+   "scene": "a bare-shouldered noblewoman on a battlement, sheer silk slipping from one shoulder, a globe of the world resting in one palm, one wand upright in her other hand, the second wand mounted on the wall behind her",
+   "hair": "deep auburn hair in long loose waves over one shoulder, held by a thin gold circlet"
   },
   {
    "n": "3",
@@ -298,7 +316,7 @@
    "count": {
     "n": 3,
     "obj": "wands",
-    "layout": "exactly three wands planted upright in one straight diagonal row in front of the figure, evenly spaced, all three tips clear of the horizon, none overlapping — count them left to right: 1, 2, 3"
+    "layout": "exactly three wands planted upright in one straight diagonal row in front of the figure, evenly spaced, standing clear of his robe and his body, all three tips clear of the horizon, none overlapping — count them left to right: 1, 2, 3"
    },
    "scene": "a robed merchant seen from behind on a cliff, three staves planted in a row before him, sailing ships on a golden sea"
   },
@@ -312,9 +330,10 @@
    "count": {
     "n": 4,
     "obj": "wands",
-    "layout": "exactly four wands as the four corner posts of a canopy — two on the left, two on the right — 2 + 2 = 4; all four shafts fully visible from ground to tip, their tops joined by one flower garland"
+    "layout": "exactly four wands as the four corner posts of a canopy — two on the left, two on the right — 2 + 2 = 4; draw the two rear posts slightly taller than the two front posts so no post is hidden behind another; all four shafts fully visible from ground to tip, their tops joined by one flower garland"
    },
-   "scene": "four garlanded wands forming a festive canopy, a graceful couple dancing beneath it, she bare-shouldered in slipping silk with his hand at her waist, a manor beyond"
+   "scene": "four garlanded wands forming a festive canopy, a graceful couple dancing beneath it, she bare-shouldered in slipping silk with his hand at her waist, a manor beyond",
+   "hair": "blue-black hair piled high in a braided crown with soft curls escaping at the nape"
   },
   {
    "n": "5",
@@ -340,9 +359,10 @@
    "count": {
     "n": 6,
     "obj": "wands",
-    "layout": "exactly six wands: one laurel-crowned wand raised in the heroine's hand plus five held by the five followers behind her — 1 + 5 = 6; all six upright and separately countable"
+    "layout": "exactly six wands: one laurel-crowned wand raised in the heroine's hand plus five held by the five followers behind her — 1 + 5 = 6; each follower holds their wand upright and well above shoulder height so all five are separately countable against the sky, no wand resting on a shoulder"
    },
-   "scene": "a nude victorious woman on a white horse, hair loose over one bare shoulder, a laurel wreath on her brow, one crowned wand raised, five admirers behind her each holding one wand"
+   "scene": "a nude victorious woman on a white horse, hair loose over one bare shoulder, a laurel wreath on her brow, one crowned wand raised, five admirers behind her each holding one wand",
+   "hair": "honey-gold hair loose and wind-blown down her back in long rippling waves"
   },
   {
    "n": "7",
@@ -382,9 +402,9 @@
    "count": {
     "n": 9,
     "obj": "wands",
-    "layout": "exactly nine wands: eight planted upright in one straight palisade row behind him, evenly spaced, plus the one he holds — 8 + 1 = 9; all nine countable against open sky"
+    "layout": "exactly nine wands: eight planted upright in one straight palisade row BEHIND him, evenly spaced and clear of his body, plus the one he holds in front of him — 8 + 1 = 9; all nine countable against open sky"
    },
-   "scene": "a wary sentinel with a bandaged head holding one wand, eight wands planted upright in a row before him"
+   "scene": "a watchful bare-chested sentinel with a linen band bound round his brow, standing weary but unbowed and holding one wand, eight wands planted upright in a straight row BEHIND him against open sky, his body standing in front of the row"
   },
   {
    "n": "10",
@@ -412,7 +432,8 @@
     "obj": "wand",
     "layout": "exactly one living wand; no second staff, no decorative staffs in the dunes"
    },
-   "scene": "a graceful young woman page in a flowing open robe sliding off one shoulder, holding one living wand, desert dunes and pyramids behind her"
+   "scene": "a graceful young woman page in a flowing open robe sliding off one shoulder, holding one living wand, desert dunes and pyramids behind her",
+   "hair": "short tousled auburn hair cropped at the jaw, a boyish page's cut"
   },
   {
    "n": "N",
@@ -440,7 +461,8 @@
     "obj": "wand",
     "layout": "exactly one sunflower wand; no other staff"
    },
-   "scene": "a radiant nude queen with dark loosened hair on a lion-carved throne, one breast bared, one sunflower wand in her hand, a black cat at her feet"
+   "scene": "a radiant nude queen with dark loosened hair on a lion-carved throne, one breast bared, one sunflower wand in her hand, a black cat at her feet",
+   "hair": "a great mane of dark russet hair, thickly waved, falling past her waist"
   },
   {
    "n": "K",
@@ -482,7 +504,8 @@
     "obj": "chalices",
     "layout": "exactly two chalices, one raised in each lover's hand, one on the left and one on the right, both bowls fully visible and not overlapping — no third cup"
    },
-   "scene": "a nude young woman and a nude young man facing one another, her body turned three-quarters toward the viewer with one arm across her breast, each raising one chalice in a toast, a caduceus with a lion head above them"
+   "scene": "a nude young woman and a nude young man facing one another, her body turned three-quarters toward the viewer with one arm across her breast, each raising one chalice in a toast, a caduceus with a lion head above them",
+   "hair": "soft ash-brown hair worn in a low braided loop with loose curls at the ears"
   },
   {
    "n": "3",
@@ -496,7 +519,8 @@
     "obj": "chalices",
     "layout": "exactly three chalices — one raised by each of the three maidens, three dancers and three cups, one per figure; all three bowls held above shoulder height and countable"
    },
-   "scene": "three nude maidens with flower wreaths dancing in a circle, their bodies turned to the light, each raising one chalice, fruits on the ground"
+   "scene": "three nude maidens with flower wreaths dancing in a circle, their bodies turned to the light, each raising one chalice, fruits on the ground",
+   "hair": "rich chocolate-brown hair in three long braids, one over each shoulder and one down the back"
   },
   {
    "n": "4",
@@ -538,7 +562,8 @@
     "obj": "chalices",
     "layout": "exactly six chalices, each filled with flowers: one being passed between their hands plus five standing in a row along the courtyard wall behind them — 1 + 5 = 6; all six bowls separate and countable"
    },
-   "scene": "two graceful young women in sheer summer dresses in an old courtyard garden, exchanging one flower-filled chalice, five more set along the wall behind them"
+   "scene": "two graceful young women in sheer summer dresses in an old courtyard garden, exchanging one flower-filled chalice, five more set along the wall behind them",
+   "hair": "pale gold hair in a high knot with ringlets tumbling down"
   },
   {
    "n": "7",
@@ -594,7 +619,8 @@
     "obj": "chalices",
     "layout": "exactly ten chalices along ONE rainbow arc — 4 on the left half, 4 on the right half, 2 at the apex — 4 + 4 + 2 = 10; evenly spaced against open sky, all ten bowls countable"
    },
-   "scene": "a blissful couple embracing in a meadow, she in slipping silk with one bare shoulder and the long line of her back to the light, his arms around her waist, ten chalices along a rainbow arc, a cottage and dancing children beyond"
+   "scene": "a blissful couple embracing in a meadow, she in slipping silk with one bare shoulder and the long line of her back to the light, his arms around her waist, ten chalices along a rainbow arc, a cottage and dancing children beyond",
+   "hair": "long warm-brown hair, softly waved and loose to the middle of her back"
   },
   {
    "n": "P",
@@ -608,7 +634,8 @@
     "obj": "chalice",
     "layout": "exactly one chalice; no other cup anywhere in the scene"
    },
-   "scene": "a graceful young woman page by the sea in an open robe sliding off one shoulder, holding one chalice from which a curious fish looks out"
+   "scene": "a graceful young woman page by the sea in an open robe sliding off one shoulder, holding one chalice from which a curious fish looks out",
+   "hair": "dark hair in a single side braid over one shoulder, the rest loose and wavy"
   },
   {
    "n": "N",
@@ -636,7 +663,8 @@
     "obj": "chalice",
     "layout": "exactly one lidded golden chalice; no other cup"
    },
-   "scene": "a gentle nude queen on a shell throne by the sea, wet hair over one bare shoulder, cradling one lidded golden chalice in her lap, sea foam behind her"
+   "scene": "a gentle nude queen on a shell throne by the sea, wet hair over one bare shoulder, cradling one lidded golden chalice in her lap, sea foam behind her",
+   "hair": "long silver-blonde hair, very straight and fine, falling to her hips"
   },
   {
    "n": "K",
@@ -678,7 +706,8 @@
     "obj": "swords",
     "layout": "exactly two long blades forming a single X across her chest, one over each shoulder; no third blade, no dagger at her belt"
    },
-   "scene": "a blindfolded woman in a sheer robe that clings to her bare body, seated by the sea, two swords crossed over her chest, the moon rising"
+   "scene": "a blindfolded woman in a sheer robe that clings to her bare body, seated by the sea, two swords crossed over her chest, the moon rising",
+   "hair": "jet-black hair drawn into a tight high bun, severe and smooth"
   },
   {
    "n": "3",
@@ -734,7 +763,8 @@
     "obj": "swords",
     "layout": "exactly six swords standing upright in the boat — three on the left of the passengers and three on the right, 3 + 3 = 6; evenly spaced, all six hilts above the gunwale, none crossing the figures"
    },
-   "scene": "a cloaked woman and a child being poled across a river by a ferryman, six swords upright along the boat"
+   "scene": "a cloaked woman and a child being poled across a river by a ferryman, six swords upright along the boat",
+   "hair": "light ash-brown hair in a loose low braid"
   },
   {
    "n": "7",
@@ -762,7 +792,8 @@
     "obj": "swords",
     "layout": "exactly eight swords planted in the ground around her at even intervals, like the hours of a clock — three in front of her, one at each side, three behind her, 3 + 2 + 3 = 8; all eight hilts visible above ground, evenly spaced, forming one open circle"
    },
-   "scene": "a blindfolded woman in a flowing gown loosened from one shoulder and loosely bound, standing in a ring of eight swords, a fortress on the cliff behind"
+   "scene": "a blindfolded woman in a flowing gown loosened from one shoulder and loosely bound, standing in a ring of eight swords, a fortress on the cliff behind",
+   "hair": "dark brown hair half-bound with a ribbon, the rest loose and tangled"
   },
   {
    "n": "9",
@@ -776,7 +807,8 @@
     "obj": "swords",
     "layout": "exactly nine swords mounted on the dark wall in three rows of three — 3 + 3 + 3 = 9; a neat 3 x 3 grid of horizontal blades, all nine countable, none hidden behind her head or hands"
    },
-   "scene": "a distressed woman sitting up in bed at night, her bare shoulder and back above the sheet, face in her hands, nine swords mounted in rows on the dark wall"
+   "scene": "a distressed woman sitting up in bed at night, her bare shoulder and back above the sheet, face in her hands, nine swords mounted in rows on the dark wall",
+   "hair": "long black hair spread loose across the pillow, unbound and wild"
   },
   {
    "n": "10",
@@ -804,7 +836,8 @@
     "obj": "sword",
     "layout": "exactly one sword, gripped in both hands; no dagger, no second blade"
    },
-   "scene": "an alert young woman page in a flowing cape on a windy mound holding one raised sword with both hands"
+   "scene": "an alert young woman page in a flowing cape on a windy mound holding one raised sword with both hands",
+   "hair": "windswept honey-brown hair cut short at the shoulders"
   },
   {
    "n": "N",
@@ -832,7 +865,8 @@
     "obj": "sword",
     "layout": "exactly one upright sword; no other blade"
    },
-   "scene": "a stern dignified queen with flowing hair, one shoulder and the curve of her breast left bare by her loosened gown, seated on a cherub-carved throne above a sea of clouds, one upright sword in her hand"
+   "scene": "a stern dignified queen with flowing hair, one shoulder and the curve of her breast left bare by her loosened gown, seated on a cherub-carved throne above a sea of clouds, one upright sword in her hand",
+   "hair": "pale silver-grey hair piled high in an elaborate coiled crown"
   },
   {
    "n": "K",
@@ -888,7 +922,8 @@
     "obj": "pentacle coins",
     "layout": "exactly three coins set into the stone arch above the sculptor — one at the apex and two at the springing points, 1 + 2 = 3; all three discs fully visible, none hidden by the arch's shadow"
    },
-   "scene": "a young woman sculptor in an open workshop apron slipping off one shoulder, hair loose, chiseling a column, a monk and an architect commenting, three coins set in the arch above"
+   "scene": "a young woman sculptor in an open workshop apron slipping off one shoulder, hair loose, chiseling a column, a monk and an architect commenting, three coins set in the arch above",
+   "hair": "dark auburn hair in a braided crown with a few curls at the forehead"
   },
   {
    "n": "4",
@@ -916,7 +951,8 @@
     "obj": "pentacle coins",
     "layout": "exactly five glowing coins set in the tall stained-glass window in a quincunx — one at the top center, two on the middle row, two on the bottom row, 1 + 2 + 2 = 5; all five discs separate and countable"
    },
-   "scene": "two ragged beggars passing a glowing church in the snow, five coins shining in the tall stained-glass window"
+   "scene": "two ragged beggars passing a glowing church in the snow, five coins shining in the tall stained-glass window",
+   "hair": "long unkempt dark-brown hair hanging loose, matted with snow"
   },
   {
    "n": "6",
@@ -958,7 +994,8 @@
     "obj": "pentacle coins",
     "layout": "exactly eight finished coins in ONE straight row of 8 along the front edge of the bench, evenly spaced and all eight countable; the blank stone disc she is chiseling is unfinished and bears no star, so it does NOT count and must not look like a coin"
    },
-   "scene": "a young woman apprentice in an apron slipping off one shoulder, sleeves rolled and hair loose, chiseling a plain stone disc at a bench, eight coins in one row along the bench edge, a town through the window"
+   "scene": "a young woman apprentice in an apron slipping off one shoulder, sleeves rolled and hair loose, chiseling a plain stone disc at a bench, eight coins in one row along the bench edge, a town through the window",
+   "hair": "chestnut hair in a neat low chignon with a curl at each temple"
   },
   {
    "n": "9",
@@ -972,7 +1009,8 @@
     "obj": "pentacle coins",
     "layout": "exactly nine coins fixed to the arbor beam in ONE row of 9, evenly spaced against open sky, all nine fully visible, none hidden by leaves or by her body — count them left to right: 1 to 9"
    },
-   "scene": "an elegant woman in a sheer flowing gown that clings to breast and hip, a falcon on her gloved hand, her other hand touching ripe grapes, nine coins along the arbor beam, a snail at her feet"
+   "scene": "an elegant woman in a sheer flowing gown that clings to breast and hip, a falcon on her gloved hand, her other hand touching ripe grapes, nine coins along the arbor beam, a snail at her feet",
+   "hair": "long vine-dark hair, loosely waved, bound back with a ribbon"
   },
   {
    "n": "10",
@@ -986,7 +1024,8 @@
     "obj": "pentacle coins",
     "layout": "exactly ten coins on the wall in a Tree-of-Life pyramid — 4 on the bottom row, 3 above them, 2 above those, 1 at the apex, 4 + 3 + 2 + 1 = 10; all ten discs countable, none hidden behind the figures"
    },
-   "scene": "a family hall — a patriarch seated, a couple standing with his hand at her waist, a child playing with two dogs — ten coins in a pyramid emblem on the wall behind them"
+   "scene": "a family hall — a patriarch seated, a couple standing with his hand at her waist, a child playing with two dogs — ten coins in a pyramid emblem on the wall behind them",
+   "hair": "warm brown hair in a thick braid coiled at the nape"
   },
   {
    "n": "P",
@@ -1000,7 +1039,8 @@
     "obj": "pentacle coin",
     "layout": "exactly one large coin, held in both hands; no other coin anywhere"
    },
-   "scene": "a studious young woman page in an open robe studying one large pentacle coin held in both hands, a plowed field behind her"
+   "scene": "a studious young woman page in an open robe studying one large pentacle coin held in both hands, a plowed field behind her",
+   "hair": "dark blonde hair falling loose and straight to the shoulders"
   },
   {
    "n": "N",
@@ -1028,7 +1068,8 @@
     "obj": "pentacle coin",
     "layout": "exactly one coin, resting in her lap; no other coin"
    },
-   "scene": "a warm nude queen with a flower crown on a goat-carved throne, one breast bared, one pentacle resting in her lap, a rabbit in the garden"
+   "scene": "a warm nude queen with a flower crown on a goat-carved throne, one breast bared, one pentacle resting in her lap, a rabbit in the garden",
+   "hair": "deep brown hair with a ruddy sheen, thickly curled and falling to her waist"
   },
   {
    "n": "K",
