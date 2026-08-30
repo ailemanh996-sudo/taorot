@@ -716,7 +716,7 @@
    "file": "cards/swords-ace.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 420
+   "kb": 426
   },
   {
    "slug": "swords-02",
@@ -730,7 +730,7 @@
    "file": "cards/swords-02.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 464
+   "kb": 462
   },
   {
    "slug": "swords-03",
@@ -744,7 +744,7 @@
    "file": "cards/swords-03.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 436
+   "kb": 442
   },
   {
    "slug": "swords-04",
@@ -753,12 +753,12 @@
    "groupLabel": "Swords",
    "emblem": "three swords on a wall, one below",
    "title": "FOUR OF SWORDS",
-   "scene": "a knight in armor lying at rest on a stone tomb in a chapel, three swords on the wall and one below, a stained-glass window",
-   "femme": false,
+   "scene": "an adult woman lying at rest on a stone tomb in a chapel, her shoulders bare above a loosened gown and her armor set aside beside her, three swords mounted on the wall above her and one lying beneath her, a stained-glass window behind",
+   "femme": true,
    "file": "cards/swords-04.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 440
+   "kb": 462
   },
   {
    "slug": "swords-05",
@@ -772,7 +772,7 @@
    "file": "cards/swords-05.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 448
+   "kb": 479
   },
   {
    "slug": "swords-06",
@@ -800,7 +800,7 @@
    "file": "cards/swords-07.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 458
+   "kb": 470
   },
   {
    "slug": "swords-08",
@@ -814,7 +814,7 @@
    "file": "cards/swords-08.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 455
+   "kb": 447
   },
   {
    "slug": "swords-09",
@@ -828,7 +828,7 @@
    "file": "cards/swords-09.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 430
+   "kb": 425
   },
   {
    "slug": "swords-10",
@@ -842,7 +842,7 @@
    "file": "cards/swords-10.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 418
+   "kb": 433
   },
   {
    "slug": "swords-page",

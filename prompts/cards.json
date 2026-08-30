@@ -736,13 +736,14 @@
    "group": "swords",
    "emblem": "three swords on a wall, one below",
    "title": "FOUR OF SWORDS",
-   "femme": false,
+   "femme": true,
    "count": {
     "n": 4,
     "obj": "swords",
     "layout": "exactly four swords: three mounted horizontally on the wall above him, stacked in a row of 3, plus one lying flat on the tomb slab beneath him — 3 + 1 = 4; all four blades complete and countable"
    },
-   "scene": "a knight in armor lying at rest on a stone tomb in a chapel, three swords on the wall and one below, a stained-glass window"
+   "scene": "an adult woman lying at rest on a stone tomb in a chapel, her shoulders bare above a loosened gown and her armor set aside beside her, three swords mounted on the wall above her and one lying beneath her, a stained-glass window behind",
+   "hair": "long dark-auburn hair, unbound and loose, spread around her head and shoulders"
   },
   {
    "n": "5",
