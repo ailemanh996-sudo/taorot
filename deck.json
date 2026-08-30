@@ -571,12 +571,12 @@
    "groupLabel": "Cups",
    "emblem": "three spilled, two standing",
    "title": "FIVE OF CUPS",
-   "scene": "a grieving cloaked figure bowing by a river, three spilled chalices before him, two full ones standing behind",
-   "femme": false,
+   "scene": "a graceful adult woman in a dark cloak slipping off one bare shoulder, standing bowed with her back to the light by the river, three spilled chalices lying emptied and overturned in the foreground at her feet, two full chalices still standing upright on the bank behind her",
+   "femme": true,
    "file": "cards/cups-05.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 439
+   "kb": 428
   },
   {
    "slug": "cups-06",
@@ -627,12 +627,12 @@
    "groupLabel": "Cups",
    "emblem": "nine chalices in an arc",
    "title": "NINE OF CUPS",
-   "scene": "a content bare-chested merchant seated before nine chalices proudly arranged in a grid on a shelf",
-   "femme": false,
+   "scene": "a content adult woman with bare shoulders seated at a banquet table, silk slipping from one shoulder, before nine golden chalices proudly arranged in a neat grid on a shelf behind her",
+   "femme": true,
    "file": "cards/cups-09.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 460
+   "kb": 456
   },
   {
    "slug": "cups-10",
@@ -683,12 +683,12 @@
    "groupLabel": "Cups",
    "emblem": "a lidded chalice between waves",
    "title": "QUEEN OF CUPS",
-   "scene": "a gentle nude queen on a shell throne by the sea, wet hair over one bare shoulder, cradling one lidded golden chalice in her lap, sea foam behind her",
+   "scene": "a youthful adult queen seated on a shell throne at the water's edge, her shoulders bare beneath wet platinum-blonde hair, antique sea-green silk draping her hips and legs, holding one lidded golden chalice in her lap, sea foam and breaking waves behind her",
    "femme": true,
    "file": "cards/cups-queen.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 477
+   "kb": 466
   },
   {
    "slug": "cups-king",

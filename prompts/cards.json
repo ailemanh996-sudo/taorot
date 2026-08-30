@@ -545,13 +545,14 @@
    "group": "cups",
    "emblem": "three spilled, two standing",
    "title": "FIVE OF CUPS",
-   "femme": false,
+   "femme": true,
    "count": {
     "n": 5,
     "obj": "chalices",
     "layout": "exactly five chalices: three spilled and empty lying in the foreground plus two still upright and full standing on the bank behind him — 3 + 2 = 5; all five bowls countable, none hidden behind his cloak"
    },
-   "scene": "a grieving cloaked figure bowing by a river, three spilled chalices before him, two full ones standing behind"
+   "scene": "a graceful adult woman in a dark cloak slipping off one bare shoulder, standing bowed with her back to the light by the river, three spilled chalices lying emptied and overturned in the foreground at her feet, two full chalices still standing upright on the bank behind her",
+   "hair": "long mahogany hair, unbound and loose, falling down her back from under the hood"
   },
   {
    "n": "6",
@@ -602,13 +603,14 @@
    "group": "cups",
    "emblem": "nine chalices in an arc",
    "title": "NINE OF CUPS",
-   "femme": false,
+   "femme": true,
    "count": {
     "n": 9,
     "obj": "chalices",
     "layout": "exactly nine chalices on the shelf behind him as a neat 3 x 3 grid — three rows of three, 3 + 3 + 3 = 9; evenly spaced, all nine bowls fully visible"
    },
-   "scene": "a content bare-chested merchant seated before nine chalices proudly arranged in a grid on a shelf"
+   "scene": "a content adult woman with bare shoulders seated at a banquet table, silk slipping from one shoulder, before nine golden chalices proudly arranged in a neat grid on a shelf behind her",
+   "hair": "warm honey-brown hair in a loose knot at the nape with soft curls framing her face"
   },
   {
    "n": "10",
@@ -666,8 +668,10 @@
     "obj": "chalice",
     "layout": "exactly one lidded golden chalice; no other cup"
    },
-   "scene": "a gentle nude queen on a shell throne by the sea, wet hair over one bare shoulder, cradling one lidded golden chalice in her lap, sea foam behind her",
-   "hair": "long silver-blonde hair, very straight and fine, falling to her hips"
+   "scene": "a youthful adult queen seated on a shell throne at the water's edge, her shoulders bare beneath wet platinum-blonde hair, antique sea-green silk draping her hips and legs, holding one lidded golden chalice in her lap, sea foam and breaking waves behind her",
+   "hair": "long platinum-blonde hair, very straight and fine, falling to her hips, almost white-gold",
+   "build": "slender and lithe — a narrow waist, long tapering limbs, a long neck, elegant elongated proportions, lean and graceful rather than heavy",
+   "allure": "Raise the allure further: an unmistakably inviting presence. She holds a slow sidelong glance on the viewer, lips softly parted, the body turned to display the long line from shoulder to waist to hip, silk slipping as though about to fall, one hand lingering along her own throat, collarbone or thigh. Warm, sensual and inviting — never crude, never posed like a fashion photograph."
   },
   {
    "n": "K",
