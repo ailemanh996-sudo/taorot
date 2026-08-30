@@ -1,7 +1,7 @@
 {
  "deck": "Sensual Tarot",
  "total": 78,
- "done": 22,
+ "done": 31,
  "size": "848x1264",
  "cards": [
   {
@@ -321,7 +321,10 @@
    "title": "ACE OF WANDS",
    "scene": "a divine hand from a cloud offering a single living, sprouting wand, a rugged landscape and a distant castle below",
    "femme": false,
-   "file": null
+   "file": "cards/wands-ace.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 448
   },
   {
    "slug": "wands-02",
@@ -332,7 +335,10 @@
    "title": "TWO OF WANDS",
    "scene": "a bare-shouldered noblewoman on a battlement, sheer silk slipping from one shoulder, a globe of the world resting in one palm, one wand upright in her other hand, the second wand mounted on the wall behind her",
    "femme": true,
-   "file": null
+   "file": "cards/wands-02.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 468
   },
   {
    "slug": "wands-03",
@@ -343,7 +349,10 @@
    "title": "THREE OF WANDS",
    "scene": "a robed merchant seen from behind on a cliff, three staves planted in a row before him, sailing ships on a golden sea",
    "femme": false,
-   "file": null
+   "file": "cards/wands-03.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 440
   },
   {
    "slug": "wands-04",
@@ -354,7 +363,10 @@
    "title": "FOUR OF WANDS",
    "scene": "four garlanded wands forming a festive canopy, a graceful couple dancing beneath it, she bare-shouldered in slipping silk with his hand at her waist, a manor beyond",
    "femme": true,
-   "file": null
+   "file": "cards/wands-04.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 484
   },
   {
    "slug": "wands-05",
@@ -365,7 +377,10 @@
    "title": "FIVE OF WANDS",
    "scene": "five nude athletic youths, each holding one single staff, clashing them in a spirited mock battle",
    "femme": false,
-   "file": null
+   "file": "cards/wands-05.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 466
   },
   {
    "slug": "wands-06",
@@ -376,7 +391,10 @@
    "title": "SIX OF WANDS",
    "scene": "a nude victorious woman on a white horse, hair loose over one bare shoulder, a laurel wreath on her brow, one crowned wand raised, five admirers behind her each holding one wand",
    "femme": true,
-   "file": null
+   "file": "cards/wands-06.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 448
   },
   {
    "slug": "wands-07",
@@ -387,7 +405,10 @@
    "title": "SEVEN OF WANDS",
    "scene": "a bare-chested young man on a ridge gripping one wand, six rival wands rising from below the cliff edge",
    "femme": false,
-   "file": null
+   "file": "cards/wands-07.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 447
   },
   {
    "slug": "wands-08",
@@ -398,7 +419,10 @@
    "title": "EIGHT OF WANDS",
    "scene": "eight wands with leaf tips flying in one parallel diagonal row across an open sky toward a river town below",
    "femme": false,
-   "file": null
+   "file": "cards/wands-08.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 451
   },
   {
    "slug": "wands-09",
@@ -409,7 +433,10 @@
    "title": "NINE OF WANDS",
    "scene": "a wary sentinel with a bandaged head holding one wand, eight wands planted upright in a row before him",
    "femme": false,
-   "file": null
+   "file": "cards/wands-09.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 446
   },
   {
    "slug": "wands-10",
