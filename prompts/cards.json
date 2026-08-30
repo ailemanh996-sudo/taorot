@@ -303,7 +303,7 @@
     "obj": "wands",
     "layout": "exactly two wands: one held upright in her right hand, one mounted upright on the stone battlement to her left — 1 + 1 = 2; both shafts complete from base to tip, they do not cross"
    },
-   "scene": "a bare-shouldered noblewoman on a battlement, sheer silk slipping from one shoulder, a globe of the world resting in one palm, one wand upright in her other hand, the second wand mounted on the wall behind her",
+   "scene": "a bare-shouldered noblewoman on a battlement, sheer silk slipping from one shoulder, a globe of the world resting in one palm with her eyes lowered to look at the globe, one wand upright in her other hand, the second wand mounted on the wall behind her",
    "hair": "deep auburn hair in long loose waves over one shoulder, held by a thin gold circlet"
   },
   {
@@ -318,7 +318,7 @@
     "obj": "wands",
     "layout": "exactly three wands planted upright in one straight diagonal row in front of the figure, evenly spaced, standing clear of his robe and his body, all three tips clear of the horizon, none overlapping — count them left to right: 1, 2, 3"
    },
-   "scene": "a woman merchant in a slipping antique robe seen from behind on a cliff, her long bare back and one shoulder showing, three staves planted in a row before her, sailing ships on a golden sea",
+   "scene": "a woman merchant in a slipping antique robe seen from behind on a cliff, her long bare back and one shoulder showing, her face turned to look far out to sea, three staves planted upright in a row beside her, sailing ships on a golden sea",
    "hair": "warm mid-brown hair, loosely braided and pinned low, with soft curls framing her face and a few strands loose at the nape"
   },
   {
@@ -333,8 +333,10 @@
     "obj": "wands",
     "layout": "exactly four wands as the four corner posts of a canopy — two on the left, two on the right — 2 + 2 = 4; draw the two rear posts slightly taller than the two front posts so no post is hidden behind another; all four shafts fully visible from ground to tip, their tops joined by one flower garland"
    },
-   "scene": "four garlanded wands forming a festive canopy, a graceful couple dancing beneath it, she bare-shouldered in slipping silk with his hand at her waist, a manor beyond",
-   "hair": "blue-black hair piled high in a braided crown with soft curls escaping at the nape"
+   "scene": "four garlanded wands forming a festive canopy, a graceful couple dancing beneath it, she slender and bare-shouldered in slipping silk with his hand at her waist, a manor beyond",
+   "hair": "blue-black hair piled high in a braided crown with soft curls escaping at the nape",
+   "build": "slender and lithe — a narrow waist, long tapering limbs, a long neck, elegant elongated proportions, lean and graceful rather than heavy",
+   "allure": "Raise the allure further: an unmistakably inviting presence. She holds a slow sidelong glance on the viewer, lips softly parted, the body turned to display the long line from shoulder to waist to hip, silk slipping as though about to fall, one hand lingering along her own throat, collarbone or thigh. Warm, sensual and inviting — never crude, never posed like a fashion photograph."
   },
   {
    "n": "5",
@@ -354,7 +356,7 @@
    "n": "6",
    "slug": "wands-06",
    "group": "wands",
-   "emblem": "six wands, one crowned with laurel",
+   "emblem": "six slender wands standing side by side in one neat row, one of them crowned with a small laurel wreath — exactly six shafts, no more and no fewer",
    "title": "SIX OF WANDS",
    "femme": true,
    "count": {

@@ -333,12 +333,12 @@
    "groupLabel": "Wands",
    "emblem": "two crossed leafy wands",
    "title": "TWO OF WANDS",
-   "scene": "a bare-shouldered noblewoman on a battlement, sheer silk slipping from one shoulder, a globe of the world resting in one palm, one wand upright in her other hand, the second wand mounted on the wall behind her",
+   "scene": "a bare-shouldered noblewoman on a battlement, sheer silk slipping from one shoulder, a globe of the world resting in one palm with her eyes lowered to look at the globe, one wand upright in her other hand, the second wand mounted on the wall behind her",
    "femme": true,
    "file": "cards/wands-02.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 447
+   "kb": 469
   },
   {
    "slug": "wands-03",
@@ -347,12 +347,12 @@
    "groupLabel": "Wands",
    "emblem": "three leafy wands in a fan",
    "title": "THREE OF WANDS",
-   "scene": "a woman merchant in a slipping antique robe seen from behind on a cliff, her long bare back and one shoulder showing, three staves planted in a row before her, sailing ships on a golden sea",
+   "scene": "a woman merchant in a slipping antique robe seen from behind on a cliff, her long bare back and one shoulder showing, her face turned to look far out to sea, three staves planted upright in a row beside her, sailing ships on a golden sea",
    "femme": true,
    "file": "cards/wands-03.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 445
+   "kb": 456
   },
   {
    "slug": "wands-04",
@@ -361,12 +361,12 @@
    "groupLabel": "Wands",
    "emblem": "four wands with a garland",
    "title": "FOUR OF WANDS",
-   "scene": "four garlanded wands forming a festive canopy, a graceful couple dancing beneath it, she bare-shouldered in slipping silk with his hand at her waist, a manor beyond",
+   "scene": "four garlanded wands forming a festive canopy, a graceful couple dancing beneath it, she slender and bare-shouldered in slipping silk with his hand at her waist, a manor beyond",
    "femme": true,
    "file": "cards/wands-04.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 478
+   "kb": 490
   },
   {
    "slug": "wands-05",
@@ -387,14 +387,14 @@
    "n": "6",
    "group": "wands",
    "groupLabel": "Wands",
-   "emblem": "six wands, one crowned with laurel",
+   "emblem": "six slender wands standing side by side in one neat row, one of them crowned with a small laurel wreath — exactly six shafts, no more and no fewer",
    "title": "SIX OF WANDS",
    "scene": "a nude victorious woman on a white horse, hair loose over one bare shoulder, a laurel wreath on her brow, one crowned wand raised, five admirers behind her each holding one wand",
    "femme": true,
    "file": "cards/wands-06.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 464
+   "kb": 482
   },
   {
    "slug": "wands-07",
