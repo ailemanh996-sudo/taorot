@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sensual Tarot · 78 lá</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>SENSUAL TAROT</h1>
+    <p class="sub">78 lá · phôi + neo phong cách · 848×1264</p>
+  </div>
+  <div class="progress">
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="count"><b id="count-done">0</b> / <span id="count-total">78</span> lá đã tạo</div>
+  </div>
+</header>
+
+<nav id="filters">
+  <button class="tab active" data-group="all">Tất cả</button>
+  <button class="tab" data-group="major">Major Arcana</button>
+  <button class="tab" data-group="wands">Wands</button>
+  <button class="tab" data-group="cups">Cups</button>
+  <button class="tab" data-group="swords">Swords</button>
+  <button class="tab" data-group="pentacles">Pentacles</button>
+  <label class="chk"><input type="checkbox" id="only-missing"> Chỉ lá chưa tạo</label>
+  <input id="search" type="search" placeholder="Tìm tên lá / slug…">
+</nav>
+
+<main id="grid" class="grid"></main>
+<p id="empty" class="empty" hidden>Không có lá nào khớp bộ lọc.</p>
+
+<footer>
+  <span>Chạy <code>python3 scripts/build_gallery.py</code> sau khi thêm ảnh vào <code>cards/</code>.</span>
+</footer>
+
+<div id="lightbox" class="lightbox" hidden>
+  <button class="lb-close" id="lb-close" aria-label="đóng">✕</button>
+  <button class="lb-nav lb-prev" id="lb-prev" aria-label="trước">‹</button>
+  <button class="lb-nav lb-next" id="lb-next" aria-label="sau">›</button>
+  <div class="lb-body">
+    <div class="lb-img"><img id="lb-image" alt=""></div>
+    <div class="lb-meta">
+      <div class="lb-kicker" id="lb-kicker"></div>
+      <h2 id="lb-title"></h2>
+      <dl>
+        <dt>Emblem</dt><dd id="lb-emblem"></dd>
+        <dt>File</dt><dd id="lb-file"></dd>
+      </dl>
+      <p class="scene" id="lb-scene"></p>
+      <div class="lb-actions">
+        <button id="btn-prompt">Xem prompt</button>
+        <button id="btn-copy">Copy prompt</button>
+      </div>
+      <pre id="lb-prompt" hidden></pre>
+    </div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
