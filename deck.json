@@ -1,7 +1,7 @@
 {
  "deck": "Sensual Tarot",
  "total": 78,
- "done": 50,
+ "done": 57,
  "size": "848x1264",
  "cards": [
   {
@@ -683,12 +683,12 @@
    "groupLabel": "Cups",
    "emblem": "a lidded chalice between waves",
    "title": "QUEEN OF CUPS",
-   "scene": "a youthful adult queen seated on a shell throne at the water's edge, her shoulders bare beneath wet platinum-blonde hair, antique sea-green silk draping her hips and legs, holding one lidded golden chalice in her lap, sea foam and breaking waves behind her",
+   "scene": "a youthful adult queen seated on a shell throne at the water's edge, her shoulders bare beneath wet platinum-blonde hair, wearing a gown of antique WHITE SILK GAUZE so sheer and transparent that the light shines through it and the long line of her body reads clearly beneath, holding one lidded golden chalice in her lap, sea foam and breaking waves behind her",
    "femme": true,
    "file": "cards/cups-queen.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 466
+   "kb": 490
   },
   {
    "slug": "cups-king",
@@ -713,7 +713,10 @@
    "title": "ACE OF SWORDS",
    "scene": "a divine hand grasping one upright sword, a jeweled crown hovering at its tip, barren peaks below",
    "femme": false,
-   "file": null
+   "file": "cards/swords-ace.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 420
   },
   {
    "slug": "swords-02",
@@ -724,7 +727,10 @@
    "title": "TWO OF SWORDS",
    "scene": "a blindfolded woman in a sheer robe that clings to her bare body, seated by the sea, two swords crossed over her chest, the moon rising",
    "femme": true,
-   "file": null
+   "file": "cards/swords-02.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 464
   },
   {
    "slug": "swords-03",
@@ -735,7 +741,10 @@
    "title": "THREE OF SWORDS",
    "scene": "a large anatomical heart pierced by three swords, rain and storm clouds behind",
    "femme": false,
-   "file": null
+   "file": "cards/swords-03.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 436
   },
   {
    "slug": "swords-04",
@@ -746,7 +755,10 @@
    "title": "FOUR OF SWORDS",
    "scene": "a knight in armor lying at rest on a stone tomb in a chapel, three swords on the wall and one below, a stained-glass window",
    "femme": false,
-   "file": null
+   "file": "cards/swords-04.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 440
   },
   {
    "slug": "swords-05",
@@ -757,7 +769,10 @@
    "title": "FIVE OF SWORDS",
    "scene": "a smug victor gathering three swords on a windy shore, two defeated figures walking away, two swords abandoned in the sand",
    "femme": false,
-   "file": null
+   "file": "cards/swords-05.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 448
   },
   {
    "slug": "swords-06",
@@ -768,7 +783,10 @@
    "title": "SIX OF SWORDS",
    "scene": "a cloaked woman and a child being poled across a river by a ferryman, six swords upright along the boat",
    "femme": true,
-   "file": null
+   "file": "cards/swords-06.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 458
   },
   {
    "slug": "swords-07",
@@ -779,7 +797,10 @@
    "title": "SEVEN OF SWORDS",
    "scene": "a sly man in a red cap tiptoeing away from a camp with five swords in his arms, two swords left standing in the grass",
    "femme": false,
-   "file": null
+   "file": "cards/swords-07.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 458
   },
   {
    "slug": "swords-08",
