@@ -86,7 +86,7 @@
    "file": "cards/05-hierophant.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 515
+   "kb": 505
   },
   {
    "slug": "06-lovers",
@@ -100,7 +100,7 @@
    "file": "cards/06-lovers.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 532
+   "kb": 526
   },
   {
    "slug": "07-chariot",
@@ -128,7 +128,7 @@
    "file": "cards/08-strength.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 508
+   "kb": 465
   },
   {
    "slug": "09-hermit",
@@ -142,7 +142,7 @@
    "file": "cards/09-hermit.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 460
+   "kb": 491
   },
   {
    "slug": "10-wheel",

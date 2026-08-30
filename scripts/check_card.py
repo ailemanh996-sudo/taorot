@@ -12,6 +12,7 @@ Dùng để chọn giữa nhiều bản (variant) của cùng một lá.
   python3 scripts/check_card.py raw/01-magician.png raw/variants/01-magician-b.png
   python3 scripts/check_card.py raw/           # tất cả ảnh thô
 """
+import re
 import shutil
 import subprocess
 import sys
@@ -20,7 +21,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from compose_card import CARDS, ROOT, channel_stats, frame_region, im, load_panel, run  # noqa: E402
 
-BAND = (60, 1050, 730, 200)   # vùng dải tên mở rộng, để thấy cả chữ dài
+BAND = (60, 1050, 730, 200)   # vùng dải tên, đo `band` (cả hoạ tiết)
+TITLE_SCAN = (60, 1095, 730, 145)  # chỉ dải chữ, để đo bbox chữ (tránh lẫn đầu lâu)
 
 
 def prep(src, dst, W, H):
@@ -80,17 +82,48 @@ def band_rmse_outside_title(src, base, tmp, title_box):
     return max(vals) if vals else float("nan")
 
 
-def title_bbox(src, base, tmp, thresh="25%"):
+def title_bbox(src, base, tmp, rel=0.35):
+    global BAND
+    """Tìm vùng chữ tên bằng profile cột/hàng của ảnh sai khác.
+
+    Ngưỡng TUYỆT ĐỐI bắt nhầm cả hoạ tiết dải (vì dải các lá luôn hơi khác khung chuẩn),
+    nên dùng ngưỡng TƯƠNG ĐỐI: lấy đoạn liên tiếp mà profile > rel * đỉnh.
+    """
+    saved = BAND
+    BAND = TITLE_SCAN
     crop(src, tmp / "ts.png", BAND)
     crop(base, tmp / "tb.png", BAND)
     run(im() + [str(tmp / "tb.png"), str(tmp / "ts.png"), "-compose", "Difference", "-composite",
-                "-colorspace", "Gray", "-threshold", thresh, "-trim", str(tmp / "td.png")])
-    out = run(["identify", "-format", "%wx%h %X %Y", str(tmp / "td.png")]).stdout.split()
-    if len(out) < 3:
+                "-colorspace", "Gray", str(tmp / "td.png")])
+    x, y, w, h = BAND
+
+    def profile(geo, n):
+        out = run(im() + [str(tmp / "td.png"), "-resize", geo, "-depth", "8", "txt:-"]).stdout
+        vals = []
+        for line in out.splitlines()[1:]:
+            m = re.match(r"(\d+),(\d+):\s*\(\s*(\d+)", line)
+            if m:
+                vals.append(int(m.group(3)))
+        return vals[:n]
+
+    cols = profile(f"{w}x1!", w)
+    rows = profile(f"1x{h}!", h)
+
+    def span(vals):
+        if not vals:
+            return None
+        peak = max(vals)
+        if peak < 30:                      # khác biệt quá nhỏ -> không có chữ
+            return None
+        cut = peak * rel
+        idx = [i for i, v in enumerate(vals) if v > cut]
+        return min(idx), max(idx) + 1
+
+    sc, sr = span(cols), span(rows)
+    BAND = saved
+    if not sc or not sr:
         return None
-    bw, bh = (int(v) for v in out[0].split("x"))
-    ox, oy = int(float(out[1])), int(float(out[2]))
-    return (BAND[0] + ox, BAND[1] + oy, bw, bh)
+    return (TITLE_SCAN[0] + sc[0], TITLE_SCAN[1] + sr[0], sc[1] - sc[0], sr[1] - sr[0])
 
 
 def main():

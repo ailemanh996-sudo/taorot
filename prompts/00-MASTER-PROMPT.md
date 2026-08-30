@@ -187,8 +187,9 @@ Vùng dán lưu trong `prompts/panel.json` (đo từ bản đồ khác biệt St
 | `emblem` — huy hiệu trong medallion | 250, 10, 350, 115 |
 | `title` — chữ tên ở dải dưới | 190, 1080, 480, 165 |
 
-> Hộp `title` ban đầu là `262,1090,330,145` — quá hẹp: chữ `THE CHARIOT` bắt đầu ở **x=230** nên bị cụt chữ cái
-> đầu. Đã mở rộng sang **190..670**. Khi thêm lá mới, kiểm tra bằng `scripts/check_card.py`.
+> Hộp `title` đã nới 2 lần vì chữ dài: `262,1090,330,145` → `190,1080,480,165` (chữ `THE CHARIOT` bắt đầu ở
+> **x=230** nên bị cụt chữ đầu) → **`175,1080,500,165`** (`THE HIGH PRIESTESS` rộng 477px, bắt đầu ở x=191).
+> Khi thêm lá mới, luôn chạy `scripts/check_card.py` để xem chữ có nằm gọn trong hộp không.
 
 ```bash
 python3 scripts/compose_card.py raw/          # ghép tất cả ảnh trong raw/ lên khung chuẩn
@@ -241,6 +242,7 @@ cân màu theo khung chuẩn, ghép lên khung chuẩn, chuẩn hoá 848×1264 v
 - [ ] Khung viền vàng, 4 góc hoa văn, medallion, dải tên + đầu lâu **giống phôi 100%**?
 - [ ] Tên lá đúng chính tả, **đúng font của The Star**, chỉ nằm ở dải dưới?
 - [ ] `python3 scripts/compose_card.py --check` → RMSE khung < 0.01?
+- [ ] `python3 scripts/check_card.py raw/<lá>.png` → chữ tên báo **OK** (nằm gọn trong hộp), `band` < 0.15?
 - [ ] Nhân vật nữ đủ gợi cảm nhưng vẫn đúng giới hạn fine-art (không lộ genital, không tư thế khiêu dâm)?
 - [ ] Tay đủ ngón, không dư chi, không dư đầu?
 - [ ] Màu trầm antique khớp `17-the-star.jpg`?
