@@ -1,7 +1,7 @@
 {
  "deck": "Sensual Tarot",
  "total": 78,
- "done": 20,
+ "done": 27,
  "size": "848x1264",
  "cards": [
   {
@@ -181,7 +181,10 @@
    "title": "THE HANGED MAN",
    "scene": "a serene nude man suspended upside-down by one foot from a living tree shaped like a cross, legs crossed, a radiant halo of light around his head",
    "femme": false,
-   "file": null
+   "file": "cards/12-hanged.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 468
   },
   {
    "slug": "13-death",
@@ -209,7 +212,7 @@
    "file": "cards/14-temperance.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 493
+   "kb": 525
   },
   {
    "slug": "15-devil",
@@ -223,7 +226,7 @@
    "file": "cards/15-devil.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 468
+   "kb": 524
   },
   {
    "slug": "16-tower",
@@ -304,7 +307,10 @@
    "title": "THE WORLD",
    "scene": "a graceful nude woman dancer with a flowing violet scarf caught low around her hips, holding a wand in each hand, dancing within a great oval laurel wreath, an angel, an eagle, a lion and a bull at the corners",
    "femme": true,
-   "file": null
+   "file": "cards/21-world.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 519
   },
   {
    "slug": "wands-ace",
@@ -315,7 +321,10 @@
    "title": "ACE OF WANDS",
    "scene": "a divine hand from a cloud offering a single living, sprouting wand, a rugged landscape and a distant castle below",
    "femme": false,
-   "file": null
+   "file": "cards/wands-ace.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 496
   },
   {
    "slug": "wands-02",
@@ -326,7 +335,10 @@
    "title": "TWO OF WANDS",
    "scene": "a bare-shouldered noblewoman on a battlement, sheer silk slipping from one shoulder, a globe of the world resting in one palm, one wand upright in her other hand, the second wand mounted on the wall behind her",
    "femme": true,
-   "file": null
+   "file": "cards/wands-02.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 459
   },
   {
    "slug": "wands-03",
@@ -337,7 +349,10 @@
    "title": "THREE OF WANDS",
    "scene": "a robed merchant seen from behind on a cliff, three staves planted in a row before him, sailing ships on a golden sea",
    "femme": false,
-   "file": null
+   "file": "cards/wands-03.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 462
   },
   {
    "slug": "wands-04",
@@ -348,7 +363,10 @@
    "title": "FOUR OF WANDS",
    "scene": "four garlanded wands forming a festive canopy, a graceful couple dancing beneath it, she bare-shouldered in slipping silk with his hand at her waist, a manor beyond",
    "femme": true,
-   "file": null
+   "file": "cards/wands-04.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 484
   },
   {
    "slug": "wands-05",
@@ -359,7 +377,10 @@
    "title": "FIVE OF WANDS",
    "scene": "five nude athletic youths, each holding one single staff, clashing them in a spirited mock battle",
    "femme": false,
-   "file": null
+   "file": "cards/wands-05.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 496
   },
   {
    "slug": "wands-06",
