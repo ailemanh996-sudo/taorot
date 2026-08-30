@@ -338,7 +338,7 @@
    "file": "cards/wands-02.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 459
+   "kb": 447
   },
   {
    "slug": "wands-03",
@@ -347,12 +347,12 @@
    "groupLabel": "Wands",
    "emblem": "three leafy wands in a fan",
    "title": "THREE OF WANDS",
-   "scene": "a robed merchant seen from behind on a cliff, three staves planted in a row before him, sailing ships on a golden sea",
-   "femme": false,
+   "scene": "a woman merchant in a slipping antique robe seen from behind on a cliff, her long bare back and one shoulder showing, three staves planted in a row before her, sailing ships on a golden sea",
+   "femme": true,
    "file": "cards/wands-03.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 433
+   "kb": 445
   },
   {
    "slug": "wands-04",
@@ -436,7 +436,7 @@
    "file": "cards/wands-09.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 450
+   "kb": 462
   },
   {
    "slug": "wands-10",
