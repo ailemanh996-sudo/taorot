@@ -72,13 +72,32 @@ Tọa độ theo chuẩn ImageMagick: `x,y` là góc trên-trái, rồi đến `
 
 | Thông số | Giá trị | Ý nghĩa |
 |---|---|---|
-| `feather` | **12 px** | Làm mờ mép mặt nạ (`-blur 0×12`) để đường nối không sắc |
+| `feather` | **3 px** | Làm mờ mép mặt nạ (`-blur 0×3`) để đường nối không sắc |
 | `edge_guard` | **18 px** | Nét đen dày 36 px sát mép ngoài — **khoá viền**, không cho feather lem ra khung |
 | `bg` | `#e8dcc0` | Màu nền dự phòng khi ảnh nguồn thiếu chiều |
 | `max_kb` | **800 KB** | Ngưỡng dung lượng; vượt thì giảm chất lượng 90 → 60 |
 
-> **`edge_guard` là then chốt.** Bỏ nó thì feather 12 px sẽ làm nhòe mép ngoài
-> và lộ nền đen — lỗi đã từng xảy ra trong dự án.
+### Vì sao `feather` là 3 mà không phải 12
+
+`feather` là độ lệch chuẩn (sigma) của bộ lọc làm mờ Gaussian. Dải chuyển tiếp trải ra
+khoảng **±3 sigma** quanh mép ô:
+
+| `feather` | Dải chuyển | Hậu quả |
+|---|---|---|
+| 12 | ±36 px | Nội dung lá lem ~32 px **ra ngoài** ô, khung lem ~44 px **vào trong** ô |
+| **3** | **±9 px** | Lem chỉ còn ~8 px |
+
+Đo trên 78 lá (vành sát mép ô, so với base):
+
+| | feather 12 | feather 3 |
+|---|---|---|
+| Lem trung bình | 0.0520 | **0.0206** (giảm 60 %) |
+| Lem cao nhất (`pentacles-09`) | 0.1595 | **0.0830** (giảm 48 %) |
+| Vật lạ ngoài ô | 0.281 % | **0.065 %** |
+| Seam trung bình | 0.0438 | 0.0473 (tệ thêm 0.0035) |
+
+> **`edge_guard` vẫn giữ nguyên 18 px.** Nó chỉ khoá mép *ngoài cùng* của lá,
+> không can thiệp vào mép ô nội dung — nên không ngăn được lem quanh ô.
 
 ---
 
@@ -103,6 +122,10 @@ Tọa độ theo chuẩn ImageMagick: `x,y` là góc trên-trái, rồi đến `
 | `check_card.py` | Kiểm tra ảnh thô: tỉ lệ, khung, dải tên, chữ tên | `star-clean.png` |
 | `check_seam.py` | Đo đường nối giữa dải tên và khung chuẩn | `star-clean.png` |
 | `build_gallery.py` | Sinh `deck.json` + `index.html` tự chứa | — |
+
+> **`compose_card.py` phóng to ảnh nguồn lên kích thước TOÀN LÁ (848×1264), rồi mới dán.**
+> Không phải phóng lên kích thước ô (621×933). Nhờ vậy các vùng nội dung thẳng hàng
+> tuyệt đối với khung, không cần bù tọa độ.
 
 ---
 
@@ -131,6 +154,12 @@ Tọa độ theo chuẩn ImageMagick: `x,y` là góc trên-trái, rồi đến `
 | Chữ tên không bị copy nhầm | RMSE so với Star **> 0.05** | vùng `80,1045,690,200` |
 | Xác nhận vẽ lại thật | RMSE ô nội dung **> 0.15** | so với bản cũ trong git |
 
+> **Lưu ý về mực dải tên:** 8/78 lá đang nằm ngoài khoảng 66–74 %
+> (cao nhất `13-death` 77.0 %, thấp nhất `02-priestess` 65.6 %). Đây là tình trạng
+> **có sẵn từ trước**, không do thay đổi `feather` (khác biệt chỉ ~0.05 %).
+> Mực dải tên tỷ lệ thuận với độ dài tên — THE HIGH PRIESTESS dài hơn THE STAR —
+> nên ngưỡng cố định này có thể không phù hợp cho mọi lá.
+
 ---
 
 ## 9. Độ lệch trục (có thật, giữ nguyên theo phôi gốc)
@@ -156,3 +185,4 @@ Từ trường `_history` của `prompts/panel.json`:
 - **Nới tiếp thành toàn bộ dải trong** `80,1045,690,200` — máy sinh ảnh không thể vẽ lại
   hoa văn dải dưới giống hệt nhau; dán một ô nhỏ sẽ lộ hình chữ nhật. Lấy cả dải từ lá nguồn
   và đẩy đường nối ra sát mép trong khung vàng, nơi đường viền tự nhiên che khuất.
+- **`feather` 12 → 3** — vì blur sigma 12 làm nội dung lem ra ngoài ô (xem mục 4).
