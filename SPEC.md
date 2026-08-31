@@ -57,16 +57,37 @@ Tọa độ theo chuẩn ImageMagick: `x,y` là góc trên-trái, rồi đến `
 | `bg` | `#e8dcc0` | Màu nền dự phòng khi ảnh nguồn thiếu chiều |
 | `max_kb` | **800 KB** | Ngưỡng dung lượng; vượt thì giảm chất lượng 90 → 60 |
 
-### Vì sao `feather` là 3
+### Kiến trúc lớp — nội dung ở dưới, khung phủ lên trên
 
-`feather` là độ lệch chuẩn (sigma) của Gaussian; dải chuyển tiếp trải khoảng **±3 sigma**:
+Đây là **thay đổi quan trọng nhất** của quy trình ghép.
 
-| `feather` | Dải chuyển | Hậu quả |
+**Cách cũ (mặt nạ):** lấy khung chuẩn làm nền, rồi dán 3 vùng nội dung vào. Vì phải dán
+lọt đúng ô, cần `feather` làm mờ mép — và chính feather sinh ra lem.
+
+**Cách mới (lớp phủ):** nội dung nằm xuống trước, **tràn lề toàn bộ 848×1264**, rồi
+phủ lớp khung hoạ tiết lên trên. Lớp khung khoét trong suốt ở đúng 3 vùng nội dung,
+nên nội dung lộ ra qua 3 "cửa sổ" đó, còn mép khung **che kín** phần nội dung thừa.
+
+```
+   ┌───────────────────────────────────────┐
+   │ LỚP 2: khung hoạ tiết (đục)           │  ← luôn nằm TRÊN
+   │   khoét trong suốt ở ô / huy hiệu / tên│
+   ├───────────────────────────────────────┤
+   │ LỚP 1: nội dung lá, tràn lề 848×1264  │  ← nằm DƯỚI
+   └───────────────────────────────────────┘
+```
+
+Hệ quả:
+
+| | Mặt nạ + feather | Lớp khung phủ trên |
 |---|---|---|
-| 12 | ±36 px | Nội dung lem ~32 px ra ngoài ô |
-| **3** | **±9 px** | Lem chỉ còn ~8 px |
+| Lem nội dung ra ngoài ô | có (do feather) | **không thể xảy ra** |
+| Vật lạ ngoài ô | 0.065 % | **0 %** |
+| Độ đồng nhất khung giữa các lá | 0.0124 – 0.0144 | **0.0124 – 0.0125** (giống hệt từng điểm ảnh) |
+| Cần `feather`? | có | **không** |
 
-Đo trên 78 lá: lem trung bình 0.0520 → **0.0206** (giảm 60 %), vật lạ 0.281 % → **0.065 %**.
+> `feather` vẫn còn trong `panel.json` nhưng **không còn được dùng** khi ghép.
+> `ensure_overlay()` chỉ blur `0×0.6` để khử răng cưa ở mép khoét — không phải feather.
 
 ### Vì sao ô nội dung là `124,131,600,878`
 
@@ -93,7 +114,8 @@ vùng tên lệch so khung chuẩn 0.16–0.23 (không lá nào mất tên), tha
 
 | File | Kích thước | Vai trò | Sửa được? |
 |---|---|---|---|
-| **`star-clean.png`** | 848×1264 | **Khung chuẩn — base mặc định** để ghép mọi lá | Không |
+| **`star-clean.png`** | 848×1264 | **Khung chuẩn** — nguồn sinh ra lớp khung; cũng là base để so màu | Không |
+| **`frame-overlay.png`** | 848×1264 + alpha | **Lớp khung tách rời** — `star-clean` khoét trong suốt ở 3 vùng nội dung. `compose_card.py` tự tạo lại nếu thiếu hoặc nếu `panel.json` mới hơn | Tự sinh |
 | `17-the-star.jpg` | 848×1264 | Neo phong cách & mẫu chữ (ref 2) | **Không bao giờ** |
 | `card-blank.jpg` | 848×1264 | Phôi hoa văn — tham chiếu khi sinh ảnh (ref 1) | Không |
 | `title-style.png` | — | Dải tên The Star — mẫu chữ bắt buộc (ref 3) | Không |
@@ -106,14 +128,15 @@ vùng tên lệch so khung chuẩn 0.16–0.23 (không lá nào mất tên), tha
 | Script | Chức năng | Base |
 |---|---|---|
 | `build_prompts.py` | Sinh 78 prompt từ `cards.json`; `check` để xác thực | — |
-| `compose_card.py` | Dán 3 vùng nội dung lên khung chuẩn (mỗi lần 1 lá) | `star-clean.png` |
+| `compose_card.py` | Phóng nội dung tràn lề, rồi **phủ lớp khung lên trên** (mỗi lần 1 lá) | `frame-overlay.png` |
 | `check_card.py` | Kiểm tra ảnh thô: tỉ lệ, khung, dải tên, chữ tên | `star-clean.png` |
 | `check_seam.py` | Đo đường nối giữa dải tên và khung chuẩn | `star-clean.png` |
 | `build_gallery.py` | Sinh `deck.json` + `index.html` tự chứa | — |
 
-> **`compose_card.py` phóng ảnh nguồn lên kích thước TOÀN LÁ (848×1264), rồi mới dán.**
+> **`compose_card.py` phóng ảnh nguồn lên kích thước TOÀN LÁ (848×1264), rồi phủ khung lên.**
 > Không phải phóng lên kích thước ô. Nhờ vậy các vùng thẳng hàng tuyệt đối với khung,
-> không cần bù tọa độ — và toạ độ trong `panel.json` vừa là **vùng lấy** vừa là **vị trí đặt**.
+> không cần bù tọa độ — và toạ độ trong `panel.json` vừa là **vùng khoét** trên lớp khung
+> vừa là **vị trí** nội dung lộ ra.
 
 ---
 
@@ -179,3 +202,8 @@ Từ trường `_history` của `prompts/panel.json`:
   của chính từng lá (0.3775).
   **Lưu ý quan trọng:** phải ghép lại từ commit `799e648`. Ở các commit sau, nội dung gốc
   ở vùng này đã bị thay bằng khung chuẩn và **không thể khôi phục** từ lá đã ghép.
+
+- **Đổi sang kiến trúc lớp (nội dung dưới, khung phủ trên)** — tách `refs/frame-overlay.png`
+  từ `star-clean.png` bằng cách khoét trong suốt ở 3 vùng nội dung. Nội dung giờ được
+  phóng tràn lề toàn lá rồi mới phủ khung lên, nên **không còn đường nối và không thể lem**
+  (vật lạ giảm từ 0.065 % xuống **0 %**). `feather` không còn được dùng khi ghép.

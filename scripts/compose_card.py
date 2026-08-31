@@ -169,9 +169,11 @@ def compose(src, base, out, panel):
     color_match(work, work, base, frame_region(W, H, panel))
     match_band(work, base, tmp, panel)
 
-    # 3. dán 3 vùng nội dung lên khung chuẩn
-    build_mask(mask, panel, W, H)
-    run(im() + [str(base), str(work), str(mask), "-composite", str(tmp / "out.png")])
+    # 3. PHỦ khung hoạ tiết LÊN TRÊN nội dung.
+    #    Nội dung đã nằm sẵn và tràn lề -> mép khung che phần thừa,
+    #    nên không cần feather và không có đường nối ở mép ô.
+    overlay = ensure_overlay(base, panel)
+    run(im() + [str(work), str(overlay), "-composite", str(tmp / "out.png")])
 
     # 4. nén: q90, giảm dần nếu vượt ngưỡng
     q = 90
@@ -182,6 +184,36 @@ def compose(src, base, out, panel):
             break
         q -= 5
     return out.stat().st_size / 1024, q
+
+
+def ensure_overlay(base, panel):
+    """Lớp khung hoạ tiết: base nhưng khoét trong suốt ở 3 vùng nội dung.
+
+    Tự động tạo lại nếu thiếu, hoặc nếu panel.json mới hơn file overlay.
+    """
+    ov = ref("frame-overlay.png")
+    W, H = panel["size"]
+    need = True
+    if ov.exists() and PANEL.exists():
+        need = PANEL.stat().st_mtime > ov.stat().st_mtime
+    if not need:
+        r = run(["identify", "-format", "%wx%h", str(ov)])
+        need = r.stdout.strip() != f"{W}x{H}"
+    if not need:
+        return ov
+
+    m = ov.parent / "_ovmask.png"
+    cmd = im() + ["-size", f"{W}x{H}", "xc:white", "-fill", "black"]
+    for key in ("panel", "emblem", "title"):
+        x, y, w, h = panel[key]
+        cmd += ["-draw", f"rectangle {x},{y} {x + w - 1},{y + h - 1}"]
+    cmd += ["-blur", "0x0.6", str(m)]          # chỉ khử răng cưa, không phải feather
+    run(cmd)
+    run(im() + [str(base), str(m), "-alpha", "off", "-compose", "CopyOpacity",
+                "-composite", "-define", "png:color-type=6", str(ov)])
+    m.unlink(missing_ok=True)
+    print(f"  (tạo lại lớp khung {ov.name} theo panel.json)")
+    return ov
 
 
 def diff_region(a, b, region):
