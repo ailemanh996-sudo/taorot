@@ -27,7 +27,7 @@ Mọi con số lấy từ cấu hình **đang thực sự chạy**, không ghi t
 | **Dải hoạ tiết tối** | x 34..74 | x 774..813 | y 34..74 | y 1186..1236 | khung chuẩn |
 | **Dải nhợt** | x 75..114 | x 734..773 | y 75..121 | y 1020..1042 | khung chuẩn |
 | **Viền trong** (đường kép) | x 115..123 | x 725..733 | y 122..130 | y 1043..1046 | khung chuẩn |
-| **Vùng nội dung** | **x 124..724** | | **y 131..1009** | | **ảnh của lá** |
+| **Vùng nội dung** | **x 124..724** | | **y 131..1045** | | **ảnh của lá** |
 | Huy hiệu | — | — | y 10..125 | — | ảnh của lá |
 | Dải tên | — | — | — | y 1045..1245 | ảnh của lá |
 
@@ -42,7 +42,7 @@ Tọa độ theo chuẩn ImageMagick: `x,y` là góc trên-trái, rồi đến `
 
 | Vùng | Góc (x,y) | Kích thước | Góc đối diện | Nội dung |
 |---|---|---|---|---|
-| **Ô nội dung** `panel` | `124,131` | 600 × 878 | `724,1009` | Cảnh của lá — phần duy nhất thay đổi giữa các lá |
+| **Ô nội dung** `panel` | `124,131` | 600 × 914 | `724,1045` | Cảnh của lá — phần duy nhất thay đổi giữa các lá |
 | **Huy hiệu** `emblem` | `250,10` | 350 × 115 | `600,125` | Biểu tượng riêng của lá, không chữ, không số |
 | **Dải tên** `title` | `80,1045` | 690 × 200 | `770,1245` | Toàn bộ dải hoa văn dưới, lấy nguyên từ lá nguồn |
 
@@ -172,3 +172,10 @@ Từ trường `_history` của `prompts/panel.json`:
 - **`feather` 12 → 3** — blur sigma 12 làm nội dung lem ra ngoài ô (xem mục 4).
 - **`panel` 106,120,621,933 → 124,131,600,878** — ô cũ trùm lên dải nhợt & viền trong
   do AI tự vẽ, gây thiếu đồng nhất; thu vào đúng vùng nội dung thực (xem mục 4).
+
+- **đáy ô 1009 → 1045** — ô kết thúc 1009 trong khi dải tên bắt đầu 1045, chừa khe hở 35 px
+  (y 1010..1044). Khe này lấy từ khung chuẩn nên **lộ hoạ tiết đáy của riêng lá The Star**
+  trên mọi lá (đo 0.0204). Kéo đáy ô xuống 1045 để kín khe hở → vùng đó lấy nội dung
+  của chính từng lá (0.3775).
+  **Lưu ý quan trọng:** phải ghép lại từ commit `799e648`. Ở các commit sau, nội dung gốc
+  ở vùng này đã bị thay bằng khung chuẩn và **không thể khôi phục** từ lá đã ghép.
