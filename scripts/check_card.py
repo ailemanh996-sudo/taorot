@@ -135,7 +135,7 @@ def main():
         return 1
     panel = load_panel()
     W, H = panel["size"]
-    base = ref("frame-master.jpg")
+    base = ref("star-clean.png")
     tmp = Path("/tmp/_check")
     tmp.mkdir(exist_ok=True)
 

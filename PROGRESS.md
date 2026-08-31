@@ -70,7 +70,7 @@ Tiền      ██████████████         14/14
 | Nhóm vật bị vẽ thừa | Gọi đích danh lỗi trong prompt: *"lá này đã hỏng, từng ra 9 kiếm"* |
 | Cảnh tối làm dải tên bị tối | **BAND TONE LOCK** + đo % mực (phát hiện `swords-06` 85.6 %) |
 | **Chữ "dark" lặp nhiều lần làm tối cả dải tên** | Tránh hẳn chữ "dark" — `swords-king` từ 80.1 % mực xuống 69.7 % |
-| Lửa nến của The Star lọt sang mọi lá | Tạo `refs/frame-master.jpg` (Star đã xoá nến) |
+| Lửa nến của The Star lọt sang mọi lá | Tạo `refs/star-clean.png` — khung chuẩn, đặt làm base mặc định |
 | Ref 2 rò rỉ nội dung | Điều **REFERENCE DISCIPLINE**: ref 2 chỉ cung cấp phong cách |
 | Cánh thiên thần bị ngược ở tư thế nhìn sau | Dùng góc ba-phần-tư |
 | Kiểm duyệt chặn ảnh mô tả khoả thân | **Tả vải trước, cơ thể sau**; đổi "khoả thân" → "vai trần" |
@@ -97,5 +97,6 @@ Tiền      ██████████████         14/14
 - `prompts/out/` — 78 file prompt đã sinh
 - `scripts/` — `build_prompts.py`, `check_card.py`, `compose_card.py`, `check_seam.py`, `build_gallery.py`
 - `cards/` — **78 lá hoàn chỉnh** (tác phẩm bền vững)
-- `refs/` — `card-blank.jpg`, `17-the-star.jpg`, `title-style.png`, `frame-master.jpg`, `star-clean.png`
+- `refs/` — `card-blank.jpg` (tham chiếu sinh ảnh), `17-the-star.jpg` (neo phong cách, không sửa),
+  `title-style.png` (mẫu chữ), **`star-clean.png` (khung chuẩn — base mặc định)**, `frame-master.jpg` (cũ, không còn dùng)
 - `raw/` — ảnh thô, **không lưu vào git**

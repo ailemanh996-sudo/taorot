@@ -20,7 +20,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from compose_card import CARDS, load_panel, ref  # noqa: E402
 
-BASE = ref("frame-master.jpg")
+BASE = ref("star-clean.png")
 # vùng TRONG hộp tên nhưng TRÁNH chữ (chữ nằm khoảng x200..660, y1100..1235)
 PROBES = {
     "trái": lambda tx: (tx + 3, 1090, 24, 150),
