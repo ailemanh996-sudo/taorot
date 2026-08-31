@@ -725,12 +725,12 @@
    "groupLabel": "Swords",
    "emblem": "two crossed swords",
    "title": "TWO OF SWORDS",
-   "scene": "a blindfolded woman in a sheer robe that clings to her bare body, seated by the sea, two swords crossed over her chest, the moon rising",
+   "scene": "a blindfolded adult woman in a very thin veil of antique silk gauze, almost transparent, her shoulders bare, seated on a stone seat by the sea, two long swords crossed over her chest, the moon rising behind her",
    "femme": true,
    "file": "cards/swords-02.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 462
+   "kb": 461
   },
   {
    "slug": "swords-03",
@@ -800,7 +800,7 @@
    "file": "cards/swords-07.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 476
+   "kb": 446
   },
   {
    "slug": "swords-08",
@@ -814,7 +814,7 @@
    "file": "cards/swords-08.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 447
+   "kb": 452
   },
   {
    "slug": "swords-09",
@@ -837,12 +837,12 @@
    "groupLabel": "Swords",
    "emblem": "ten swords along a back",
    "title": "TEN OF SWORDS",
-   "scene": "a still figure lying face down by a black sea at dawn, ten swords along the back in a row, the sun rising",
+   "scene": "a classical allegorical scene on a flat shore by a black sea at dawn — a human figure lying at rest face downward on the sand, covered only by a veil of antique gauze so sheer and transparent that the long line of the body reads clearly beneath it, and TEN SWORDS standing upright in the sand in a row alongside the length of the body, their blades rising like a row of tall metal reeds beside it, the low sun rising over the water",
    "femme": false,
    "file": "cards/swords-10.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 442
+   "kb": 422
   },
   {
    "slug": "swords-page",
@@ -879,12 +879,12 @@
    "groupLabel": "Swords",
    "emblem": "a sword wrapped in laurel",
    "title": "QUEEN OF SWORDS",
-   "scene": "a stern dignified queen with flowing hair, one shoulder and the curve of her breast left bare by her loosened gown, seated on a butterfly-carved throne above a sea of clouds, one upright sword in her hand",
+   "scene": "a stern dignified adult queen whose body is wrapped in a single sheet of TRANSPARENT antique silk gauze, one shoulder and the curve of her breast left bare, posed with sensual grace yet enthroned with majesty, seated on a butterfly-carved stone throne above a sea of clouds, one upright sword held in her hand",
    "femme": true,
    "file": "cards/swords-queen.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 462
+   "kb": 456
   },
   {
    "slug": "swords-king",
@@ -893,12 +893,12 @@
    "groupLabel": "Swords",
    "emblem": "a sword between two wings",
    "title": "KING OF SWORDS",
-   "scene": "a commanding wise bare-chested king with a beard on a crescent-carved throne, one upright sword in hand, sea and birds behind",
+   "scene": "a YOUNG king with a short dark beard and a bare chest, enthroned on a crescent-carved stone seat with the proud, majestic bearing of a young sovereign — chin slightly raised, level commanding eyes, a haughty calm face — one upright sword held in his hand, the open sea and seabirds behind him",
    "femme": false,
    "file": "cards/swords-king.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 459
+   "kb": 460
   },
   {
    "slug": "pentacles-ace",

@@ -713,8 +713,9 @@
     "obj": "swords",
     "layout": "exactly two long blades forming a single X across her chest, one over each shoulder; no third blade, no dagger at her belt"
    },
-   "scene": "a blindfolded woman in a sheer robe that clings to her bare body, seated by the sea, two swords crossed over her chest, the moon rising",
-   "hair": "jet-black hair drawn into a tight high bun, severe and smooth"
+   "scene": "a blindfolded adult woman in a very thin veil of antique silk gauze, almost transparent, her shoulders bare, seated on a stone seat by the sea, two long swords crossed over her chest, the moon rising behind her",
+   "hair": "jet-black hair drawn into a tight high bun, severe and smooth",
+   "build": "slender and lithe — a narrow waist, long tapering limbs, a long neck, elegant elongated proportions, lean and graceful rather than heavy"
   },
   {
    "n": "3",
@@ -784,7 +785,7 @@
    "count": {
     "n": 7,
     "obj": "swords",
-    "layout": "exactly seven swords: five carried in his arms with five separate hilts visible, plus two left standing upright in the grass behind him — 5 + 2 = 7"
+    "layout": "five swords carried in his arms, held upright and fanned apart so that there are FOUR GAPS of clear sky between the five hilts — five hilts, four gaps — plus TWO swords planted upright in the grass behind him with ONE WIDE GAP of bare grass between them — two swords, one gap; 5 + 2 = 7. THIS CARD HAS ALREADY FAILED ONCE BY SHOWING NINE SWORDS: the usual mistake is drawing FOUR swords planted in the grass instead of two. Plant exactly TWO in the grass, never four, and count them: 1, 2"
    },
    "scene": "a sly man in a red cap tiptoeing away from a camp with five swords in his arms, two swords left standing in the grass"
   },
@@ -798,7 +799,7 @@
    "count": {
     "n": 8,
     "obj": "swords",
-    "layout": "exactly eight swords planted in the ground around her at even intervals, like the hours of a clock — three in front of her, one at each side, three behind her, 3 + 2 + 3 = 8; all eight hilts visible above ground, evenly spaced, forming one open circle"
+    "layout": "eight swords planted in one open ring around her — THREE in front of her with two gaps between them, ONE at her left side, ONE at her right side, THREE behind her with two gaps between them; 3 + 1 + 1 + 3 = 8. Walk the ring and count the eight gaps of bare ground between neighbours: 1, 2, 3, 4, 5, 6, 7, 8. THIS CARD HAS ALREADY FAILED ONCE BY SHOWING NINE SWORDS: the usual mistake is adding one extra sword to the group behind her. Keep the group behind her at exactly THREE"
    },
    "scene": "a blindfolded woman in a flowing gown loosened from one shoulder and loosely bound, standing in a ring of eight swords, a fortress on the cliff behind",
    "hair": "dark brown hair half-bound with a ribbon, the rest loose and tangled"
@@ -830,7 +831,7 @@
     "obj": "swords",
     "layout": "exactly ten swords planted along the back in two staggered rows of five — 5 + 5 = 10; all ten hilts countable in a row from shoulder to hip, evenly spaced, none overlapping"
    },
-   "scene": "a still figure lying face down by a black sea at dawn, ten swords along the back in a row, the sun rising"
+   "scene": "a classical allegorical scene on a flat shore by a black sea at dawn — a human figure lying at rest face downward on the sand, covered only by a veil of antique gauze so sheer and transparent that the long line of the body reads clearly beneath it, and TEN SWORDS standing upright in the sand in a row alongside the length of the body, their blades rising like a row of tall metal reeds beside it, the low sun rising over the water"
   },
   {
    "n": "P",
@@ -873,8 +874,9 @@
     "obj": "sword",
     "layout": "exactly one upright sword; no other blade"
    },
-   "scene": "a stern dignified queen with flowing hair, one shoulder and the curve of her breast left bare by her loosened gown, seated on a butterfly-carved throne above a sea of clouds, one upright sword in her hand",
-   "hair": "pale silver-grey hair piled high in an elaborate coiled crown"
+   "scene": "a stern dignified adult queen whose body is wrapped in a single sheet of TRANSPARENT antique silk gauze, one shoulder and the curve of her breast left bare, posed with sensual grace yet enthroned with majesty, seated on a butterfly-carved stone throne above a sea of clouds, one upright sword held in her hand",
+   "hair": "deep dark-red hair, a rich mahogany auburn, piled high in an elaborate coiled crown",
+   "allure": "a pose that is unmistakably sensual yet still sovereign: she sits upright and tall on the throne with the calm authority of a ruler, while the sheer silk slides over one thigh and one shoulder so the long line of the body shows, her chin slightly raised, her gaze level and commanding, one hand resting along her own thigh or collarbone"
   },
   {
    "n": "K",
@@ -888,7 +890,7 @@
     "obj": "sword",
     "layout": "exactly one upright sword; no other blade"
    },
-   "scene": "a commanding wise bare-chested king with a beard on a crescent-carved throne, one upright sword in hand, sea and birds behind"
+   "scene": "a YOUNG king with a short dark beard and a bare chest, enthroned on a crescent-carved stone seat with the proud, majestic bearing of a young sovereign — chin slightly raised, level commanding eyes, a haughty calm face — one upright sword held in his hand, the open sea and seabirds behind him"
   },
   {
    "n": "A",
