@@ -1,6 +1,20 @@
 # Tiến độ bộ bài Taorot
 
-**78 / 78 — HOÀN THÀNH**
+**78 / 78 — HOÀN THÀNH** · kèm **mặt sau lá bài**
+
+## Mặt sau đã chọn
+
+`backs/card-back.jpg` — 848 × 1264 (tỉ lệ 0.671, khớp mặt trước)
+
+| | |
+|---|---|
+| Chủ đề | Hai thiên thần nhỏ ở **tư thế đối ngược**: một ở dưới cúi nhìn xuống, một ở trên ngẩng nhìn lên |
+| Đối xứng | **0.2108 — đối thế chủ ý, không phải ảnh gương** |
+| Đồng nhất màu | lệch sáng 17.7 · **1 tông màu** (nền giấy cổ + vàng cổ) |
+
+Bản này **cố ý không đối xứng gương**: hai thiên thần ở tư thế trái ngược nhau thì không thể đồng thời là ảnh phản chiếu của nhau. Đây là lựa chọn đã được xác nhận.
+
+Các phương án khác lưu ở `backs/options/` (back-01 … back-06).
 
 | Bộ bài | Số lá | Trạng thái |
 |---|---|---|
