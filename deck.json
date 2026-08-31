@@ -730,7 +730,7 @@
    "file": "cards/swords-02.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 463
+   "kb": 462
   },
   {
    "slug": "swords-03",
@@ -786,7 +786,7 @@
    "file": "cards/swords-06.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 458
+   "kb": 454
   },
   {
    "slug": "swords-07",
@@ -814,7 +814,7 @@
    "file": "cards/swords-08.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 442
+   "kb": 447
   },
   {
    "slug": "swords-09",
@@ -842,7 +842,7 @@
    "file": "cards/swords-10.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 433
+   "kb": 442
   },
   {
    "slug": "swords-page",
@@ -856,7 +856,7 @@
    "file": "cards/swords-page.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 461
+   "kb": 457
   },
   {
    "slug": "swords-knight",
@@ -870,7 +870,7 @@
    "file": "cards/swords-knight.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 464
+   "kb": 447
   },
   {
    "slug": "swords-queen",
@@ -884,7 +884,7 @@
    "file": "cards/swords-queen.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 453
+   "kb": 462
   },
   {
    "slug": "swords-king",
@@ -898,7 +898,7 @@
    "file": "cards/swords-king.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 448
+   "kb": 459
   },
   {
    "slug": "pentacles-ace",
