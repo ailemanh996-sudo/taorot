@@ -1,6 +1,6 @@
 {
  "_note": "Vùng nội dung riêng của từng lá, dán lên khung chuẩn. Đo từ bản đồ khác biệt + check_card.py.",
- "_history": "title mở rộng 262,591 -> 190,670 vì chữ THE CHARIOT bắt đầu ở x=230 (bị cụt mất chữ đầu) | nới tiếp 190->175 vì THE HIGH PRIESTESS rộng 488px (x=181) | nới hộp tên = toàn bộ dải trong (80..770 x 1045..1245): model không thể vẽ lại dải hoạ tiết giống hệt nhau, nên thay vì dán một ô nhỏ (lộ hình chữ nhật), lấy cả dải từ lá nguồn và đẩy đường nối ra mép trong khung vàng - nơi có đường viền tự nhiên che khuất | feather 12 -> 3: blur sigma 12 tạo dải chuyển ±40px quanh mép ô, làm nội dung lá lem ~32px RA NGOÀI ô (đo được 0.16 ở vành sát mép). Giảm xuống 3 thu hẹp còn ±9px: lem giảm 47% (0.1102 -> 0.0582), seam chỉ tệ thêm 0.0035 (0.0438 -> 0.0473). | panel 106,120,621,933 -> 124,131,600,878: ô cũ trùm lên cả dải nhợt (75..114) và viền trong (115..123) do AI tự vẽ, nên dải này khác nhau ở từng lá (đo 0.1538). Thu ô vào đúng vùng nội dung thực (x 124..724, y 131..1009) để dải nhợt + viền trong lấy từ khung chuẩn -> đồng nhất mọi lá (0.0155, tốt hơn 90%). Ô mới cũng không chạm huy hiệu (hết y=125) hay dải tên (bắt đầu y=1045). | đáy ô 1009 -> 1045: ô cũ kết thúc y=1009 trong khi dải tên bắt đầu y=1045, chừa khe hở 35px ở y 1010..1044. Khe này lấy từ khung chuẩn nên lộ hoạ tiết đáy của riêng lá The Star trên mọi lá. Kéo đáy ô xuống 1045 để kín khe hở, vùng đó lấy nội dung của chính từng lá. Lưu ý: phải ghép lại từ commit 799e648, vì ở commit sau nội dung gốc ở vùng này đã bị mất.",
+ "_history": "title mở rộng 262,591 -> 190,670 vì chữ THE CHARIOT bắt đầu ở x=230 (bị cụt mất chữ đầu) | nới tiếp 190->175 vì THE HIGH PRIESTESS rộng 488px (x=181) | nới hộp tên = toàn bộ dải trong (80..770 x 1045..1245): model không thể vẽ lại dải hoạ tiết giống hệt nhau, nên thay vì dán một ô nhỏ (lộ hình chữ nhật), lấy cả dải từ lá nguồn và đẩy đường nối ra mép trong khung vàng - nơi có đường viền tự nhiên che khuất | feather 12 -> 3: blur sigma 12 tạo dải chuyển ±40px quanh mép ô, làm nội dung lá lem ~32px RA NGOÀI ô (đo được 0.16 ở vành sát mép). Giảm xuống 3 thu hẹp còn ±9px: lem giảm 47% (0.1102 -> 0.0582), seam chỉ tệ thêm 0.0035 (0.0438 -> 0.0473). | panel 106,120,621,933 -> 124,131,600,878: ô cũ trùm lên cả dải nhợt (75..114) và viền trong (115..123) do AI tự vẽ, nên dải này khác nhau ở từng lá (đo 0.1538). Thu ô vào đúng vùng nội dung thực (x 124..724, y 131..1009) để dải nhợt + viền trong lấy từ khung chuẩn -> đồng nhất mọi lá (0.0155, tốt hơn 90%). Ô mới cũng không chạm huy hiệu (hết y=125) hay dải tên (bắt đầu y=1045). | đáy ô 1009 -> 1045: ô cũ kết thúc y=1009 trong khi dải tên bắt đầu y=1045, chừa khe hở 35px ở y 1010..1044. Khe này lấy từ khung chuẩn nên lộ hoạ tiết đáy của riêng lá The Star trên mọi lá. Kéo đáy ô xuống 1045 để kín khe hở, vùng đó lấy nội dung của chính từng lá. Lưu ý: phải ghép lại từ commit 799e648, vì ở commit sau nội dung gốc ở vùng này đã bị mất. | title 80,1045,690,200 -> 80,1075,690,115: cửa sổ cũ phủ cả hoạ tiết đầu lâu phía trên chữ, nên hoạ tiết này do AI vẽ lại ở từng lá và lệch rất mạnh (0.3420). Thu hẹp xuống đúng vùng nền nhợt chứa chữ -> hoạ tiết lấy chung từ phôi, đồng nhất (0.0152). Kiểm tra cả 78 tên đều nằm gọn (chữ y 1106..1164, cửa sổ y 1075..1189).",
  "panel": [
   124,
   131,
@@ -15,9 +15,9 @@
  ],
  "title": [
   80,
-  1045,
+  1075,
   690,
-  200
+  115
  ],
  "feather": 3,
  "edge_guard": 18,

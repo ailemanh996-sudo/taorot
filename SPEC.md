@@ -23,13 +23,19 @@ Mọi con số lấy từ cấu hình **đang thực sự chạy**, không ghi t
 
 | Lớp | Trái | Phải | Trên | Dưới | Nguồn |
 |---|---|---|---|---|---|
-| Viền ngoài sáng | x 0..33 | x 814..847 | y 0..33 | y 1237..1263 | khung chuẩn |
-| **Dải hoạ tiết tối** | x 34..74 | x 774..813 | y 34..74 | y 1186..1236 | khung chuẩn |
-| **Dải nhợt** | x 75..114 | x 734..773 | y 75..121 | y 1020..1042 | khung chuẩn |
-| **Viền trong** (đường kép) | x 115..123 | x 725..733 | y 122..130 | y 1043..1046 | khung chuẩn |
+| Viền ngoài sáng | x 0..33 | x 814..847 | y 0..33 | y 1237..1263 | phôi (chung) |
+| **Dải hoạ tiết tối** | x 34..74 | x 774..813 | y 34..74 | y 1186..1236 | phôi (chung) |
+| **Dải nhợt** | x 75..114 | x 734..773 | y 75..121 | y 1020..1042 | phôi (chung) |
+| **Viền trong** (đường kép) | x 115..123 | x 725..733 | y 122..130 | y 1043..1046 | phôi (chung) |
 | **Vùng nội dung** | **x 124..724** | | **y 131..1045** | | **ảnh của lá** |
-| Huy hiệu | — | — | y 10..125 | — | ảnh của lá |
-| Dải tên | — | — | — | y 1045..1245 | ảnh của lá |
+| Huy hiệu | — | — | y 10..125 | — | **ảnh của lá** |
+| Hoa văn tên (trên) | — | — | y 1047..1081 | — | phôi (chung) |
+| **Nền nhợt + chữ tên** | — | — | **y 1075..1189** | — | **ảnh của lá** |
+| Hoa văn tên (dưới) | — | — | y 1186..1236 | — | phôi (chung) |
+
+> **Nguyên tắc:** mọi thứ mang tính **hoạ tiết chung** (viền, dải nhợt, hoa văn tên)
+> lấy từ phôi → giống hệt nhau trên mọi lá. Chỉ 3 thứ **riêng của từng lá** lấy từ ảnh
+> do AI vẽ: **cảnh, huy hiệu, chữ tên**.
 
 > Ô nội dung `124,131,600,878` nằm **trọn trong** vùng được viền trong bao quanh,
 > và **không chạm** huy hiệu (kết thúc y=125) hay dải tên (bắt đầu y=1045).
@@ -44,7 +50,7 @@ Tọa độ theo chuẩn ImageMagick: `x,y` là góc trên-trái, rồi đến `
 |---|---|---|---|---|
 | **Ô nội dung** `panel` | `124,131` | 600 × 914 | `724,1045` | Cảnh của lá — phần duy nhất thay đổi giữa các lá |
 | **Huy hiệu** `emblem` | `250,10` | 350 × 115 | `600,125` | Biểu tượng riêng của lá, không chữ, không số |
-| **Dải tên** `title` | `80,1045` | 690 × 200 | `770,1245` | Toàn bộ dải hoa văn dưới, lấy nguyên từ lá nguồn |
+| **Dải tên** `title` | `80,1075` | 690 × 115 | `770,1189` | Chỉ **vùng nền nhợt chứa chữ**. Hoa văn đầu lâu phía trên & dưới lấy chung từ phôi |
 
 ---
 
@@ -207,3 +213,9 @@ Từ trường `_history` của `prompts/panel.json`:
   từ `star-clean.png` bằng cách khoét trong suốt ở 3 vùng nội dung. Nội dung giờ được
   phóng tràn lề toàn lá rồi mới phủ khung lên, nên **không còn đường nối và không thể lem**
   (vật lạ giảm từ 0.065 % xuống **0 %**). `feather` không còn được dùng khi ghép.
+
+- **`title` 80,1045,690,200 → 80,1075,690,115** — cửa sổ cũ phủ cả hoa văn đầu lâu phía trên
+  chữ, nên hoa văn này do AI vẽ lại ở từng lá và lệch rất mạnh (0.2604, cao nhất 0.3336).
+  Thu hẹp xuống đúng vùng nền nhợt chứa chữ → hoa văn lấy chung từ phôi, đồng nhất
+  (**0.0289**, tốt hơn 89 %), mà chữ tên vẫn giữ nguyên (0.2633).
+  Đã kiểm tra cả 78 tên đều nằm gọn: chữ ở y 1106..1164, cửa sổ y 1075..1189 (dư 31/25 px).
