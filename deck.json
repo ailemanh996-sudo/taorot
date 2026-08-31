@@ -1,7 +1,7 @@
 {
  "deck": "Sensual Tarot",
  "total": 78,
- "done": 71,
+ "done": 78,
  "size": "848x1264",
  "cards": [
   {
@@ -702,7 +702,7 @@
    "file": "cards/cups-king.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 455
+   "kb": 464
   },
   {
    "slug": "swords-ace",
@@ -884,7 +884,7 @@
    "file": "cards/swords-queen.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 473
+   "kb": 466
   },
   {
    "slug": "swords-king",
@@ -926,7 +926,7 @@
    "file": "cards/pentacles-02.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 457
+   "kb": 460
   },
   {
    "slug": "pentacles-03",
@@ -1005,9 +1005,12 @@
    "groupLabel": "Pentacles",
    "emblem": "eight pentacles in a row",
    "title": "EIGHT OF PENTACLES",
-   "scene": "a young woman apprentice in an apron slipping off one shoulder, sleeves rolled and hair loose, chiseling a plain stone disc at a bench, eight coins in one row along the bench edge, a town through the window",
+   "scene": "a young woman apprentice in an apron slipping off one shoulder, sleeves rolled, her chestnut hair pinned in a neat low chignon, chiseling a plain stone disc at a bench, eight coins in one row along the bench edge, a town through the window",
    "femme": true,
-   "file": null
+   "file": "cards/pentacles-08.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 472
   },
   {
    "slug": "pentacles-09",
@@ -1018,7 +1021,10 @@
    "title": "NINE OF PENTACLES",
    "scene": "an elegant woman in a sheer flowing gown that clings to breast and hip, a falcon on her gloved hand, her other hand touching ripe grapes, nine coins along the arbor beam, a snail at her feet",
    "femme": true,
-   "file": null
+   "file": "cards/pentacles-09.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 510
   },
   {
    "slug": "pentacles-10",
@@ -1029,7 +1035,10 @@
    "title": "TEN OF PENTACLES",
    "scene": "a family hall — a patriarch seated, a couple standing with his hand at her waist, a child playing with two dogs — ten coins in a pyramid emblem on the wall behind them",
    "femme": true,
-   "file": null
+   "file": "cards/pentacles-10.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 498
   },
   {
    "slug": "pentacles-page",
@@ -1040,7 +1049,10 @@
    "title": "PAGE OF PENTACLES",
    "scene": "a studious young woman page in an open robe studying one large pentacle coin held in both hands, a plowed field behind her",
    "femme": true,
-   "file": null
+   "file": "cards/pentacles-page.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 457
   },
   {
    "slug": "pentacles-knight",
@@ -1051,7 +1063,10 @@
    "title": "KNIGHT OF PENTACLES",
    "scene": "a patient bare-chested knight on a heavy black draft horse standing still, examining one pentacle coin in his palm, a plowed field behind",
    "femme": false,
-   "file": null
+   "file": "cards/pentacles-knight.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 462
   },
   {
    "slug": "pentacles-queen",
@@ -1062,7 +1077,10 @@
    "title": "QUEEN OF PENTACLES",
    "scene": "a warm nude queen with a flower crown on a goat-carved throne, one breast bared, one pentacle resting in her lap, a rabbit in the garden",
    "femme": true,
-   "file": null
+   "file": "cards/pentacles-queen.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 486
   },
   {
    "slug": "pentacles-king",
@@ -1073,7 +1091,10 @@
    "title": "KING OF PENTACLES",
    "scene": "a robust bare-chested king with a beard and an ermine cloak on a bull-carved throne, one pentacle and a scepter in hand, harvest fields behind",
    "femme": false,
-   "file": null
+   "file": "cards/pentacles-king.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 491
   }
  ]
 }
