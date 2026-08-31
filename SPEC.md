@@ -17,33 +17,22 @@ Mọi con số lấy từ cấu hình **đang thực sự chạy**, không ghi t
 
 ---
 
-## 2. Sơ đồ tọa độ
+## 2. Các lớp của lá (từ ngoài vào trong)
 
-```
-   x→0                                                      848
-  +------------------------------------------------------------+
-  |  MEDALION         +--------------------+                   |
-  |  350 x 115        |                    |                   |
-  |                   +--------------------+                   |
-  |        +------------------------------------------+        |
-  |        |                                          |        |
-  |        |  Ô NỘI DUNG (panel)                      |        |
-  |        |  621 x 933 px                            |        |
-  |        |                                          |        |
-  |        |                                          |        |
-  |        |  ← cảnh riêng từng lá →                  |        |
-  |        |                                          |        |
-  |        |                                          |        |
-  |        |  (106,120) → (727,1053)                  |        |
-  |        |                                          |        |
-  |        |                                          |        |
-  |        +------------------------------------------+        |
-  |      +-----------------------------------------------+     |
-  |      | DẢI TÊN (title) 690 x 200 — chữ dưới đầu lâu  |     |
-  |      +-----------------------------------------------+     |
-  +------------------------------------------------------------+
-0 / 106 / 727 / 848
-```
+Đo trực tiếp trên `refs/star-clean.png`, quét cường độ sáng theo hàng/cột:
+
+| Lớp | Trái | Phải | Trên | Dưới | Nguồn |
+|---|---|---|---|---|---|
+| Viền ngoài sáng | x 0..33 | x 814..847 | y 0..33 | y 1237..1263 | khung chuẩn |
+| **Dải hoạ tiết tối** | x 34..74 | x 774..813 | y 34..74 | y 1186..1236 | khung chuẩn |
+| **Dải nhợt** | x 75..114 | x 734..773 | y 75..121 | y 1020..1042 | khung chuẩn |
+| **Viền trong** (đường kép) | x 115..123 | x 725..733 | y 122..130 | y 1043..1046 | khung chuẩn |
+| **Vùng nội dung** | **x 124..724** | | **y 131..1009** | | **ảnh của lá** |
+| Huy hiệu | — | — | y 10..125 | — | ảnh của lá |
+| Dải tên | — | — | — | y 1045..1245 | ảnh của lá |
+
+> Ô nội dung `124,131,600,878` nằm **trọn trong** vùng được viền trong bao quanh,
+> và **không chạm** huy hiệu (kết thúc y=125) hay dải tên (bắt đầu y=1045).
 
 ---
 
@@ -53,18 +42,9 @@ Tọa độ theo chuẩn ImageMagick: `x,y` là góc trên-trái, rồi đến `
 
 | Vùng | Góc (x,y) | Kích thước | Góc đối diện | Nội dung |
 |---|---|---|---|---|
-| **Ô nội dung** `panel` | `106,120` | 621 × 933 | `727,1053` | Cảnh của lá — phần duy nhất thay đổi giữa các lá |
-| **Medalion** `emblem` | `250,10` | 350 × 115 | `600,125` | Huy hiệu riêng của lá, không chữ, không số |
+| **Ô nội dung** `panel` | `124,131` | 600 × 878 | `724,1009` | Cảnh của lá — phần duy nhất thay đổi giữa các lá |
+| **Huy hiệu** `emblem` | `250,10` | 350 × 115 | `600,125` | Biểu tượng riêng của lá, không chữ, không số |
 | **Dải tên** `title` | `80,1045` | 690 × 200 | `770,1245` | Toàn bộ dải hoa văn dưới, lấy nguyên từ lá nguồn |
-
-### Dải khung — phần ngoài ô nội dung, giống hệt nhau ở mọi lá
-
-| Cạnh | Khoảng | Độ dày |
-|---|---|---|
-| Trái | x 0 → 106 | **106 px** |
-| Phải | x 727 → 848 | **121 px** |
-| Trên | y 0 → 120 | **120 px** |
-| Dưới | y 1053 → 1264 | **211 px** |
 
 ---
 
@@ -77,27 +57,35 @@ Tọa độ theo chuẩn ImageMagick: `x,y` là góc trên-trái, rồi đến `
 | `bg` | `#e8dcc0` | Màu nền dự phòng khi ảnh nguồn thiếu chiều |
 | `max_kb` | **800 KB** | Ngưỡng dung lượng; vượt thì giảm chất lượng 90 → 60 |
 
-### Vì sao `feather` là 3 mà không phải 12
+### Vì sao `feather` là 3
 
-`feather` là độ lệch chuẩn (sigma) của bộ lọc làm mờ Gaussian. Dải chuyển tiếp trải ra
-khoảng **±3 sigma** quanh mép ô:
+`feather` là độ lệch chuẩn (sigma) của Gaussian; dải chuyển tiếp trải khoảng **±3 sigma**:
 
 | `feather` | Dải chuyển | Hậu quả |
 |---|---|---|
-| 12 | ±36 px | Nội dung lá lem ~32 px **ra ngoài** ô, khung lem ~44 px **vào trong** ô |
+| 12 | ±36 px | Nội dung lem ~32 px ra ngoài ô |
 | **3** | **±9 px** | Lem chỉ còn ~8 px |
 
-Đo trên 78 lá (vành sát mép ô, so với base):
+Đo trên 78 lá: lem trung bình 0.0520 → **0.0206** (giảm 60 %), vật lạ 0.281 % → **0.065 %**.
 
-| | feather 12 | feather 3 |
+### Vì sao ô nội dung là `124,131,600,878`
+
+Ô cũ `106,120,621,933` trùm lên cả **dải nhợt** (75..114) và **viền trong** (115..123).
+Hai dải này do AI vẽ lại ở mỗi lá nên **khác nhau từng lá** — đo được độ lệch **0.0878**
+so với khung chuẩn, cao nhất 0.1920.
+
+Thu ô vào đúng vùng nội dung thực (`124..724`, `131..1009`) thì dải nhợt và viền trong
+được lấy từ **khung chuẩn**, nên đồng nhất tuyệt đối trên mọi lá:
+
+| | Ô cũ 106,120 | Ô mới 124,131 |
 |---|---|---|
-| Lem trung bình | 0.0520 | **0.0206** (giảm 60 %) |
-| Lem cao nhất (`pentacles-09`) | 0.1595 | **0.0830** (giảm 48 %) |
-| Vật lạ ngoài ô | 0.281 % | **0.065 %** |
-| Seam trung bình | 0.0438 | 0.0473 (tệ thêm 0.0035) |
+| Lệch dải viền (trung bình) | 0.0878 | **0.0145** |
+| Lệch dải viền (cao nhất) | 0.1920 | **0.0229** |
 
-> **`edge_guard` vẫn giữ nguyên 18 px.** Nó chỉ khoá mép *ngoài cùng* của lá,
-> không can thiệp vào mép ô nội dung — nên không ngăn được lem quanh ô.
+Đồng nhất hơn **83 %**. Kiểm chứng tên & huy hiệu không bị ảnh hưởng:
+vùng tên lệch so khung chuẩn 0.16–0.23 (không lá nào mất tên), thay đổi so bản trước chỉ **0.0197**.
+
+> **`edge_guard` chỉ khoá mép ngoài cùng của lá**, không ngăn được lem quanh ô nội dung.
 
 ---
 
@@ -123,9 +111,9 @@ khoảng **±3 sigma** quanh mép ô:
 | `check_seam.py` | Đo đường nối giữa dải tên và khung chuẩn | `star-clean.png` |
 | `build_gallery.py` | Sinh `deck.json` + `index.html` tự chứa | — |
 
-> **`compose_card.py` phóng to ảnh nguồn lên kích thước TOÀN LÁ (848×1264), rồi mới dán.**
-> Không phải phóng lên kích thước ô (621×933). Nhờ vậy các vùng nội dung thẳng hàng
-> tuyệt đối với khung, không cần bù tọa độ.
+> **`compose_card.py` phóng ảnh nguồn lên kích thước TOÀN LÁ (848×1264), rồi mới dán.**
+> Không phải phóng lên kích thước ô. Nhờ vậy các vùng thẳng hàng tuyệt đối với khung,
+> không cần bù tọa độ — và toạ độ trong `panel.json` vừa là **vùng lấy** vừa là **vị trí đặt**.
 
 ---
 
@@ -154,11 +142,10 @@ khoảng **±3 sigma** quanh mép ô:
 | Chữ tên không bị copy nhầm | RMSE so với Star **> 0.05** | vùng `80,1045,690,200` |
 | Xác nhận vẽ lại thật | RMSE ô nội dung **> 0.15** | so với bản cũ trong git |
 
-> **Lưu ý về mực dải tên:** 8/78 lá đang nằm ngoài khoảng 66–74 %
-> (cao nhất `13-death` 77.0 %, thấp nhất `02-priestess` 65.6 %). Đây là tình trạng
-> **có sẵn từ trước**, không do thay đổi `feather` (khác biệt chỉ ~0.05 %).
-> Mực dải tên tỷ lệ thuận với độ dài tên — THE HIGH PRIESTESS dài hơn THE STAR —
-> nên ngưỡng cố định này có thể không phù hợp cho mọi lá.
+> **Lưu ý mực dải tên:** 8/78 lá nằm ngoài khoảng 66–74 % (cao nhất `13-death` 77.0 %,
+> thấp nhất `02-priestess` 65.6 %). Có sẵn từ trước, không do các thay đổi gần đây
+> (khác biệt ~0.05 %). Mực tỷ lệ thuận với độ dài tên — THE HIGH PRIESTESS dài hơn
+> THE STAR — nên một ngưỡng cố định khó phù hợp cho mọi lá.
 
 ---
 
@@ -167,12 +154,10 @@ khoảng **±3 sigma** quanh mép ô:
 | | |
 |---|---|
 | Tâm lá | x = **424** |
-| Tâm ô nội dung | x = **416** |
-| Độ lệch | ô nội dung lệch **TRÁI 8 px** so với tâm lá |
-| Dải khung trái / phải | **106 px** / **121 px** — chênh **15 px** |
+| Tâm ô nội dung | x = **424** |
+| Độ lệch | ô nội dung lệch **TRÁI 0 px** so với tâm lá |
 
-Giữ nguyên để khung khớp với `17-the-star.jpg`. Nếu muốn căn lại cho cân đối,
-phải đổi `panel` **và** ghép lại toàn bộ 78 lá.
+Giữ nguyên để khung khớp với `17-the-star.jpg`.
 
 ---
 
@@ -180,9 +165,10 @@ phải đổi `panel` **và** ghép lại toàn bộ 78 lá.
 
 Từ trường `_history` của `prompts/panel.json`:
 
-- **`title` từng là `262,1090,330,145`** — quá hẹp, chữ THE CHARIOT bị cụt (bắt đầu ở x=230).
-- Nới thành `190,670`, rồi `175` — vì THE HIGH PRIESTESS rộng 488 px (bắt đầu ở x=181).
-- **Nới tiếp thành toàn bộ dải trong** `80,1045,690,200` — máy sinh ảnh không thể vẽ lại
-  hoa văn dải dưới giống hệt nhau; dán một ô nhỏ sẽ lộ hình chữ nhật. Lấy cả dải từ lá nguồn
-  và đẩy đường nối ra sát mép trong khung vàng, nơi đường viền tự nhiên che khuất.
-- **`feather` 12 → 3** — vì blur sigma 12 làm nội dung lem ra ngoài ô (xem mục 4).
+- **`title` từng là `262,1090,330,145`** — quá hẹp, chữ THE CHARIOT bị cụt (x=230).
+- Nới `190,670`, rồi `175` — vì THE HIGH PRIESTESS rộng 488 px (x=181).
+- Nới thành toàn bộ dải trong `80,1045,690,200` — máy sinh ảnh không thể vẽ lại hoa văn
+  dải dưới giống hệt nhau; lấy cả dải rồi đẩy đường nối ra mép trong khung vàng.
+- **`feather` 12 → 3** — blur sigma 12 làm nội dung lem ra ngoài ô (xem mục 4).
+- **`panel` 106,120,621,933 → 124,131,600,878** — ô cũ trùm lên dải nhợt & viền trong
+  do AI tự vẽ, gây thiếu đồng nhất; thu vào đúng vùng nội dung thực (xem mục 4).
