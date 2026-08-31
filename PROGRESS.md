@@ -100,3 +100,4 @@ Tiền      ██████████████         14/14
 - `refs/` — `card-blank.jpg` (tham chiếu sinh ảnh), `17-the-star.jpg` (neo phong cách, không sửa),
   `title-style.png` (mẫu chữ), **`star-clean.png` (khung chuẩn — base mặc định)**, `frame-master.jpg` (cũ, không còn dùng)
 - `raw/` — ảnh thô, **không lưu vào git**
+- `SPEC.md` — **đặc tả kỹ thuật**: kích thước, tọa độ, viền, ngưỡng kiểm tra
