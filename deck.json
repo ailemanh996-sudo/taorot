@@ -1,7 +1,7 @@
 {
  "deck": "Sensual Tarot",
  "total": 78,
- "done": 64,
+ "done": 71,
  "size": "848x1264",
  "cards": [
   {
@@ -884,7 +884,7 @@
    "file": "cards/swords-queen.jpg",
    "w": 848,
    "h": 1264,
-   "kb": 456
+   "kb": 460
   },
   {
    "slug": "swords-king",
@@ -909,7 +909,10 @@
    "title": "ACE OF PENTACLES",
    "scene": "a divine hand offering one large golden pentacle coin over a lush garden gateway with lilies, mountains beyond",
    "femme": false,
-   "file": null
+   "file": "cards/pentacles-ace.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 485
   },
   {
    "slug": "pentacles-02",
@@ -920,7 +923,10 @@
    "title": "TWO OF PENTACLES",
    "scene": "a nimble bare-chested youth in a flowing sash juggling two pentacle coins joined by an infinity ribbon, ships on rolling waves behind",
    "femme": false,
-   "file": null
+   "file": "cards/pentacles-02.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 457
   },
   {
    "slug": "pentacles-03",
@@ -931,7 +937,10 @@
    "title": "THREE OF PENTACLES",
    "scene": "a young woman sculptor in an open workshop apron slipping off one shoulder, hair loose, chiseling a column, a monk and an architect commenting, three coins set in the arch above",
    "femme": true,
-   "file": null
+   "file": "cards/pentacles-03.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 484
   },
   {
    "slug": "pentacles-04",
@@ -942,7 +951,10 @@
    "title": "FOUR OF PENTACLES",
    "scene": "a crowned man in rich robes seated rigidly on a stone seat, clutching one coin to his chest, one coin in his crown, two coins beneath his feet",
    "femme": false,
-   "file": null
+   "file": "cards/pentacles-04.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 464
   },
   {
    "slug": "pentacles-05",
@@ -953,7 +965,10 @@
    "title": "FIVE OF PENTACLES",
    "scene": "two ragged beggars passing a glowing church in the snow, five coins shining in the tall stained-glass window",
    "femme": true,
-   "file": null
+   "file": "cards/pentacles-05.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 493
   },
   {
    "slug": "pentacles-06",
@@ -964,7 +979,10 @@
    "title": "SIX OF PENTACLES",
    "scene": "a prosperous merchant weighing coins on a balance before a kneeling poor couple, a town arcade behind him",
    "femme": false,
-   "file": null
+   "file": "cards/pentacles-06.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 487
   },
   {
    "slug": "pentacles-07",
@@ -975,7 +993,10 @@
    "title": "SEVEN OF PENTACLES",
    "scene": "a bare-chested young farmer leaning on a hoe gazing at a garden vine bearing seven coins, a manor beyond",
    "femme": false,
-   "file": null
+   "file": "cards/pentacles-07.jpg",
+   "w": 848,
+   "h": 1264,
+   "kb": 482
   },
   {
    "slug": "pentacles-08",
