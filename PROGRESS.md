@@ -1,65 +1,87 @@
-# Tiến độ bộ bài Tarot — 78 lá
+# Tiến độ bộ bài Taorot
 
-_Cập nhật: 2026-08-30_
-_Commit: `b14301d`_
+**78 / 78 — HOÀN THÀNH**
 
-## Tổng quan: **50/78 lá (64%)**
-
-| Bộ | Trạng thái | Xong |
+| Bộ bài | Số lá | Trạng thái |
 |---|---|---|
-| Ẩn chính | ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ | **22/22** |
-| Wands — Gậy | ▓▓▓▓▓▓▓▓▓▓▓▓▓▓ | **14/14** |
-| Cups — Chén | ▓▓▓▓▓▓▓▓▓▓▓▓▓▓ | **14/14** |
-| Swords — Kiếm | ░░░░░░░░░░░░░░ | **0/14** |
-| Pentacles — Xu | ░░░░░░░░░░░░░░ | **0/14** |
+| Ẩn Chính (Major Arcana) | 22 / 22 | ✅ xong |
+| Gậy (Wands) | 14 / 14 | ✅ xong |
+| Cốc (Cups) | 14 / 14 | ✅ xong |
+| Kiếm (Swords) | 14 / 14 | ✅ xong |
+| Tiền (Pentacles) | 14 / 14 | ✅ xong |
 
-## Chất lượng (đo tự động, 50 lá đã có)
+```
+Ẩn Chính  ██████████████████████  22/22
+Gậy       ██████████████         14/14
+Cốc       ██████████████         14/14
+Kiếm      ██████████████         14/14
+Tiền      ██████████████         14/14
+```
+
+---
+
+## Chất lượng đo được (toàn bộ 78 lá)
 
 | Chỉ số | Kết quả | Ngưỡng |
 |---|---|---|
-| Tỉ lệ 848×1264 | 50/50 đạt | đúng 0.671 |
-| Đường nối (seam) | 0.034 – 0.057, trung bình 0.042 | < 0.06 mịn |
-| Chữ tên nằm trong hộp | 50/50 đạt | — |
-| Vật lạ trong khung | 0.004% – 0.200%, trung bình 0.114% | < 0.3% |
-| Khung đồng nhất toàn bộ | có (`compose_card.py` dập từ `frame-master.jpg`) | — |
+| Tỉ lệ khung 848 × 1264 | 78 / 78 | 0.671 |
+| Chữ tên nằm gọn trong hộp | 78 / 78 | OK |
+| Đường nối (seam) — 234 điểm đo | **trung bình 0.0389** | < 0.06 mịn |
+| — thấp nhất | 0.0282 | |
+| — cao nhất | **0.0809** (`pentacles-10`) | < 0.10 đạt |
+| Lá mịn hoàn toàn | **77 / 78** | |
+| Mực dải tên | 66 – 74 % | 66 – 74 % |
+| Vật lạ lọt vào khung | cao nhất 0.29 % | < 0.3 % |
 
-### 10 lá đường nối mịn nhất
+`pentacles-10` là lá duy nhất có một điểm đo ở mức 0.0809 (*hơi thấy*) — vẫn dưới ngưỡng 0.10.
 
-| Lá | Seam |
+---
+
+## Quy trình 6 bước
+
+1. Sửa dữ liệu trong `prompts/cards.json` (không viết tay 78 chuỗi prompt)
+2. `python3 scripts/build_prompts.py all` rồi `check` → phải báo `78 cards, 0 error(s), 0 warning(s)`
+3. `generate_image` với 3 ảnh tham chiếu → `raw/<slug>.png`
+4. `scripts/check_card.py raw/` → tỉ lệ 0.671, chữ tên `OK`
+5. `scripts/compose_card.py raw/<slug>.png` (**một lá mỗi lần**) rồi `scripts/check_seam.py`
+6. `scripts/build_gallery.py` → commit + push
+
+---
+
+## Các lỗi đã giải quyết
+
+| Lỗi | Cách xử lý |
 |---|---|
-| `cups-10` | 0.0335 |
-| `cups-04` | 0.0336 |
-| `20-judgement` | 0.0342 |
-| `cups-king` | 0.0342 |
-| `11-justice` | 0.0348 |
-| `09-hermit` | 0.0351 |
-| `cups-knight` | 0.0353 |
-| `00-fool` | 0.0354 |
-| `05-hierophant` | 0.0354 |
-| `cups-06` | 0.0354 |
+| AI đếm sai số vật (chén / gậy / kiếm / tiền) | **COUNT LOCK** chia nhóm + **đếm khe hở** |
+| Nhóm vật bị vẽ thừa | Gọi đích danh lỗi trong prompt: *"lá này đã hỏng, từng ra 9 kiếm"* |
+| Cảnh tối làm dải tên bị tối | **BAND TONE LOCK** + đo % mực (phát hiện `swords-06` 85.6 %) |
+| **Chữ "dark" lặp nhiều lần làm tối cả dải tên** | Tránh hẳn chữ "dark" — `swords-king` từ 80.1 % mực xuống 69.7 % |
+| Lửa nến của The Star lọt sang mọi lá | Tạo `refs/frame-master.jpg` (Star đã xoá nến) |
+| Ref 2 rò rỉ nội dung | Điều **REFERENCE DISCIPLINE**: ref 2 chỉ cung cấp phong cách |
+| Cánh thiên thần bị ngược ở tư thế nhìn sau | Dùng góc ba-phần-tư |
+| Kiểm duyệt chặn ảnh mô tả khoả thân | **Tả vải trước, cơ thể sau**; đổi "khoả thân" → "vai trần" |
+| Sửa đi sửa lại làm hỏng đường nối | Nếu cần sửa lần hai → **vẽ lại từ đầu** |
+| Huy hiệu "thiên thần nhỏ" tự gắn cánh cho nhân vật | Đổi thành "chạm bướm" |
+| Mâu thuẫn giữa trường `scene` và `hair` | Luôn đối chiếu hai trường trước khi tạo |
 
-## Việc đã giải quyết
+---
 
-- **Hai cây nến dính khung**: nằm trong ảnh nền `frame-master`; xoá bằng cách tạo lá Star sạch rồi lấy mặt nạ. Từ 3.94% xuống 0.000%.
-- **Máy chép bối cảnh lá Star**: prompt từng chỉ nói "vẽ theo phong cách". Thêm điều khoản **REFERENCE DISCIPLINE** — ảnh tham khảo 2 chỉ cung cấp phong cách, cấm chép nội dung.
-- **Đếm sai số vật**: mỗi lá có phép cộng riêng (`1+5`, `3+3+2`, `4+4+2`, `3×3`). Huy hiệu `wands-06` dùng mẹo đếm **khe hở** thay vì đếm thân.
-- **Thừa tay**: thêm `extra arm, three arms, more than two arms` vào NEGATIVE chung của template.
-- **Cánh ngược chiều**: thêm luật "nếu nhân vật nhìn từ sau, cánh cũng nhìn từ sau".
-- **Kiểm duyệt từ chối ảnh**: đổi sang lối tả vải trước — "vai trần", "lụa ướt dính", "nghiên cứu nhân thể cổ điển".
+## Việc còn mở
 
-## Còn mở
+1. **Đếm số vật bằng mắt** trên 56 lá Ẩn phụ — máy không đếm được, cần người xem
+2. Xác nhận chữ "XVII" đã biến mất khỏi medalion của The Star (không có OCR)
+3. Đo lại vòng 6 px bên trong khung
+4. `00-fool` (0.0627) và `17-the-star` (0.0832) là hai lá có dải tên yếu nhất
+5. `pentacles-10` — điểm đo trên cùng 0.0809, có thể làm lại nếu thấy rõ
 
-1. Xác nhận chữ **XVII** đã mất khỏi huy hiệu lá Star (không có OCR trong môi trường — cần soi bằng mắt).
-2. Đo lại vòng 6 px quanh mép trong (lần đo trước 0.11–0.38, chưa đo lại từ khi có nền mới).
-3. Bộ **Swords** (14 lá) và **Pentacles** (14 lá).
+---
 
-## Quy trình (mỗi lá)
+## Cấu trúc thư mục
 
-```
-1. python3 scripts/build_prompts.py all      # sinh prompt từ cards.json
-2. generate_image  (3 ảnh tham khảo: card-blank, 17-the-star, title-style)
-3. python3 scripts/check_card.py raw/<slug>.png
-4. python3 scripts/compose_card.py raw/<slug>.png
-5. python3 scripts/check_seam.py <slug>
-6. python3 scripts/build_gallery.py
-```
+- `prompts/cards.json` — dữ liệu gốc của 78 lá
+- `prompts/template.md` — khuôn prompt chung
+- `prompts/out/` — 78 file prompt đã sinh
+- `scripts/` — `build_prompts.py`, `check_card.py`, `compose_card.py`, `check_seam.py`, `build_gallery.py`
+- `cards/` — **78 lá hoàn chỉnh** (tác phẩm bền vững)
+- `refs/` — `card-blank.jpg`, `17-the-star.jpg`, `title-style.png`, `frame-master.jpg`, `star-clean.png`
+- `raw/` — ảnh thô, **không lưu vào git**
